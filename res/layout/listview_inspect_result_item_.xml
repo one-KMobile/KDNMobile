@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewGroup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:orientation="vertical">
+    	<RelativeLayout 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:background="#dde3e7"
+    	    android:padding="5dp">
+    		<TextView
+		        android:id="@+id/tvTowerNo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="지지물번호"
+		        android:textSize="18sp" />
+	        <TextView
+		        android:id="@+id/tvDate"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:text="순시일"
+		        android:textSize="16sp" />    
+    	</RelativeLayout>
+    	
+    	<LinearLayout 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical">
+	        <LinearLayout 
+	            android:id="@+id/linearInsType"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:orientation="horizontal">
+		        <TextView
+			        android:id="@+id/tvPlace"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:text="1차사업소/2차사업소" 
+			        android:visibility="gone"/>    
+	    	</LinearLayout>
+	    	
+	        <ImageView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/table_line_w" />
+	        
+	        <LinearLayout 
+	            android:id="@+id/linearInsType2"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:orientation="horizontal">
+	    	</LinearLayout>
+   		 </LinearLayout>
+    </LinearLayout>
+	    
+</RelativeLayout>

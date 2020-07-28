@@ -1,0 +1,355 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:6:1-160:12
+	package
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:7:5-34
+	android:versionName
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:10:5-30
+		INJECTED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:9:5-28
+		INJECTED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:6:11-69
+uses-sdk
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:12:5-14:41
+	android:targetSdkVersion
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:14:9-38
+	android:minSdkVersion
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:13:9-35
+uses-permission#android.permission.INTERNET
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:15:5-66
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:15:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:16:5-78
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:16:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:17:5-80
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:17:22-78
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:18:5-80
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:18:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:19:22-77
+uses-permission#android.permission.NFC
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:20:5-61
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:20:22-59
+uses-permission#android.permission.CAMERA
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:21:5-65
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:21:22-62
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:22:2-75
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:22:19-73
+uses-permission#android.permission.GET_TASKS
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:23:2-64
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:23:19-62
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:24:2-64
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:24:19-62
+permission#com.kdn.mtps.mobile.permission.C2D_MESSAGE
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:27:5-29:47
+	android:protectionLevel
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:29:9-44
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:28:9-66
+uses-permission#com.kdn.mtps.mobile.permission.C2D_MESSAGE
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:31:5-82
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:31:22-79
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:33:5-82
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:33:22-79
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:35:5-71
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:35:22-68
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:38:5-75
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:38:22-72
+uses-feature#android.hardware.nfc
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:40:2-41:68
+	android:required
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:41:42-65
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:41:6-41
+application
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:44:5-158:19
+	android:label
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:48:9-41
+	android:allowBackup
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:46:9-35
+	android:icon
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:47:9-42
+	android:theme
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:49:9-40
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:45:9-58
+activity#com.kdn.mtps.mobile.SplashActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:50:9-58:20
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:53:13-47
+	android:label
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:52:13-45
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:51:13-62
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:54:13-57:29
+action#android.intent.action.MAIN
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:55:17-69
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:55:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:56:17-77
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:56:27-74
+activity#com.kdn.mtps.mobile.MainActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:59:9-60:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:60:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:59:19-66
+activity#com.kdn.mtps.mobile.LoginActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:61:9-62:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:62:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:61:19-67
+activity#com.kdn.mtps.mobile.map.NMapViewer
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:63:9-64:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:64:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:63:19-68
+activity#com.kdn.mtps.mobile.notice.NoticeListActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:65:9-66:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:66:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:65:19-79
+activity#com.kdn.mtps.mobile.facility.FacilitySearchActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:67:9-68:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:68:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:67:19-85
+activity#com.kdn.mtps.mobile.facility.FacilityMapActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:69:9-70:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:70:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:69:19-82
+service#com.kdn.mtps.mobile.service.KDNService
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:71:9-82
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:71:18-71
+receiver#com.kdn.mtps.mobile.receiver.KDNReceiver
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:72:9-76:20
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:72:19-74
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:73:13-75:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:74:17-79
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:74:25-76
+activity#com.kdn.mtps.mobile.facility.FacilityMapListActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:77:9-78:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:78:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:77:19-86
+activity#com.kdn.mtps.mobile.inspect.InspectResultSearchActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:79:9-80:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:80:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:79:19-89
+activity#com.kdn.mtps.mobile.inspect.InspectResultDetailActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:81:9-82:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:82:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:81:19-89
+activity#com.kdn.mtps.mobile.datasync.DataSyncActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:83:9-84:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:84:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:83:19-79
+activity#com.kdn.mtps.mobile.nfc.NfcActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:85:9-87:20
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:86:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:85:19-69
+activity#com.kdn.mtps.mobile.nfc.NfcWriteActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:88:9-89:25
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:88:19-74
+activity#com.kdn.mtps.mobile.input.InputBTActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:90:9-92:71
+	android:windowSoftInputMode
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:91:13-70
+	android:configChanges
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:92:13-59
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:90:19-75
+activity#com.kdn.mtps.mobile.input.InputJPActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:93:9-95:71
+	android:windowSoftInputMode
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:94:13-52
+	android:configChanges
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:95:13-59
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:93:19-75
+activity#com.kdn.mtps.mobile.input.InputJSActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:96:9-98:71
+	android:windowSoftInputMode
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:97:13-52
+	android:configChanges
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:98:13-59
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:96:19-75
+activity#com.kdn.mtps.mobile.input.InputJJActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:99:9-101:71
+	android:windowSoftInputMode
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:100:13-52
+	android:configChanges
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:101:13-59
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:99:19-75
+activity#com.kdn.mtps.mobile.input.InputKBActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:102:9-104:71
+	android:windowSoftInputMode
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:103:13-52
+	android:configChanges
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:104:13-59
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:102:19-75
+activity#com.kdn.mtps.mobile.input.InputHKActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:105:9-107:76
+	android:windowSoftInputMode
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:107:13-64
+	android:configChanges
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:106:13-59
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:105:19-75
+activity#com.kdn.mtps.mobile.input.InputHJActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:108:9-110:71
+	android:windowSoftInputMode
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:109:13-52
+	android:configChanges
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:110:13-59
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:108:19-75
+activity#com.kdn.mtps.mobile.input.InputBRActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:111:9-113:71
+	android:windowSoftInputMode
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:112:13-52
+	android:configChanges
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:113:13-59
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:111:19-75
+activity#com.kdn.mtps.mobile.input.InputYBActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:114:9-116:71
+	android:windowSoftInputMode
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:115:13-52
+	android:configChanges
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:116:13-59
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:114:19-75
+activity#com.kdn.mtps.mobile.camera.CameraManageActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:117:9-118:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:118:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:117:19-81
+activity#com.kdn.mtps.mobile.inspect.InspectResultOutputActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:119:9-120:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:120:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:119:19-89
+activity#com.kdn.mtps.mobile.inspect.InspectMapListActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:121:9-122:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:122:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:121:19-84
+activity#com.kdn.mtps.mobile.gcm.PushDialog
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:123:9-126:25
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:125:13-47
+	android:theme
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:124:13-49
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:123:19-68
+activity#com.google.zxing.client.android.CaptureActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:127:9-141:19
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:130:12-49
+	android:windowSoftInputMode
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:132:12-59
+	android:configChanges
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:129:12-62
+	android:theme
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:131:12-70
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:128:12-74
+intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:133:12-136:28
+category#android.intent.category.DEFAULT
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:135:14-73
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:135:24-70
+intent-filter#android.intent.category.DEFAULT+com.google.zxing.client.android.SCAN
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:137:12-140:28
+action#com.google.zxing.client.android.SCAN
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:138:14-76
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:138:22-73
+activity#com.kdn.mtps.mobile.setting.SettingActivity
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:142:8-143:59
+	android:screenOrientation
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:143:13-47
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:142:18-76
+receiver#com.google.android.gcm.GCMBroadcastReceiver
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:146:9-155:20
+	android:permission
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:148:13-73
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:147:13-71
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.kdn.mtps.mobile
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:149:13-154:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:150:17-81
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:150:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:151:17-86
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:151:25-83
+category#com.kdn.mtps.mobile
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:153:17-64
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:153:27-61
+service#com.kdn.mtps.mobile.GCMIntentService
+ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:156:9-80
+	android:name
+		ADDED from D:\AndroidStudioProjects\KDNMobile\AndroidManifest.xml:156:18-69

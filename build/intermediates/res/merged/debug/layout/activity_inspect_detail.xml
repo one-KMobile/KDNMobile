@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>	
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLayout">
+    
+    <include layout="@layout/activity_header"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingLeft="10dp"
+        	android:paddingRight="10dp"
+        	android:paddingTop="5dp"
+        	android:paddingBottom="5dp">
+        	<LinearLayout 
+        	    android:layout_width="0px"
+        	    android:layout_weight="6.5"
+        	    android:layout_height="fill_parent">
+        	    <ImageView
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:src="@drawable/icon_box_wire" />
+        	    
+        		<TextView
+		            android:id="@+id/tvName"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:textSize="16sp"
+		            android:text="선로명"
+		            android:layout_marginLeft="5dp"
+		            android:gravity="center_vertical" />    
+        	</LinearLayout>
+	        
+        	<LinearLayout 
+        	    android:layout_width="0px"
+        	    android:layout_weight="3.5"
+        	    android:layout_height="fill_parent"
+        	    android:gravity="right">
+        		<ImageView
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:src="@drawable/icon_box_schedule"
+        	        android:gravity="right|center_vertical"
+        	        android:layout_gravity="right" />
+        		
+		        <TextView
+		            android:id="@+id/tvDate"
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:text="순시일"
+		            android:textSize="16sp"
+		            android:layout_marginLeft="5dp"
+		            android:gravity="right|center_vertical" />
+	      	</LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/subtitle_line" />
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingLeft="10dp"
+        	android:paddingRight="10dp"
+        	android:paddingTop="5dp"
+        	android:paddingBottom="5dp">
+	        
+            <LinearLayout 
+        	    android:layout_width="0px"
+        	    android:layout_weight="6.5"
+        	    android:layout_height="fill_parent">
+		        <ImageView
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:src="@drawable/icon_box_tower" />
+		        
+		        <TextView
+		            android:id="@+id/tvEqpNo"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:textSize="16sp"
+		            android:text="지지물번호"
+		            android:layout_marginLeft="5dp"
+		            android:gravity="center_vertical" />
+		    </LinearLayout>
+	        
+	        <TextView
+	            android:id="@+id/tvWriter"
+	            android:layout_width="0px"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="3.5"
+	            android:text="보고자"
+	            android:textSize="16sp"
+	            android:gravity="right|center_vertical" />
+        </LinearLayout>
+	</LinearLayout>
+	
+    <ImageView
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:background="@drawable/header_line" />
+    
+    <HorizontalScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout 
+        android:id="@+id/linearDateList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        >
+        
+    </LinearLayout>
+    </HorizontalScrollView>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/btnStatus"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="현재상태" />
+        <Button
+            android:id="@+id/btnEditStatus"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="순시정보 수정" />
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_line"
+        android:layout_marginBottom="5dp" />
+        
+    <FrameLayout 
+        android:id="@+id/layout_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="visible">
+        
+        <TextView
+            android:id="@+id/tvBTInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보통순시 결과입력"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+	        <Button
+	            android:layout_marginRight="5dp"
+	            android:id="@+id/btnFacBTCamera"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_inspect_bt_camera"/>
+	        <Button
+	            android:id="@+id/btnFacBT"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_input_bt_insert"/>
+        </LinearLayout>
+    </FrameLayout>
+    
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivBTLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_line"
+        android:layout_marginBottom="5dp" />
+    
+    <FrameLayout 
+        android:id="@+id/layout_js"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+            
+	        <TextView
+	            android:id="@+id/tvJSInput"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="전선접속개소순시 결과입력"
+	            android:textSize="16sp"
+	            android:layout_gravity="center_vertical"
+	            android:paddingLeft="10dp"/>
+	        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+	        <Button
+	            android:layout_marginRight="5dp"
+	            android:id="@+id/btnFacJSCamera"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_inspect_bt_camera"/>
+	        <Button
+	            android:id="@+id/btnFacJS"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_input_bt_insert"/>
+		</LinearLayout>
+    </FrameLayout>
+    
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivJSLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_line"
+        android:layout_marginBottom="5dp" />
+    <FrameLayout 
+        android:id="@+id/layout_jj"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvJJInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="접지저항측정 결과입력"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+	        <Button
+	            android:layout_marginRight="5dp"
+	            android:id="@+id/btnFacJJCamera"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_inspect_bt_camera"/>
+	        <Button
+	            android:id="@+id/btnFacJJ"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_input_bt_insert"/>
+        </LinearLayout>
+    </FrameLayout>
+    
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivJJLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_line"
+        android:layout_marginBottom="5dp" />
+    
+    <FrameLayout 
+        android:id="@+id/layout_kb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvKBInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기별점검 결과입력"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+	        <Button
+	            android:layout_marginRight="5dp"
+	            android:id="@+id/btnFacKBCamera"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_inspect_bt_camera"/>
+	        <Button
+	            android:id="@+id/btnFacKB"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_input_bt_insert"/>
+        </LinearLayout>
+    </FrameLayout>
+    
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivKBLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_line"
+        android:layout_marginBottom="5dp" />
+    
+    <FrameLayout
+        android:id="@+id/layout_hk" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvHKInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="항공등 점등점검 결과입력"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp" />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+	         <Button
+	            android:layout_marginRight="5dp"
+	            android:id="@+id/btnFacHKCamera"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/selector_inspect_bt_camera" />
+	        <Button
+	            android:id="@+id/btnFacHK"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_input_bt_insert"
+	            />
+		</LinearLayout>
+    </FrameLayout>
+    
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivHKLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_line"
+        android:layout_marginBottom="5dp" />
+    
+    <FrameLayout
+        android:id="@+id/layout_hj" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvHJInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="항공등 점등점검 결과입력"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp" />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+	         <Button
+	            android:layout_marginRight="5dp"
+	            android:id="@+id/btnFacHJCamera"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/selector_inspect_bt_camera" />
+	        <Button
+	            android:id="@+id/btnFacHJ"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_input_bt_insert"
+	            />
+		</LinearLayout>
+    </FrameLayout>
+    
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivHJLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_line"
+        android:layout_marginBottom="5dp" />
+    
+    <FrameLayout
+        android:id="@+id/layout_br" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvBRInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="항공등 점등점검 결과입력"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp" />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+	         <Button
+	            android:layout_marginRight="5dp"
+	            android:id="@+id/btnFacBRCamera"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	             android:background="@drawable/selector_inspect_bt_camera" />
+	        <Button
+	            android:id="@+id/btnFacBR"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_input_bt_insert"
+	            />
+		</LinearLayout>
+    </FrameLayout>
+    
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivBRLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_line"
+        android:layout_marginBottom="5dp" />
+    
+    <FrameLayout 
+        android:id="@+id/layout_jp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvJPInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="점퍼접속개소순시 결과입력"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+	        <Button
+	            android:layout_marginRight="5dp"
+	            android:id="@+id/btnFacJPCamera"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_inspect_bt_camera"/>
+	        <Button
+	            android:id="@+id/btnFacJP"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_input_bt_insert"/>
+        </LinearLayout>
+    </FrameLayout>
+    
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivJPLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_line"
+        android:layout_marginBottom="5dp" />
+</LinearLayout>

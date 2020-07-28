@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_header" />
+
+    <include layout="@layout/activity_input_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+	            android:id="@+id/btnCamera"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:background="@drawable/selector_inspect_bt_camera"/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/selector_input_bt_insert"
+                android:textSize="20sp" />
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right|center_vertical">
+                <Button
+	                android:id="@+id/btnEdit"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="right|center_vertical"
+	                android:background="@drawable/selector_input_bt_edit"
+	                android:textSize="20sp"
+	                android:visibility="gone" />
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="0dp" />
+                <Button
+	                android:id="@+id/btnDelete"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="right|center_vertical"
+	                android:background="@drawable/selector_input_bt_delete"
+	                android:textSize="20sp"
+	                android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+        
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputbt_line_bg" />
+    
+    <ScrollView
+        android:id="@+id/svParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+   
+	   	<LinearLayout 
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:orientation="vertical">
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="10dp">
+		        
+		        <LinearLayout 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical">
+		            <LinearLayout 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content">
+		            	<ImageView
+		            	    android:layout_width="wrap_content"
+		            	    android:layout_height="match_parent"
+		            	    android:layout_gravity="center"
+		            	    android:src="@drawable/input_bt_icon_condition" />
+		                <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="@string/input_bt_claim_content"
+				            android:layout_marginLeft="5dp"
+				            android:textSize="16sp" />
+		            </LinearLayout>
+		            
+		            <View
+			            android:layout_width="0dp"
+			            android:layout_height="5dp" />
+		            <Button
+		                android:id="@+id/btnClaimContent"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/select_half"
+		                android:gravity="center"
+		                android:singleLine="true" />
+		        </LinearLayout>
+		    </LinearLayout>
+		    
+		    <ImageView
+		        android:layout_marginTop="20dp"
+		        android:layout_marginBottom="10dp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/inputbt_line_bg" />
+		    
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center">
+			
+		        <LinearLayout 
+		            android:visibility="gone"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical">
+		            <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/input_bt_worker_cnt"
+			            android:textSize="16sp" />
+		            <View
+			            android:layout_width="0dp"
+			            android:layout_height="5dp" />
+		            <Button
+		                android:id="@+id/btnWorkerCnt"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/select_half"
+		                android:gravity="center"
+		                android:singleLine="true"/>
+		        </LinearLayout>
+		        
+		        <LinearLayout 
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content">
+			        <LinearLayout 
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+			            android:orientation="vertical">
+		                <LinearLayout 
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content">
+			            	<ImageView
+			            	    android:layout_width="wrap_content"
+			            	    android:layout_height="match_parent"
+		            	    	android:layout_gravity="center"
+			            	    android:src="@drawable/input_bt_icon_inspect" />
+				            <TextView
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:text="점검상태"
+					            android:layout_marginLeft="5dp"
+					            android:textSize="16sp" />
+				        </LinearLayout>
+			            <View
+				            android:layout_width="0dp"
+				            android:layout_height="5dp" />
+			            <EditText
+					        android:id="@+id/editCheckResult"
+					        android:layout_width="fill_parent"
+						    android:layout_height="wrap_content"
+						    android:background="@drawable/input_full_big"
+						    android:paddingLeft="5dp"
+						    android:paddingRight="5dp"
+						    android:maxLength="50"
+						    android:singleLine="false"
+						    android:gravity="left|top"
+						    android:imeOptions="flagNoExtractUi"
+						    android:hint="입력하세요" />
+			        </LinearLayout>
+			     </LinearLayout>
+		    </LinearLayout>
+		    
+		    <ImageView
+		        android:layout_marginTop="20dp"
+		        android:layout_marginBottom="10dp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/inputbt_line_bg" />
+		    
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+		        <LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+		            android:orientation="vertical">
+			        <LinearLayout 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content">
+		            	<ImageView
+		            	    android:layout_width="wrap_content"
+		            	    android:layout_height="match_parent"
+		            	    android:layout_gravity="center"
+		            	    android:src="@drawable/input_bt_icon_report" />
+			            <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="특이사항"
+				            android:layout_marginLeft="5dp"
+				            android:textSize="16sp" />
+			        </LinearLayout>
+		            <View
+			            android:layout_width="0dp"
+			            android:layout_height="5dp" />
+		            <EditText
+				        android:id="@+id/editEtc"
+				        android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:background="@drawable/input_full_big"
+					    android:paddingLeft="5dp"
+					    android:paddingRight="5dp"
+					    android:maxLength="50"
+					    android:singleLine="false"
+					    android:imeOptions="flagNoExtractUi"
+					    android:gravity="left|top"
+					    android:hint="입력하세요" />
+		        </LinearLayout>
+		     </LinearLayout>
+		     
+		    <ImageView
+		        android:layout_marginTop="20dp"
+		        android:layout_marginBottom="10dp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/inputbt_line_bg" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

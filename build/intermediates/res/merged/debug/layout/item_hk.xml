@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItemParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+        
+	    <TextView
+	        android:id="@+id/tvLightType"
+	        android:layout_width="60dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="고광도" />
+	
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/table_line_h" />
+	    
+	    <TextView
+	        android:id="@+id/tvNo"
+	        android:layout_width="50dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	         />
+	    
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/table_line_h" />
+	    
+	    <TextView
+	        android:id="@+id/tvPower"
+	        android:layout_width="90dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="교류전원식"
+	         />
+	    
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/table_line_h" />
+	
+	    <EditText
+	        android:id="@+id/editLightCnt"
+	        android:layout_width="60dp"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:inputType="number"
+	        android:imeOptions="flagNoExtractUi"
+	        android:background="@drawable/selector_input_s"
+	        android:paddingLeft="8dp"
+	        />
+	    
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/table_line_h" />
+	    
+	    <Button
+	        android:id="@+id/btnLightState"
+	        android:layout_width="60dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center" />
+	    
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/table_line_h" />
+	    
+	    <Button
+	        android:id="@+id/btnYBresult"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+	        android:text="조치후양호"
+	        android:background="@drawable/btn_good_m" />
+	</LinearLayout>
+	
+	<ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_line_w" />
+
+</LinearLayout>

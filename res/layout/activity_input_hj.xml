@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_header" />
+
+    <include layout="@layout/activity_input_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_inspect_bt_camera" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/selector_input_bt_insert"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/selector_input_bt_edit"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="0dp" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/selector_input_bt_delete"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputbt_line_bg" />
+
+    <ScrollView
+        android:id="@+id/svParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:background="#dde3e7">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="항공등\n종류" />
+
+                    <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+                    
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="전원" />
+
+                    <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+                    
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="항공등\n순번" />
+					
+                    <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+                    
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="제어반" />
+
+                    <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+                    
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="태양전지" />
+
+                    <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+                    
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="축전지" />
+
+                    <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+                    
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="등기구" />
+
+                    <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+                    
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="전선" />
+
+                    <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+                    
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="양부판정" />
+                </LinearLayout>
+
+                <ImageView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/table_line_w" />
+                
+                <LinearLayout
+                    android:id="@+id/llLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</LinearLayout>

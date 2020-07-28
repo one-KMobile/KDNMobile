@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\AndroidStudioProjects\KDNMobile\assets"><file name="font.ttf.mp3" path="D:\AndroidStudioProjects\KDNMobile\assets\font.ttf.mp3"/></source></dataSet><dataSet config="debug"><source path="D:\AndroidStudioProjects\KDNMobile\build-types\debug\assets"/></dataSet></merger>

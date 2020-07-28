@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+	            android:id="@+id/btnCamera"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:background="@drawable/selector_inspect_bt_camera"/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/selector_input_bt_insert"
+                android:textSize="20sp" />
+            
+        </FrameLayout>
+        
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/inputbt_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <Button
+            android:id="@+id/btnName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/select_full"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/facility_name" >
+        </Button>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputbt_line_bg" />
+        
+    <ScrollView
+        android:id="@+id/svParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#dde3e7"  >
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="번호" />
+
+                    <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+                    
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="지지물\n번호" />
+
+                        <ImageView
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:background="@drawable/table_line_w" />
+                        
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="전" />
+                            
+                            <ImageView
+						        android:layout_width="wrap_content"
+						        android:layout_height="match_parent"
+						        android:background="@drawable/table_line_h_s" />
+
+                            <TextView
+                                android:layout_width="30dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="후" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+                    
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="공사현장\n(취약개소)명" />
+
+                    <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+                    
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="순시결과" />
+
+                    <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+                    
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="조사내용" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</LinearLayout>

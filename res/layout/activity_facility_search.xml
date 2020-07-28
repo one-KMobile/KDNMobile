@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_header"/>
+    
+    <include layout="@layout/activity_facility_header"/>
+    
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/listFacility"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="2px"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:focusable="true"
+            android:scrollbars="horizontal"
+            android:smoothScrollbar="false" />
+
+        <TextView
+            android:id="@+id/tvNoData"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_search_data"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:gravity="center" />
+        
+        <ImageView
+            android:id="@+id/ivBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@xml/rect"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

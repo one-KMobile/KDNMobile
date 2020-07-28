@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp" >
+
+    <ListView
+	     android:id="@+id/listCompany"
+	     android:layout_width="match_parent"
+	     android:layout_height="400dp"
+	     android:listSelector="@drawable/selector_list_color"
+	     android:drawSelectorOnTop="true"
+	     android:dividerHeight="0px"
+	     android:fadingEdge="none"
+	     android:fastScrollEnabled="true"
+	     android:focusable="true"
+	     android:scrollbars="horizontal"
+	     android:smoothScrollbar="false"/>
+    
+    <!-- 
+    <LinearLayout
+        android:id="@+id/llSelfInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="직접입력" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCompanyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+ 	-->
+</LinearLayout>

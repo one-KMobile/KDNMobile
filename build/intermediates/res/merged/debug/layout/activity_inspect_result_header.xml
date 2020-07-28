@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/facility_search_bg"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="78.2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnName"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/inspect_result_select_long"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/facility_name" >
+            </Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/editTowerNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inspect_result_input"
+                android:hint="지지물번호"
+                android:paddingLeft="5dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnType"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/inspect_result_select2"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/inspect_type" >
+            </Button>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnDate"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/inspect_result_select2"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="@string/date" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="21.8"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_comm_bt_search" />
+    </LinearLayout>
+
+</LinearLayout>

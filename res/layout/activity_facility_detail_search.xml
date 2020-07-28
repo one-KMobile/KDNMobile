@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_header" />
+
+    <Spinner
+        android:id="@+id/sp1bp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:prompt="@string/facility_sido" />
+
+    <Spinner
+        android:id="@+id/sp2bp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:prompt="@string/facility_sido" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="선로명" />
+
+    <Spinner
+        android:id="@+id/spType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:prompt="@string/facility_sido" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="순시일" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="~" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="순시일" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:visibility="invisible" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+          	android:layout_width="120dp"
+          	android:layout_height="80dp"
+          	android:text="목록보기" />
+        <Button
+          	android:layout_width="120dp"
+          	android:layout_height="80dp"
+          	android:text="지도로보기" />
+    </LinearLayout>
+</LinearLayout>

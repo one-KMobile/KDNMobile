@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+이미지 1080 * 1920 기준. 비율로 레이아웃 생성
+ 1. 여백 - 640(33.3) 
+ 2. 로그인 이미지 - 175(9.1) 
+ 3. 여백  - 105(5.5)
+ 4. 아이디 - 142(7.4)
+ 5. 여백 - 30(1.5)
+ 6. 비번 - 142(7.4)
+ 7. 여백 - 70(3.6)
+ 8. 접속버튼 - 135(7)
+ 9. 여백 - 390(25.2)
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="33.3">
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.1"
+        android:gravity="center">
+    	<ImageView
+    	    android:id="@+id/ivTitleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tit_login" />    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5">
+   	</LinearLayout>
+   	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.4"
+        android:gravity="center">
+    	
+        <EditText
+	        android:id="@+id/etId"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/login_input"
+			android:padding="5dp"
+			android:textSize="20sp"
+			android:inputType="textUri" />
+        
+   	</LinearLayout>
+   	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+   	</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.4"
+        android:gravity="center">
+        <EditText
+	        android:id="@+id/etPassward"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/login_input"
+			android:padding="5dp"
+			android:textSize="20sp"
+			android:imeOptions="actionDone"
+			android:inputType="textPassword" />
+   	</LinearLayout>
+   	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.6">
+   	</LinearLayout>
+   	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center">
+        <Button
+	        android:id="@+id/btnLogin"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/selector_login" />
+   	</LinearLayout>
+   	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.2"
+        android:gravity="bottom|center_horizontal">
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+   	</LinearLayout>
+   	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+   	</LinearLayout>
+   	
+</LinearLayout>

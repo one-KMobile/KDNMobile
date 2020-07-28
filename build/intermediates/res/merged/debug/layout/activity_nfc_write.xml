@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_header" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/btnName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_full"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/facility_name" >
+            </Button>
+            
+            <Button
+                android:id="@+id/btnEqpName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_full"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/eqp_no" >
+            </Button>
+            
+            <EditText
+                android:id="@+id/editTagName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_full"
+                android:layout_marginBottom="30dp"
+                android:hint=""
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:enabled="false"
+                />
+            
+        </LinearLayout>
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nfc_num1" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="항목을 선택해 주세요."
+            android:gravity="center" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="30dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nfc_num2" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="스마트폰을 태그에 가까이 대 주세요."
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nfc_img" />
+</LinearLayout>

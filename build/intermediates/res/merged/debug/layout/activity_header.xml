@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/title_bg" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="19.3"
+        android:layout_height="match_parent"
+        android:gravity="right|center_vertical">
+
+        <Button
+            android:id="@+id/btnHeaderLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_header_prev" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="244dp"
+        android:layout_height="match_parent"
+        android:layout_weight="61.7"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="19"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical">
+
+        <Button
+            android:id="@+id/btnHeaderRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_header_home"/>
+    </LinearLayout>
+
+</LinearLayout>

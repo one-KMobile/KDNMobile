@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">모바일가공순시</string>
+    <string name="action_settings">설정</string>
+	<string name="app_exit">‘뒤로’버튼을 한번 더 누르시면 종료됩니다.</string>
+	<string name="str_done">완료</string>
+	
+	<string name="title_back">이전</string>
+	<string name="title_facility_search">송전설비 검색</string>
+	<string name="title_facility_map_list">송전설비 위치보기</string>
+	<string name="title_inspect_map_list">순시결과 위치보기</string>
+	
+	<string name="loging">로그인중입니다..</string>
+	<string name="logoutting">로그아웃중입니다..</string>
+	<string name="login_attach">순시자소속</string>
+	<string name="load_excel">데이터를 가져오는 중입니다..</string>
+	
+	<string name="get_notice_list">공지사항 데이터를 가져오는중입니다..</string>
+	<string name="get_nfc_tag_list">태그 정보를 가져오는중입니다..</string>
+	
+	<string name="syncing">데이터 동기화중입니다..</string>
+	
+	<string name="facility_sido">광역시도</string>
+	<string name="facility_gu">시군구</string>
+	<string name="facility_type">시설물종류</string>
+	<string name="facility_name">선로명</string>
+	<string name="eqp_no">지지물번호</string>
+	<string name="facility_searching">송전설비 검색중입니다..</string>
+	
+	<string name="facility_1st">1차사업소</string>
+	<string name="facility_2nd">2차사업소</string>
+	
+	<string name="inspect_type">순시종류</string>
+	<string name="inspect_result_searching">순시결과 검색중입니다..</string>
+	
+	<!--  송전선로 순시 -->
+	<string name="input_bt_type">설비유형</string>
+	<string name="input_bt_detail">세부항목</string>
+	<string name="input_bt_result">점검결과</string>
+	<string name="input_bt_proceed">현장조치</string>
+	<string name="input_bt_weather">날씨</string>
+	<string name="input_bt_worker_cnt">협력인원수</string>
+	<string name="input_bt_claim_content">불량내용</string>
+	<string name="input_bt_check_resultr">점검상태</string>
+	<string name="input_bt_set_company">업체설정</string>
+	
+	<!-- 전선접속개소 -->
+	<string name="input_js_area_temp">외기온도</string>
+	<string name="input_js_circuit_name">회선명(도체수)</string>
+	<string name="input_js_current_load">당시부하</string>
+	<string name="input_js_js">전선</string>
+	<string name="input_js_jsj">접속점</string>
+	<string name="input_js_temp">온도차</string>
+	
+	<!-- 접지저항 -->
+	<string name="input_jj_ground">지목(지질)</string>
+	<string name="input_jj_span_length">경간(M)</string>
+	<string name="input_jj_check_result">판정</string>
+	<string name="input_jj_remarks">비고</string>
+	
+	<!-- 항공 점등점검 -->
+	<string name="input_hk_time">점검시간(시작~종료)</string>
+	<string name="input_hk_type">항공등 TYPE</string>
+	<string name="input_hk_category">항공등 유형</string>
+	<string name="input_hk_control_cnt">제어함 수량</string>
+	<string name="input_hk_light_cnt">등기구 수량</string>
+	<string name="input_hk_light_state">점등상태 (상/중/하)</string>
+	<string name="input_hk_light_top">점등상태 (상)</string>
+	<string name="input_hk_light_middle">점등상태 (중)</string>
+	<string name="input_hk_light_bottom">점등상태 (하)</string>
+	<string name="input_hk_etc">비고</string>
+	
+	<!--  항공장애등 -->
+	<string name="input_hj_light_type">항공등 종류</string>
+	<string name="input_hj_power">전원</string>
+	<string name="input_hj_control">제어반</string>
+	<string name="input_hj_sun_battery">태양전지</string>
+	<string name="input_hj_storage_battery">축전지</string>
+	<string name="input_hj_light_item">등기구</string>
+	<string name="input_hj_cable">전선</string>
+	<string name="input_hj_yb_result">양부판정</string>
+	
+	<!-- 기별점검 -->
+	<string name="input_kb_check_result">점검결과</string>
+	
+	<string name="remarks">비고</string>
+	<string name="date">날짜</string>
+	<string name="inspecter">순시자</string>
+	<string name="inspecter_1">순시자(정)</string>
+	<string name="inspecter_2">순시자(부)</string>
+	<string name="yb_result">양부판정</string>
+	<string name="make_company">제작업체</string>
+	
+	<string name="no_photo_data">등록된 사진이 없습니다.</string>
+	<string name="no_search_data">검색된 데이터가 없습니다.</string>
+	
+	
+</resources>

@@ -1,0 +1,730 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_login.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_login.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_map.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_map.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_jp_send.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_jp_send.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\nfc_img.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\nfc_img.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_hk_add.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_hk_add.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\inputbt_subtitle_bg2_110.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\inputbt_subtitle_bg2_110.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\camera_takedelete_long_on.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\camera_takedelete_long_on.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\camera_takedelete_long.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\camera_takedelete_long.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\table_line_w.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\table_line_w.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\camera_takecancel_long_on.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\camera_takecancel_long_on.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\temp_new_main_icon01_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\temp_new_main_icon01_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_schedule.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_schedule.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_pe_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_pe_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_icon03.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_icon03.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\camera_photo_input.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\camera_photo_input.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_hk_edit.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_hk_edit.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_bt_send.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_bt_send.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_btn_input_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_btn_input_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_logo_kepco_2.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_logo_kepco_2.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_jj_s.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_jj_s.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_icon02.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_icon02.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_ss_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_ss_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_icon05.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_icon05.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_btn_delete_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_btn_delete_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_icon04_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_icon04_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_logo_kepco.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_logo_kepco.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\inspect_result_select2.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\inspect_result_select2.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\new_new_main_icon04.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\new_new_main_icon04.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\facility_btn_search.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\facility_btn_search.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\new_main_icon03_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\new_main_icon03_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\table_line_h_s.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\table_line_h_s.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_js_edit.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_js_edit.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_jp_s.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_jp_s.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_kb_add.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_kb_add.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\facility_btn_location_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\facility_btn_location_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\air_date_btn_bg_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\air_date_btn_bg_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_hk_n.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_hk_n.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_jj_add.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_jj_add.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\header_line.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\header_line.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_hj_edit.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_hj_edit.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\temp_new_main_icon01.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\temp_new_main_icon01.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_btn_delete.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_btn_delete.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_bad.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_bad.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\inspect_result_select_long.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\inspect_result_select_long.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_kb_edit.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_kb_edit.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_jp_add.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_jp_add.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_btn_input.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_btn_input.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_bg.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_bg.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_full.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_full.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon_box_schedule.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\icon_box_schedule.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_logo_kdn.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_logo_kdn.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\synchro_option_chk.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\synchro_option_chk.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\inputbt_line_bg.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\inputbt_line_bg.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_bt_icon_inspect.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_bt_icon_inspect.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_calendar.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_calendar.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_icon06.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_icon06.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon_tower.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\icon_tower.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_back.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_back.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\photo_check_box.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\photo_check_box.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_icon03_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_icon03_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_jj_send.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_jj_send.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\new_main_icon02_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\new_main_icon02_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_login_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_login_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\air_date_btn_bg.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\air_date_btn_bg.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\new_main_icon03.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\new_main_icon03.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\title_bg.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\title_bg.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\new_new_main_icon03.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\new_new_main_icon03.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\inputbt_bg110.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\inputbt_bg110.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_js_s.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_js_s.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\push_ok.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\push_ok.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_br_s.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_br_s.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_js_add.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_js_add.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\select_full.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\select_full.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\push_dlg.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\push_dlg.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\camera_take_long.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\camera_take_long.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\inputbt_btn_add_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\inputbt_btn_add_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_hj_n.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_hj_n.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\header_btn_prev_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\header_btn_prev_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\login_bg.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\login_bg.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_br_y.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_br_y.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_hj_add.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_hj_add.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\bg_reset1.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\bg_reset1.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_hj_send.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_hj_send.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\inputbt_btn_add.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\inputbt_btn_add.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_header_home_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_header_home_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_ss.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_ss.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\facility_btn_search_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\facility_btn_search_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\select_half.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\select_half.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\landing_kps.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\landing_kps.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_transmit.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_transmit.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\landing.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\landing.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_js_n.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_js_n.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon_box_tower.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\icon_box_tower.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_jp_n.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_jp_n.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_map_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_map_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_jp_y.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_jp_y.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_calendar_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_calendar_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_jj_edit.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_jj_edit.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_js_y.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_js_y.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_bt_n.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_bt_n.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_refresh.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_refresh.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\landing_kepco.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\landing_kepco.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_br_n.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_br_n.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\new_main_icon04.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\new_main_icon04.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_btn_complete.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_btn_complete.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_jj_y.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_jj_y.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_pe.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_pe.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_kb_n.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_kb_n.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\new_main_icon01_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\new_main_icon01_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\nfc_num1.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\nfc_num1.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_schedule_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_schedule_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_kb_send.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_kb_send.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_bt_add.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_bt_add.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_logo_kps.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_logo_kps.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_icon06_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_icon06_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\new_new_main_icon01.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\new_new_main_icon01.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_bt_edit.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_bt_edit.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\facility_search_bg.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\facility_search_bg.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\photo_check.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\photo_check.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_transmit_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_transmit_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\landing_kdn.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\landing_kdn.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_good.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_good.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\inspect_output_sort_btn.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\inspect_output_sort_btn.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\new_main_icon02.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\new_main_icon02.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_bt_icon_condition.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_bt_icon_condition.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\header_btn_prev.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\header_btn_prev.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_good_m.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_good_m.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\facility_input01.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\facility_input01.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\push_close.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\push_close.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_jp_edit.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_jp_edit.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\table_line_h.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\table_line_h.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_s.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_s.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\login_input.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\login_input.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_icon02_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_icon02_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_js_send.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_js_send.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\login_copyright.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\login_copyright.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_bt_icon_report.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_bt_icon_report.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\new_main_icon01.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\new_main_icon01.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\inspect_result_input.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\inspect_result_input.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon_delete.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\icon_delete.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_refresh_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_refresh_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\synchro_option.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\synchro_option.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_hj_s.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_hj_s.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_s_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_s_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon_viewmap.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\icon_viewmap.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\tit_login.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\tit_login.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_hk_y.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_hk_y.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\inspect_result_select.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\inspect_result_select.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_hj_y.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_hj_y.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_br_add.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_br_add.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\new_new_main_icon02.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\new_new_main_icon02.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\nfc_num2.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\nfc_num2.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_full_big.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_full_big.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\inspect_output_sort_btn_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\inspect_output_sort_btn_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_hk_s.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_hk_s.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_bt_s.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_bt_s.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon_box_wire.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\icon_box_wire.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\camera_btn_take_on.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\camera_btn_take_on.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\new_main_icon04_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\new_main_icon04_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_br_send.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_br_send.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_btn_complete_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_btn_complete_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\app_icon.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\app_icon.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_kb_y.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_kb_y.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_header_home.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_header_home.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_icon05_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_icon05_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\camera_btn_take.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\camera_btn_take.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_hk_send.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_hk_send.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_jj_n.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_jj_n.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_kb_s.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_kb_s.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_icon04.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_icon04.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon_no_photo.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\icon_no_photo.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\subtitle_line.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\subtitle_line.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_icon01.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_icon01.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\bg_reset2.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\bg_reset2.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon_mylocation.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\icon_mylocation.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_icon01_ov.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\main_icon01_ov.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\facility_select_01.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\facility_select_01.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\list_line_b.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\list_line_b.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\input_br_edit.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\input_br_edit.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\facility_btn_location.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\facility_btn_location.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\btn_input_bt_y.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xxhdpi\\btn_input_bt_y.png"
+    }
+]

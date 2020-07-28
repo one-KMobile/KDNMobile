@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_header" />
+
+    <include layout="@layout/activity_input_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+	            android:id="@+id/btnCamera"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:background="@drawable/selector_inspect_bt_camera"/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/selector_input_bt_insert"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/selector_input_bt_edit"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="0dp" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/selector_input_bt_delete"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/inputbt_line_bg" />
+
+    <ScrollView
+        android:id="@+id/svParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp" >
+		
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical" >
+		
+		            <LinearLayout 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content">
+		            	<ImageView
+		            	    android:layout_width="wrap_content"
+		            	    android:layout_height="match_parent"
+		            	    android:layout_gravity="center"
+		            	    android:src="@drawable/input_bt_icon_condition" />
+		                <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="@string/input_jj_check_result"
+				            android:layout_marginLeft="5dp"
+				            android:textSize="16sp" />
+		            </LinearLayout>
+		
+		            <View
+		                android:layout_width="0dp"
+		                android:layout_height="5dp" />
+		
+		            <Button
+		                android:id="@+id/btnCheckResult"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/select_half"
+		                android:gravity="center"
+		                android:singleLine="true" />
+		        </LinearLayout>
+		    </LinearLayout>
+		
+		    <ImageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginTop="20dp"
+		        android:background="@drawable/inputbt_line_bg" />
+		
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dp">
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"
+		            android:orientation="vertical">
+		            <LinearLayout 
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content">
+			            	<ImageView
+			            	    android:layout_width="wrap_content"
+			            	    android:layout_height="match_parent"
+		            	    	android:layout_gravity="center"
+			            	    android:src="@drawable/input_bt_icon_report" />
+				            <TextView
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:text="@string/input_jj_remarks"
+					            android:layout_marginLeft="5dp"
+					            android:textSize="16sp" />
+				        </LinearLayout>
+		            <View
+			            android:layout_width="0dp"
+			            android:layout_height="5dp" />
+		            <EditText
+				        android:id="@+id/editRemarks"
+				        android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:background="@drawable/input_full"
+					    android:paddingLeft="5dp"
+					    android:paddingRight="5dp"
+					    android:imeOptions="actionNext|flagNoExtractUi"
+					    android:nextFocusDown="@+id/editCount_1"
+					    android:inputType="text"
+					    android:hint="입력하세요" />
+		        </LinearLayout>
+		     </LinearLayout>
+		     
+		    <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/inputbt_line_bg" />
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical">
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:background="#dde3e7">
+		            <TextView
+		                android:layout_width="50dp"
+		                android:layout_height="wrap_content"
+		               	android:text="단자\n/시간" 
+		               	android:gravity="center"/>
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+		            <TextView
+		                android:layout_width="50dp"
+		                android:layout_height="match_parent"
+		               	android:gravity="center"
+		               	android:text="횟수\n/시간" />
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+		            <TextView
+		                android:layout_width="50dp"
+		                android:layout_height="match_parent"
+		               	android:gravity="center"
+		               	android:text="1" />
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+		            <TextView
+		                android:layout_width="50dp"
+		                android:layout_height="match_parent"
+		               	android:gravity="center"
+		               	android:text="2" />
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+		            <TextView
+		                android:layout_width="50dp"
+		                android:layout_height="match_parent"
+		               	android:gravity="center"
+		               	android:text="3" />
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+		            <TextView
+		                android:layout_width="50dp"
+		                android:layout_height="match_parent"
+		               	android:gravity="center"
+		               	android:text="5" />
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+		            <TextView
+		                android:layout_width="50dp"
+		                android:layout_height="match_parent"
+		               	android:gravity="center"
+		               	android:text="10" />
+		        </LinearLayout>
+		        
+		        <ImageView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/table_line_w" />
+		        
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal">
+		            <TextView
+		                android:layout_width="50dp"
+		                android:layout_height="wrap_content"
+		               	android:text="(1)"
+		               	android:gravity="center" />
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+		            <EditText
+		                android:id="@+id/editCount_1"
+		                android:layout_width="50dp"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:maxLength="2"
+		                android:nextFocusDown="@+id/editTerminal1_1"
+		                android:inputType="number"
+		                android:imeOptions="flagNoExtractUi"
+		                android:background="@drawable/selector_input_ss"
+		                android:paddingLeft="8dp"
+		               	/>
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+		            <EditText
+		                android:id="@+id/editTerminal1_1"
+		                android:layout_width="50dp"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:maxLength="2"
+		                android:nextFocusDown="@+id/editTerminal1_2"
+		                android:inputType="number"
+		                android:imeOptions="flagNoExtractUi"
+		                android:background="@drawable/selector_input_ss"
+		                android:paddingLeft="8dp" />
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+		            <EditText
+		                android:id="@+id/editTerminal1_2"
+		                android:layout_width="50dp"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:maxLength="2"
+		                android:nextFocusDown="@+id/editTerminal1_3"
+		                android:inputType="number"
+		                android:imeOptions="flagNoExtractUi"
+		                android:background="@drawable/selector_input_ss"
+		                android:paddingLeft="8dp" />
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+		            <EditText
+		                android:id="@+id/editTerminal1_3"
+		                android:layout_width="50dp"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:maxLength="2"
+		                android:nextFocusDown="@+id/editTerminal1_5"
+		                android:inputType="number"
+		                android:imeOptions="flagNoExtractUi"
+		                android:background="@drawable/selector_input_ss"
+		                android:paddingLeft="8dp" />
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+		            <EditText
+		                android:id="@+id/editTerminal1_5"
+		                android:layout_width="50dp"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:maxLength="2"
+		                android:nextFocusDown="@+id/editTerminal1_10"
+		                android:inputType="number"
+		                android:imeOptions="flagNoExtractUi"
+		                android:background="@drawable/selector_input_ss"
+		                android:paddingLeft="8dp" />
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="match_parent"
+				        android:background="@drawable/table_line_h" />
+		            <EditText
+		                android:id="@+id/editTerminal1_10"
+		                android:layout_width="50dp"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:maxLength="2"
+		                android:inputType="number"
+		                android:imeOptions="flagNoExtractUi"
+		                android:background="@drawable/selector_input_ss"
+		                android:paddingLeft="8dp" />
+		            
+		        </LinearLayout>
+		        
+		        <ImageView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/table_line_w" />
+		        
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:visibility="gone">
+		            <TextView
+		                android:layout_width="60dp"
+		                android:layout_height="wrap_content"
+		               	android:text="(2)" />
+		            <EditText
+		                android:id="@+id/editCount_2"
+		                android:layout_width="0px"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:maxLength="2"
+		                android:nextFocusDown="@+id/editTerminal2_1"
+		                android:inputType="number"
+		               	android:layout_weight="1" />
+		            <EditText
+		                android:id="@+id/editTerminal2_1"
+		                android:layout_width="0px"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:maxLength="2"
+		                android:nextFocusDown="@+id/editTerminal2_2"
+		                android:inputType="number"
+		               	android:layout_weight="1" />
+		            <EditText
+		                android:id="@+id/editTerminal2_2"
+		                android:layout_width="0px"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:maxLength="2"
+		                android:nextFocusDown="@+id/editTerminal2_3"
+		                android:inputType="number"
+		               	android:layout_weight="1" />
+		            <EditText
+		                android:id="@+id/editTerminal2_3"
+		                android:layout_width="0px"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:maxLength="2"
+		                android:nextFocusDown="@+id/editTerminal2_5"
+		                android:inputType="number"
+		               	android:layout_weight="1" />
+		            <EditText
+		                android:id="@+id/editTerminal2_5"
+		                android:layout_width="0px"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:maxLength="2"
+		                android:nextFocusDown="@+id/editTerminal2_10"
+		                android:inputType="number"
+		               	android:layout_weight="1" />
+		            <EditText
+		                android:id="@+id/editTerminal2_10"
+		                android:layout_width="0px"
+		                android:layout_height="wrap_content"
+		                android:singleLine="true"
+		                android:maxLength="2"
+		                android:nextFocusDown="@+id/editTerminal2_20"
+		                android:inputType="number"
+		               	android:layout_weight="1" />
+		        </LinearLayout>
+		    </LinearLayout>
+    	</LinearLayout>
+    </ScrollView>
+</LinearLayout>

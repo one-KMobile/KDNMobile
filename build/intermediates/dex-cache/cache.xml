@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\AndroidStudioProjects\KDNMobile\libs\guavalib.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="4dad6eb644b525f4222e3c55d31c16660bacb92e">
+        <dex dex="D:\AndroidStudioProjects\KDNMobile\build\intermediates\pre-dexed\debug\guavalib_0efa4d7718ce7bf27947c21941100eee3cd90126.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\KDNMobile\libs\core-2.3.0.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="0744a770d6cc7c095dc1c4525a9de67ae3d15cd9">
+        <dex dex="D:\AndroidStudioProjects\KDNMobile\build\intermediates\pre-dexed\debug\core-2.3.0_40c76650527f2c96c294fb05429f99d9221ec747.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\KDNMobile\libs\ojdbc6.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="8d98e89385dafc7e1b8a2cfc1e016deb21246236">
+        <dex dex="D:\AndroidStudioProjects\KDNMobile\build\intermediates\pre-dexed\debug\ojdbc6_ff84daeafbcdfff9606a9f2b940282e05851ed9b.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\KDNMobile\libs\gcm.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="a6d7bce795a14c7f86111756c4ceb44b79de14aa">
+        <dex dex="D:\AndroidStudioProjects\KDNMobile\build\intermediates\pre-dexed\debug\gcm_b91d75b996f55b29840374801a5e348193e2e145.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\KDNMobile\libs\jxl.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="7a96e15eefa4ad09f999525e59ae05fe2bae4c83">
+        <dex dex="D:\AndroidStudioProjects\KDNMobile\build\intermediates\pre-dexed\debug\jxl_3945d152c0a55a8f860b29b68ba94bb788d14aaa.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\KDNMobile\libs\nmaps.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="2758047abc664826f7633b504d7f6ac281aadfb3">
+        <dex dex="D:\AndroidStudioProjects\KDNMobile\build\intermediates\pre-dexed\debug\nmaps_13ce579f9f20ec9e9cdd5db14fd489eef1d2d6e7.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\KDNMobile\libs\httpmime-4.2.1.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="c7349b04e5d76895fdfc0f38bdc0699e5f6fef5a">
+        <dex dex="D:\AndroidStudioProjects\KDNMobile\build\intermediates\pre-dexed\debug\httpmime-4.2.1_25d93a302107c4716a5138e0bc3f6623b00762c0.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\KDNMobile\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="307c1cc532eabbf1d135b43e5c983c9da700449d">
+        <dex dex="D:\AndroidStudioProjects\KDNMobile\build\intermediates\pre-dexed\debug\android-support-v4_6ce28f4d0bf604c362f2160a4786b15103093f0c.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\KDNMobile\libs\gson-2.1.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="bd858833cacb4e6742f7698649fb874a360e230f">
+        <dex dex="D:\AndroidStudioProjects\KDNMobile\build\intermediates\pre-dexed\debug\gson-2.1_0b05e39da14f559cff35fcc866fdeb6896d63490.jar" />
+    </item>
+
+</items>

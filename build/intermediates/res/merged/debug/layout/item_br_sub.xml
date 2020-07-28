@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/editEJCnt"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        />
+    
+    <EditText
+        android:id="@+id/editBRCnt"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        />
+    
+    <Button
+        android:id="@+id/btnMakeDate"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="제작년월" />
+    
+    <EditText
+        android:id="@+id/editMakeCompany"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="제작업체" />
+    
+    <Button
+        android:id="@+id/btnYBresult"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="조치후양호" />
+
+</LinearLayout>

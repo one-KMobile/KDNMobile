@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_login_attach">
+    	    <item>소속111</item>
+    	    <item>소속222</item>
+    </string-array>
+    
+    <string-array name="facility_sido">
+		<item>서울특별시</item>
+		<item>인천광역시</item>
+		<item>경기도 부천시</item>
+    </string-array>
+</resources>

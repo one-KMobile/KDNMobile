@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>	
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLayout">
+    
+    <include layout="@layout/activity_header"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+	        <TextView
+	            android:id="@+id/tvFacName"
+	            android:layout_width="0px"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="선로명" />
+	        <TextView
+	            android:id="@+id/tvFacBizPlace"
+	            android:layout_width="0px"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="1차사업소/2차사업소"
+	            android:gravity="right" />
+        </LinearLayout>
+	</LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tvAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.5"
+        android:background="#333333"
+        android:text="주소"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+    
+    <FrameLayout 
+        android:layout_width="fill_parent" 
+	    android:layout_height="0px"
+        android:layout_weight="8">
+        
+        <com.nhn.android.maps.NMapView 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="hello"
+		    android:id="@+id/mapView"/>
+        
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnCurrent"
+			android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/ic_map_no_02"
+		    android:layout_marginLeft="3dp"
+		    android:layout_marginTop="3dp" />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+        	<Button
+        	    android:id="@+id/btnMapMode"
+				android:layout_width="wrap_content" 
+			    android:layout_height="fill_parent"
+			    android:background="@drawable/icon_viewmap"
+			    android:layout_marginRight="3dp"
+		    	android:layout_marginTop="3dp" />    
+        </LinearLayout>
+        
+    </FrameLayout>
+	
+	<LinearLayout 
+	    android:visibility="gone"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_gravity="right">
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="순시정보검색" />
+	</LinearLayout>
+</LinearLayout>

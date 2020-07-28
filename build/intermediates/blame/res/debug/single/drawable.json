@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_header_home.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_header_home.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_main_bt_sync.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_main_bt_sync.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_main_bt_facility.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_main_bt_facility.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_login.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_login.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_inspect_bt_camera.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_inspect_bt_camera.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\border.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_datasync_load_excel.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_datasync_load_excel.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_input_bt_insert.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_input_bt_insert.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alarm.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\bg_alarm.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_inspect_bt_camera_delete.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_inspect_bt_camera_delete.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_map.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_btn_map.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_main_bt_notice.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_main_bt_notice.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_input_bt_delete.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_input_bt_delete.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\right_border.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\right_border.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_list_color.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_list_color.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_input_s.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_input_s.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_comm_bt_search.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_comm_bt_search.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_header_prev.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_header_prev.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_bt_date.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_bt_date.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_main_bt_nfc.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_main_bt_nfc.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_main_bt_output.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_main_bt_output.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_profile_photo_rounded_white.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\bg_profile_photo_rounded_white.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_input_br_make_company.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_input_br_make_company.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_inspect_output_send.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_inspect_output_send.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_facility_bt_location.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_facility_bt_location.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_inspect_bt_camera_pick.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_inspect_bt_camera_pick.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_input_bt_edit.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_input_bt_edit.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_inspect_output.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_inspect_output.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_input_bt_add.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_input_bt_add.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_input_ss.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_input_ss.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_main_bt_inspect.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_main_bt_inspect.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_datasync_start.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_datasync_start.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_input_br_calendar.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_input_br_calendar.xml"
+    }
+]

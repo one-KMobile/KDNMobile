@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/activity_header" />
+
+        <include layout="@layout/activity_input_header" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보통순시 목록"
+                android:textSize="16sp" />
+        </LinearLayout>
+        
+        <ImageView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/header_line" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ListView
+		     android:id="@+id/listPhoto"
+		     android:layout_width="fill_parent"
+		     android:layout_height="fill_parent"
+		     android:cacheColorHint="#00000000"
+		     android:dividerHeight="2px"
+		     android:fadingEdge="none"
+		     android:fastScrollEnabled="true"
+		     android:focusable="true"
+		     android:scrollbars="horizontal"
+		     android:smoothScrollbar="false"/>
+
+        <LinearLayout
+            android:id="@+id/linearNodate"
+            android:visibility="gone" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_no_photo" />
+	        <TextView
+	            android:layout_marginTop="40dp"
+	            android:id="@+id/tvNoData"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/no_photo_data"
+	            android:textSize="20sp"
+	            android:gravity="center" />
+        </LinearLayout>
+    </FrameLayout>
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:id="@+id/btnShoot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:background="@drawable/selector_inspect_bt_camera_pick" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:background="@drawable/selector_inspect_bt_camera_delete" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/facility_search_bg"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/facility_select_01"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/facility_name" >
+            </Button>
+            <View
+                android:layout_width="0px"
+                android:layout_height="5dp"
+                android:visibility="invisible" />
+            <EditText
+                android:id="@+id/editEqpName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/facility_input01"
+                android:hint="지지물번호"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp" >
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_comm_bt_search" />
+    </LinearLayout>
+
+</LinearLayout>
