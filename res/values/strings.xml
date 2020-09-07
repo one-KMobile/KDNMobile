@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">모바일가공순시</string>
+    <string name="app_name">모바일지중순시</string>
     <string name="action_settings">설정</string>
 	<string name="app_exit">‘뒤로’버튼을 한번 더 누르시면 종료됩니다.</string>
 	<string name="str_done">완료</string>
-	
+
 	<string name="title_back">이전</string>
+	<string name="title_select">선택</string>
 	<string name="title_facility_search">송전설비 검색</string>
 	<string name="title_facility_map_list">송전설비 위치보기</string>
 	<string name="title_inspect_map_list">순시결과 위치보기</string>
@@ -24,6 +25,7 @@
 	<string name="facility_sido">광역시도</string>
 	<string name="facility_gu">시군구</string>
 	<string name="facility_type">시설물종류</string>
+	<string name="facility_gubun_name">회선/전력구/관로</string>
 	<string name="facility_name">선로명</string>
 	<string name="eqp_no">지지물번호</string>
 	<string name="facility_searching">송전설비 검색중입니다..</string>
@@ -94,6 +96,13 @@
 	
 	<string name="no_photo_data">등록된 사진이 없습니다.</string>
 	<string name="no_search_data">검색된 데이터가 없습니다.</string>
+
+	<!--  지중 정기순시 -->
+	<string name="input_bt_result_content">종합판정</string>
+	<string name="input_bt_start_t">출발</string>
+	<string name="input_bt_end_t">도착</string>
+	<string name="input_bt_start_confirm">출발확인자</string>
+	<string name="input_bt_end_confirm">도착확인자</string>
 	
 	
 </resources>

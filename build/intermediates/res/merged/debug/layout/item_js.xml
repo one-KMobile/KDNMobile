@@ -57,7 +57,7 @@
 	        android:background="@drawable/table_line_h" />
         
         <EditText
-            android:id="@+id/editc1_js"
+            android:id="@+id/editc1"
             android:layout_width="60dp"
             android:layout_height="match_parent"
             android:imeOptions="flagNoExtractUi"
@@ -83,7 +83,7 @@
              android:layout_gravity="center"
             android:paddingLeft="8dp"
             android:background="@drawable/selector_input_s"
-            android:nextFocusDown="@+id/editc2_js" />
+            android:nextFocusDown="@+id/editc3" />
 
         <ImageView
 	        android:layout_width="wrap_content"
@@ -117,7 +117,7 @@
 	        android:background="@drawable/table_line_h" />
         
         <EditText
-            android:id="@+id/editc2_js"
+            android:id="@+id/editc3"
             android:layout_width="60dp"
             android:layout_height="match_parent"
             android:imeOptions="flagNoExtractUi"
@@ -126,7 +126,7 @@
              android:layout_gravity="center"
             android:paddingLeft="8dp"
             android:background="@drawable/selector_input_s"
-            android:nextFocusDown="@+id/editc2_jsj" />
+            android:nextFocusDown="@+id/editc2" />
 
         <ImageView
 	        android:layout_width="wrap_content"
@@ -134,7 +134,7 @@
 	        android:background="@drawable/table_line_h" />
         
         <EditText
-            android:id="@+id/editc2_jsj"
+            android:id="@+id/editc2"
             android:layout_width="60dp"
             android:layout_height="match_parent"
             android:imeOptions="flagNoExtractUi"

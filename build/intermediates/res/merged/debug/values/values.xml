@@ -30,12 +30,13 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <string name="action_settings">설정</string>
     <string name="app_exit">‘뒤로’버튼을 한번 더 누르시면 종료됩니다.</string>
-    <string name="app_name">모바일가공순시</string>
+    <string name="app_name">모바일지중순시</string>
     <string name="date">날짜</string>
     <string name="eqp_no">지지물번호</string>
     <string name="facility_1st">1차사업소</string>
     <string name="facility_2nd">2차사업소</string>
     <string name="facility_gu">시군구</string>
+    <string name="facility_gubun_name">회선/전력구/관로</string>
     <string name="facility_name">선로명</string>
     <string name="facility_searching">송전설비 검색중입니다..</string>
     <string name="facility_sido">광역시도</string>
@@ -45,9 +46,14 @@
     <string name="input_bt_check_resultr">점검상태</string>
     <string name="input_bt_claim_content">불량내용</string>
     <string name="input_bt_detail">세부항목</string>
+    <string name="input_bt_end_confirm">도착확인자</string>
+    <string name="input_bt_end_t">도착</string>
     <string name="input_bt_proceed">현장조치</string>
     <string name="input_bt_result">점검결과</string>
+    <string name="input_bt_result_content">종합판정</string>
     <string name="input_bt_set_company">업체설정</string>
+    <string name="input_bt_start_confirm">출발확인자</string>
+    <string name="input_bt_start_t">출발</string>
     <string name="input_bt_type">설비유형</string>
     <string name="input_bt_weather">날씨</string>
     <string name="input_bt_worker_cnt">협력인원수</string>
@@ -99,6 +105,7 @@
     <string name="title_facility_map_list">송전설비 위치보기</string>
     <string name="title_facility_search">송전설비 검색</string>
     <string name="title_inspect_map_list">순시결과 위치보기</string>
+    <string name="title_select">선택</string>
     <string name="yb_result">양부판정</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

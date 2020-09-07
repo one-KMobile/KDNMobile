@@ -12,30 +12,46 @@
         android:orientation="vertical" >
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="491dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/facility_select_01"
-                android:gravity="center"
-                android:singleLine="true"
-                android:text="@string/facility_name" >
-            </Button>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnGubun"
+                    android:layout_width="201dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/facility_select_01"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/facility_gubun_name"></Button>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <Button
+                    android:id="@+id/btnName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/facility_select_01"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/facility_name"></Button>
+
+            </LinearLayout>
+
             <View
                 android:layout_width="0px"
                 android:layout_height="5dp"
                 android:visibility="invisible" />
-            <EditText
-                android:id="@+id/editEqpName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/facility_input01"
-                android:hint="지지물번호"
-                android:paddingLeft="5dp" />
+
         </LinearLayout>
 	</LinearLayout>
 

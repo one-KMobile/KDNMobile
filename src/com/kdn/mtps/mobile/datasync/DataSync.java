@@ -258,8 +258,8 @@ public class DataSync {
 					return;
 				
 				if (isComplete) {
-					//mHandler.sendEmptyMessage(TAG_CALL_API_JSINFO_SUBLIST);
-					mHandler.sendEmptyMessage(TAG_CALL_API_HKINFO_SUBLIST);
+					mHandler.sendEmptyMessage(TAG_CALL_API_JSINFO_SUBLIST);
+					//mHandler.sendEmptyMessage(TAG_CALL_API_TOWER_LIST);
 				} else {
 					mHandler.sendEmptyMessage(TAG_END_SYNC);
 				}
@@ -475,7 +475,7 @@ public class DataSync {
 	}
 	
 	public void getTowerList() {
-		
+
 		ATask.executeVoidPublishProgress(new ATask.OnTaskPublishProgress() {
 			public void onPre() {
 			}
@@ -519,7 +519,7 @@ public class DataSync {
 	
 			@Override
 			public void onPost() {
-				
+
 				String strDate = new SimpleDateFormat("yyyy-MM-dd a hh:mm").format(System.currentTimeMillis());
 				Shared.set(ctx, ConstSP.SYNC_DATE, strDate);
 				
@@ -580,7 +580,8 @@ public class DataSync {
 					return;
 				
 				if (isComplete) {
-					mHandler.sendEmptyMessage(TAG_CALL_API_BRINFO_SUBLIST);
+					//mHandler.sendEmptyMessage(TAG_CALL_API_BRINFO_SUBLIST);
+					mHandler.sendEmptyMessage(TAG_CALL_API_TOWER_LIST);
 				} else {
 					mHandler.sendEmptyMessage(TAG_END_SYNC);
 				}

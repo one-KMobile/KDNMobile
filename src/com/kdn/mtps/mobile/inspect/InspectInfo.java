@@ -27,7 +27,7 @@ public class InspectInfo implements Parcelable {
 	public String has_hj = "";
 	public String has_br = "";
 	public String has_jp = "";
-	public String has_yb = "";
+	//public String has_yb = "";
 	public String complete_yn_bt = "";
 	public String complete_yn_js = "";
 	public String complete_yn_jj = "";
@@ -52,6 +52,26 @@ public class InspectInfo implements Parcelable {
 	public String ins_sn = "";
 	public String fnct_lc_no = "";
 	public String address = "";
+
+/*지중순시 추가*/
+	public String has_jg = "";
+	public String has_yb = "";
+	public String has_mh = "";
+	public String has_gh = "";
+	public String has_pr = "";
+	public String has_jb = "";
+	public String complete_yn_jg = "";
+	public String complete_yn_yb = "";
+	public String complete_yn_mh = "";
+	public String complete_yn_gh = "";
+	public String complete_yn_pr = "";
+	public String complete_yn_jb = "";
+	public String send_yn_jg = "";
+	public String send_yn_yb = "";
+	public String send_yn_mh = "";
+	public String send_yn_gh = "";
+	public String send_yn_pr = "";
+	public String send_yn_jb = "";
 	
 	public InspectInfo() {
 		
@@ -103,7 +123,25 @@ public class InspectInfo implements Parcelable {
 		ins_sn = source.readString();
 		fnct_lc_no = source.readString();
 		address = source.readString();
-		
+
+		has_jg = source.readString();
+		has_yb = source.readString();
+		has_mh = source.readString();
+		has_gh = source.readString();
+		has_pr = source.readString();
+		has_jb = source.readString();
+		complete_yn_jg = source.readString();
+		complete_yn_yb = source.readString();
+		complete_yn_mh = source.readString();
+		complete_yn_gh = source.readString();
+		complete_yn_pr = source.readString();
+		complete_yn_jb = source.readString();
+		send_yn_jg = source.readString();
+		send_yn_yb = source.readString();
+		send_yn_mh = source.readString();
+		send_yn_gh = source.readString();
+		send_yn_pr = source.readString();
+		send_yn_jb = source.readString();
 	}
 	
 	@Override
@@ -156,6 +194,25 @@ public class InspectInfo implements Parcelable {
 		arg0.writeString(ins_sn);
 		arg0.writeString(fnct_lc_no);
 		arg0.writeString(address);
+
+		arg0.writeString(has_jg);
+		arg0.writeString(has_yb);
+		arg0.writeString(has_mh);
+		arg0.writeString(has_gh);
+		arg0.writeString(has_pr);
+		arg0.writeString(has_jb);
+		arg0.writeString(complete_yn_jg);
+		arg0.writeString(complete_yn_yb);
+		arg0.writeString(complete_yn_mh);
+		arg0.writeString(complete_yn_gh);
+		arg0.writeString(complete_yn_pr);
+		arg0.writeString(complete_yn_jb);
+		arg0.writeString(send_yn_jg);
+		arg0.writeString(send_yn_yb);
+		arg0.writeString(send_yn_mh);
+		arg0.writeString(send_yn_gh);
+		arg0.writeString(send_yn_pr);
+		arg0.writeString(send_yn_jb);
 		
 	}
 

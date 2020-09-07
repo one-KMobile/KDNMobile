@@ -24,7 +24,7 @@
             android:id="@+id/ivLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/main_logo_kepco_2" />
+            android:background="@drawable/main_logo_kepco3" />
     </LinearLayout>
 
     <LinearLayout
@@ -64,12 +64,11 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.85" >
-                </LinearLayout>
+                    android:layout_weight="0.5" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent">
 
                     <Button
                         android:id="@+id/btnSetting"
@@ -80,10 +79,26 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btnFacility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_main_bt_facility"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.85" >
-                </LinearLayout>
+                    android:layout_weight="0.5"></LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -100,8 +115,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.85" >
-                </LinearLayout>
+                    android:layout_weight="0.5"></LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -113,14 +127,12 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/selector_main_bt_output"
                         android:textSize="20sp" />
-
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.85" >
-                </LinearLayout>
+                    android:layout_weight="0.5"></LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -138,8 +150,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.85" >
-                </LinearLayout>
+                    android:layout_weight="0.5"></LinearLayout>
             </LinearLayout>
         </LinearLayout>
 

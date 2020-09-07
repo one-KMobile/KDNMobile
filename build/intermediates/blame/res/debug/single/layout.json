@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\item_jg2.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\item_jg2.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\toast_push_layout.xml",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\toast_push_layout.xml"
     },
@@ -56,16 +60,24 @@
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\listview_camera_item_.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\listview_input_yb_item_.xml",
-        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\listview_input_yb_item_.xml"
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\item_jg.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\item_jg.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_list_item.xml",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\dialog_list_item.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\listview_input_yb_item_.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\listview_input_yb_item_.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\camera_photo_item.xml",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\camera_photo_item.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\activity_input_gh.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\activity_input_gh.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\item_js.xml",
@@ -162,6 +174,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\activity_facility_search.xml",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\activity_facility_search.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\activity_input_jg.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\activity_input_jg.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\callout_overlay_view.xml",

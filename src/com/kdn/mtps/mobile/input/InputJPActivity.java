@@ -456,12 +456,12 @@ public class InputJPActivity extends BaseActivity implements TitleManager, OnCli
 		viewHolder.tvConductor_cnt = (TextView) view.findViewById(R.id.tvConductor_cnt);
 		viewHolder.tvLocation = (TextView) view.findViewById(R.id.tvLocation);
 
-		viewHolder.editc1_js = (EditText) view.findViewById(R.id.editc1_js);
+		viewHolder.editc1_js = (EditText) view.findViewById(R.id.editc1);
         viewHolder.editc1_jsj = (EditText) view.findViewById(R.id.editc1_jsj);
         viewHolder.tvc1_temp = (TextView) view.findViewById(R.id.tvc1_temp);
         viewHolder.btnc1_yb_result = (Button) view.findViewById(R.id.btnc1_yb_result);
-        viewHolder.editc2_js = (EditText) view.findViewById(R.id.editc2_js);
-        viewHolder.editc2_jsj = (EditText) view.findViewById(R.id.editc2_jsj);
+        viewHolder.editc2_js = (EditText) view.findViewById(R.id.editc3);
+        viewHolder.editc2_jsj = (EditText) view.findViewById(R.id.editc2);
         viewHolder.tvc2_temp = (TextView) view.findViewById(R.id.tvc2_temp);
         viewHolder.btnc2_yb_result = (Button) view.findViewById(R.id.btnc2_yb_result);
         viewHolder.editc3_js = (EditText) view.findViewById(R.id.editc3_js);

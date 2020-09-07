@@ -156,7 +156,7 @@ public class InspectResultSearchBaseAdapter extends BaseAdapter{
 		viewHolder.linearInsType.removeAllViews();
 		viewHolder.linearInsType2.removeAllViews();
 		
-		String[] hasInput = {info.has_bt, info.has_js, info.has_jj, info.has_kb, info.has_hk, info.has_hj, info.has_br, info.has_jp};
+		String[] hasInput = {info.has_bt, info.has_jg, info.has_yb, info.has_mh, info.has_gh, info.has_pr, info.has_jb};
 		for (int idx=0; idx<hasInput.length; idx++) {
 			String has = hasInput[idx];
 			
@@ -170,54 +170,47 @@ public class InspectResultSearchBaseAdapter extends BaseAdapter{
 					else
 						tv.setBackgroundResource(R.drawable.btn_input_bt_n);
 				} else if (idx == 1) {
-					if ("Y".equalsIgnoreCase(info.send_yn_js))
-						tv.setBackgroundResource(R.drawable.btn_input_js_s);
+					if ("Y".equalsIgnoreCase(info.send_yn_jg))
+						tv.setBackgroundResource(R.drawable.btn_input_jg_s);
 					else if ("Y".equalsIgnoreCase(info.complete_yn_js))
-						tv.setBackgroundResource(R.drawable.btn_input_js_y);
+						tv.setBackgroundResource(R.drawable.btn_input_jg_y);
 					else
-						tv.setBackgroundResource(R.drawable.btn_input_js_n);
+						tv.setBackgroundResource(R.drawable.btn_input_jg_n);
 				} else if (idx == 2) {
-					if ("Y".equalsIgnoreCase(info.send_yn_jj))
-						tv.setBackgroundResource(R.drawable.btn_input_jj_s);
+					if ("Y".equalsIgnoreCase(info.send_yn_yb))
+						tv.setBackgroundResource(R.drawable.btn_input_yb_s);
 					else if ("Y".equalsIgnoreCase(info.complete_yn_jj))
-						tv.setBackgroundResource(R.drawable.btn_input_jj_y);
+						tv.setBackgroundResource(R.drawable.btn_input_yb_y);
 					else
-						tv.setBackgroundResource(R.drawable.btn_input_jj_n);
+						tv.setBackgroundResource(R.drawable.btn_input_yb_n);
 				} else if (idx == 3) {
-					if ("Y".equalsIgnoreCase(info.send_yn_kb))
-						tv.setBackgroundResource(R.drawable.btn_input_kb_s);
+					if ("Y".equalsIgnoreCase(info.send_yn_mh))
+						tv.setBackgroundResource(R.drawable.btn_input_mh_s);
 					else if ("Y".equalsIgnoreCase(info.complete_yn_kb))
-						tv.setBackgroundResource(R.drawable.btn_input_kb_y);
+						tv.setBackgroundResource(R.drawable.btn_input_mh_y);
 					else
-						tv.setBackgroundResource(R.drawable.btn_input_kb_n);
+						tv.setBackgroundResource(R.drawable.btn_input_mh_n);
 				} else if (idx == 4) {
-					if ("Y".equalsIgnoreCase(info.send_yn_hk))
-						tv.setBackgroundResource(R.drawable.btn_input_hk_s);
+					if ("Y".equalsIgnoreCase(info.send_yn_gh))
+						tv.setBackgroundResource(R.drawable.btn_input_gh_s);
 					else if ("Y".equalsIgnoreCase(info.complete_yn_hk))
-						tv.setBackgroundResource(R.drawable.btn_input_hk_y);
+						tv.setBackgroundResource(R.drawable.btn_input_gh_y);
 					else
-						tv.setBackgroundResource(R.drawable.btn_input_hk_n);
+						tv.setBackgroundResource(R.drawable.btn_input_gh_n);
 				} else if (idx == 5) {
-					if ("Y".equalsIgnoreCase(info.send_yn_hj))
-						tv.setBackgroundResource(R.drawable.btn_input_hj_s);
+					if ("Y".equalsIgnoreCase(info.send_yn_pr))
+						tv.setBackgroundResource(R.drawable.btn_input_pr_s);
 					else if ("Y".equalsIgnoreCase(info.complete_yn_hj))
-						tv.setBackgroundResource(R.drawable.btn_input_hj_y);
+						tv.setBackgroundResource(R.drawable.btn_input_pr_y);
 					else
-						tv.setBackgroundResource(R.drawable.btn_input_hj_n);
+						tv.setBackgroundResource(R.drawable.btn_input_pr_n);
 				} else if (idx == 6) {
-					if ("Y".equalsIgnoreCase(info.send_yn_br))
-						tv.setBackgroundResource(R.drawable.btn_input_br_s);
+					if ("Y".equalsIgnoreCase(info.send_yn_jb))
+						tv.setBackgroundResource(R.drawable.btn_input_jb_s);
 					else if ("Y".equalsIgnoreCase(info.complete_yn_br))
-						tv.setBackgroundResource(R.drawable.btn_input_br_y);
+						tv.setBackgroundResource(R.drawable.btn_input_jb_y);
 					else
-						tv.setBackgroundResource(R.drawable.btn_input_br_n);
-				} else if (idx == 7) {
-					if ("Y".equalsIgnoreCase(info.send_yn_jp))
-						tv.setBackgroundResource(R.drawable.btn_input_jp_s);
-					else if ("Y".equalsIgnoreCase(info.complete_yn_jp))
-						tv.setBackgroundResource(R.drawable.btn_input_jp_y);
-					else
-						tv.setBackgroundResource(R.drawable.btn_input_jp_n);
+						tv.setBackgroundResource(R.drawable.btn_input_jb_n);
 				}
 				
 				addTextView(tv, viewHolder);

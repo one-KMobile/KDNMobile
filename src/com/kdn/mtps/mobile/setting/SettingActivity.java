@@ -41,7 +41,7 @@ public class SettingActivity extends BaseActivity implements TitleManager, OnCli
 	
 	final String strWeatherItems[] = CodeInfo.getInstance(this).getNames(ConstVALUE.CODE_TYPE_WEATHER);
 	final String strInspecerItems[] = CodeInfo.getInstance(this).getNames(ConstVALUE.CODE_TYPE_WEATHER);
-	final String strCompanyItems[] = {"KEPCO","한전KDN","한전KPS","테스트1"};
+	final String strCompanyItems[] = {"KEPCO","한전KDN","한전KPS"};
 	
 	public  LinkedHashMap<String, String> PatrolMansMap = new LinkedHashMap<String, String>();
 	PatrolmansList patrolmansList;

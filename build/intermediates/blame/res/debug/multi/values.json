@@ -418,9 +418,9 @@
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 104,
+                        "startOffset": 101,
                         "endColumn": 46,
-                        "endOffset": 146
+                        "endOffset": 143
                     }
                 }
             },
@@ -437,9 +437,9 @@
                     "position": {
                         "startLine": 5,
                         "startColumn": 1,
-                        "startOffset": 149,
+                        "startOffset": 145,
                         "endColumn": 58,
-                        "endOffset": 206
+                        "endOffset": 202
                     }
                 }
             },
@@ -456,9 +456,9 @@
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 58,
+                        "startOffset": 56,
                         "endColumn": 44,
-                        "endOffset": 98
+                        "endOffset": 96
                     }
                 }
             },
@@ -473,11 +473,11 @@
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 87,
+                        "startLine": 89,
                         "startColumn": 1,
-                        "startOffset": 3310,
+                        "startOffset": 3401,
                         "endColumn": 32,
-                        "endOffset": 3341
+                        "endOffset": 3432
                     }
                 }
             },
@@ -492,11 +492,11 @@
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 27,
+                        "startLine": 29,
                         "startColumn": 1,
-                        "startOffset": 994,
+                        "startOffset": 1085,
                         "endColumn": 37,
-                        "endOffset": 1030
+                        "endOffset": 1121
                     }
                 }
             },
@@ -511,11 +511,11 @@
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 30,
+                        "startLine": 32,
                         "startColumn": 1,
-                        "startOffset": 1092,
+                        "startOffset": 1183,
                         "endColumn": 43,
-                        "endOffset": 1134
+                        "endOffset": 1225
                     }
                 }
             },
@@ -530,11 +530,11 @@
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 31,
+                        "startLine": 33,
                         "startColumn": 1,
-                        "startOffset": 1136,
+                        "startOffset": 1227,
                         "endColumn": 43,
-                        "endOffset": 1178
+                        "endOffset": 1269
                     }
                 }
             },
@@ -549,11 +549,11 @@
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 24,
+                        "startLine": 25,
                         "startColumn": 1,
-                        "startOffset": 865,
+                        "startOffset": 901,
                         "endColumn": 40,
-                        "endOffset": 904
+                        "endOffset": 940
                     }
                 }
             },
@@ -562,17 +562,17 @@
                     "startLine": 38,
                     "startColumn": 4,
                     "startOffset": 1644,
-                    "endColumn": 45,
-                    "endOffset": 1685
+                    "endColumn": 57,
+                    "endOffset": 1697
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 26,
+                        "startLine": 27,
                         "startColumn": 1,
-                        "startOffset": 951,
-                        "endColumn": 42,
-                        "endOffset": 992
+                        "startOffset": 987,
+                        "endColumn": 54,
+                        "endOffset": 1040
                     }
                 }
             },
@@ -580,18 +580,18 @@
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 1690,
-                    "endColumn": 60,
-                    "endOffset": 1746
+                    "startOffset": 1702,
+                    "endColumn": 45,
+                    "endOffset": 1743
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 1,
-                        "startOffset": 1032,
-                        "endColumn": 57,
-                        "endOffset": 1088
+                        "startOffset": 1042,
+                        "endColumn": 42,
+                        "endOffset": 1083
                     }
                 }
             },
@@ -599,18 +599,18 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 1751,
-                    "endColumn": 46,
-                    "endOffset": 1793
+                    "startOffset": 1748,
+                    "endColumn": 60,
+                    "endOffset": 1804
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 23,
+                        "startLine": 30,
                         "startColumn": 1,
-                        "startOffset": 821,
-                        "endColumn": 43,
-                        "endOffset": 863
+                        "startOffset": 1123,
+                        "endColumn": 57,
+                        "endOffset": 1179
                     }
                 }
             },
@@ -618,18 +618,18 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 1798,
-                    "endColumn": 47,
-                    "endOffset": 1841
+                    "startOffset": 1809,
+                    "endColumn": 46,
+                    "endOffset": 1851
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 24,
                         "startColumn": 1,
-                        "startOffset": 906,
-                        "endColumn": 44,
-                        "endOffset": 949
+                        "startOffset": 857,
+                        "endColumn": 43,
+                        "endOffset": 899
                     }
                 }
             },
@@ -637,18 +637,18 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 1846,
-                    "endColumn": 62,
-                    "endOffset": 1904
+                    "startOffset": 1856,
+                    "endColumn": 47,
+                    "endOffset": 1899
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 26,
                         "startColumn": 1,
-                        "startOffset": 710,
-                        "endColumn": 59,
-                        "endOffset": 768
+                        "startOffset": 942,
+                        "endColumn": 44,
+                        "endOffset": 985
                     }
                 }
             },
@@ -656,18 +656,18 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 1909,
-                    "endColumn": 64,
-                    "endOffset": 1969
+                    "startOffset": 1904,
+                    "endColumn": 62,
+                    "endOffset": 1962
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 18,
+                        "startLine": 20,
                         "startColumn": 1,
-                        "startOffset": 648,
-                        "endColumn": 61,
-                        "endOffset": 708
+                        "startOffset": 746,
+                        "endColumn": 59,
+                        "endOffset": 804
                     }
                 }
             },
@@ -675,18 +675,18 @@
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 1974,
-                    "endColumn": 55,
-                    "endOffset": 2025
+                    "startOffset": 1967,
+                    "endColumn": 64,
+                    "endOffset": 2027
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 44,
+                        "startLine": 19,
                         "startColumn": 1,
-                        "startOffset": 1642,
-                        "endColumn": 52,
-                        "endOffset": 1693
+                        "startOffset": 684,
+                        "endColumn": 61,
+                        "endOffset": 744
                     }
                 }
             },
@@ -694,18 +694,18 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 2030,
+                    "startOffset": 2032,
                     "endColumn": 55,
-                    "endOffset": 2081
+                    "endOffset": 2083
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 43,
+                        "startLine": 46,
                         "startColumn": 1,
-                        "startOffset": 1589,
+                        "startOffset": 1733,
                         "endColumn": 52,
-                        "endOffset": 1640
+                        "endOffset": 1784
                     }
                 }
             },
@@ -713,18 +713,18 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 2086,
-                    "endColumn": 48,
-                    "endOffset": 2130
+                    "startOffset": 2088,
+                    "endColumn": 55,
+                    "endOffset": 2139
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 38,
+                        "startLine": 45,
                         "startColumn": 1,
-                        "startOffset": 1354,
-                        "endColumn": 45,
-                        "endOffset": 1398
+                        "startOffset": 1680,
+                        "endColumn": 52,
+                        "endOffset": 1731
                     }
                 }
             },
@@ -732,18 +732,18 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 2135,
-                    "endColumn": 49,
-                    "endOffset": 2180
+                    "startOffset": 2144,
+                    "endColumn": 48,
+                    "endOffset": 2188
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 40,
                         "startColumn": 1,
-                        "startOffset": 1446,
-                        "endColumn": 46,
-                        "endOffset": 1491
+                        "startOffset": 1445,
+                        "endColumn": 45,
+                        "endOffset": 1489
                     }
                 }
             },
@@ -751,18 +751,18 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 2185,
-                    "endColumn": 48,
-                    "endOffset": 2229
+                    "startOffset": 2193,
+                    "endColumn": 54,
+                    "endOffset": 2243
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 39,
+                        "startLine": 104,
                         "startColumn": 1,
-                        "startOffset": 1400,
-                        "endColumn": 45,
-                        "endOffset": 1444
+                        "startOffset": 3970,
+                        "endColumn": 51,
+                        "endOffset": 4020
                     }
                 }
             },
@@ -770,18 +770,18 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 2234,
-                    "endColumn": 53,
-                    "endOffset": 2283
+                    "startOffset": 2248,
+                    "endColumn": 45,
+                    "endOffset": 2289
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 45,
+                        "startLine": 102,
                         "startColumn": 1,
-                        "startOffset": 1695,
-                        "endColumn": 50,
-                        "endOffset": 1744
+                        "startOffset": 3873,
+                        "endColumn": 42,
+                        "endOffset": 3914
                     }
                 }
             },
@@ -789,18 +789,18 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 2288,
-                    "endColumn": 46,
-                    "endOffset": 2330
+                    "startOffset": 2294,
+                    "endColumn": 49,
+                    "endOffset": 2339
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 37,
+                        "startLine": 42,
                         "startColumn": 1,
-                        "startOffset": 1310,
-                        "endColumn": 43,
-                        "endOffset": 1352
+                        "startOffset": 1537,
+                        "endColumn": 46,
+                        "endOffset": 1582
                     }
                 }
             },
@@ -808,18 +808,18 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 2335,
-                    "endColumn": 47,
-                    "endOffset": 2378
+                    "startOffset": 2344,
+                    "endColumn": 48,
+                    "endOffset": 2388
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 41,
                         "startColumn": 1,
-                        "startOffset": 1493,
-                        "endColumn": 44,
-                        "endOffset": 1536
+                        "startOffset": 1491,
+                        "endColumn": 45,
+                        "endOffset": 1535
                     }
                 }
             },
@@ -827,18 +827,18 @@
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 2383,
-                    "endColumn": 53,
-                    "endOffset": 2432
+                    "startOffset": 2393,
+                    "endColumn": 56,
+                    "endOffset": 2445
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 42,
+                        "startLine": 100,
                         "startColumn": 1,
-                        "startOffset": 1538,
-                        "endColumn": 50,
-                        "endOffset": 1587
+                        "startOffset": 3774,
+                        "endColumn": 53,
+                        "endOffset": 3826
                     }
                 }
             },
@@ -846,18 +846,18 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 2437,
-                    "endColumn": 45,
-                    "endOffset": 2478
+                    "startOffset": 2450,
+                    "endColumn": 53,
+                    "endOffset": 2499
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 80,
+                        "startLine": 47,
                         "startColumn": 1,
-                        "startOffset": 3111,
-                        "endColumn": 42,
-                        "endOffset": 3152
+                        "startOffset": 1786,
+                        "endColumn": 50,
+                        "endOffset": 1835
                     }
                 }
             },
@@ -865,18 +865,18 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 2483,
-                    "endColumn": 48,
-                    "endOffset": 2527
+                    "startOffset": 2504,
+                    "endColumn": 56,
+                    "endOffset": 2556
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 76,
+                        "startLine": 103,
                         "startColumn": 1,
-                        "startOffset": 2911,
-                        "endColumn": 45,
-                        "endOffset": 2955
+                        "startOffset": 3916,
+                        "endColumn": 53,
+                        "endOffset": 3968
                     }
                 }
             },
@@ -884,18 +884,18 @@
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 2532,
-                    "endColumn": 51,
-                    "endOffset": 2579
+                    "startOffset": 2561,
+                    "endColumn": 47,
+                    "endOffset": 2604
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 79,
+                        "startLine": 101,
                         "startColumn": 1,
-                        "startOffset": 3062,
-                        "endColumn": 48,
-                        "endOffset": 3109
+                        "startOffset": 3828,
+                        "endColumn": 44,
+                        "endOffset": 3871
                     }
                 }
             },
@@ -903,18 +903,18 @@
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 2584,
-                    "endColumn": 54,
-                    "endOffset": 2634
+                    "startOffset": 2609,
+                    "endColumn": 46,
+                    "endOffset": 2651
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 74,
+                        "startLine": 39,
                         "startColumn": 1,
-                        "startOffset": 2816,
-                        "endColumn": 51,
-                        "endOffset": 2866
+                        "startOffset": 1401,
+                        "endColumn": 43,
+                        "endOffset": 1443
                     }
                 }
             },
@@ -922,18 +922,18 @@
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 2639,
-                    "endColumn": 45,
-                    "endOffset": 2680
+                    "startOffset": 2656,
+                    "endColumn": 47,
+                    "endOffset": 2699
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 75,
+                        "startLine": 43,
                         "startColumn": 1,
-                        "startOffset": 2868,
-                        "endColumn": 42,
-                        "endOffset": 2909
+                        "startOffset": 1584,
+                        "endColumn": 44,
+                        "endOffset": 1627
                     }
                 }
             },
@@ -941,18 +941,18 @@
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 2685,
-                    "endColumn": 56,
-                    "endOffset": 2737
+                    "startOffset": 2704,
+                    "endColumn": 53,
+                    "endOffset": 2753
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 78,
+                        "startLine": 44,
                         "startColumn": 1,
-                        "startOffset": 3008,
-                        "endColumn": 53,
-                        "endOffset": 3060
+                        "startOffset": 1629,
+                        "endColumn": 50,
+                        "endOffset": 1678
                     }
                 }
             },
@@ -960,18 +960,18 @@
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 2742,
-                    "endColumn": 53,
-                    "endOffset": 2791
+                    "startOffset": 2758,
+                    "endColumn": 45,
+                    "endOffset": 2799
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 77,
+                        "startLine": 82,
                         "startColumn": 1,
-                        "startOffset": 2957,
-                        "endColumn": 50,
-                        "endOffset": 3006
+                        "startOffset": 3202,
+                        "endColumn": 42,
+                        "endOffset": 3243
                     }
                 }
             },
@@ -979,18 +979,18 @@
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 2796,
-                    "endColumn": 51,
-                    "endOffset": 2843
+                    "startOffset": 2804,
+                    "endColumn": 48,
+                    "endOffset": 2848
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 81,
+                        "startLine": 78,
                         "startColumn": 1,
-                        "startOffset": 3154,
-                        "endColumn": 48,
-                        "endOffset": 3201
+                        "startOffset": 3002,
+                        "endColumn": 45,
+                        "endOffset": 3046
                     }
                 }
             },
@@ -998,18 +998,18 @@
                 "to": {
                     "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 2848,
-                    "endColumn": 52,
-                    "endOffset": 2896
+                    "startOffset": 2853,
+                    "endColumn": 51,
+                    "endOffset": 2900
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 64,
+                        "startLine": 81,
                         "startColumn": 1,
-                        "startOffset": 2378,
-                        "endColumn": 49,
-                        "endOffset": 2426
+                        "startOffset": 3153,
+                        "endColumn": 48,
+                        "endOffset": 3200
                     }
                 }
             },
@@ -1017,18 +1017,18 @@
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 2901,
-                    "endColumn": 55,
-                    "endOffset": 2952
+                    "startOffset": 2905,
+                    "endColumn": 54,
+                    "endOffset": 2955
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 65,
+                        "startLine": 76,
                         "startColumn": 1,
-                        "startOffset": 2428,
-                        "endColumn": 52,
-                        "endOffset": 2479
+                        "startOffset": 2907,
+                        "endColumn": 51,
+                        "endOffset": 2957
                     }
                 }
             },
@@ -1036,18 +1036,18 @@
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 2957,
-                    "endColumn": 43,
-                    "endOffset": 2996
+                    "startOffset": 2960,
+                    "endColumn": 45,
+                    "endOffset": 3001
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 71,
+                        "startLine": 77,
                         "startColumn": 1,
-                        "startOffset": 2756,
-                        "endColumn": 40,
-                        "endOffset": 2795
+                        "startOffset": 2959,
+                        "endColumn": 42,
+                        "endOffset": 3000
                     }
                 }
             },
@@ -1055,18 +1055,18 @@
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 3001,
-                    "endColumn": 58,
-                    "endOffset": 3055
+                    "startOffset": 3006,
+                    "endColumn": 56,
+                    "endOffset": 3058
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 70,
+                        "startLine": 80,
                         "startColumn": 1,
-                        "startOffset": 2700,
-                        "endColumn": 55,
-                        "endOffset": 2754
+                        "startOffset": 3099,
+                        "endColumn": 53,
+                        "endOffset": 3151
                     }
                 }
             },
@@ -1074,18 +1074,18 @@
                 "to": {
                     "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 3060,
+                    "startOffset": 3063,
                     "endColumn": 53,
-                    "endOffset": 3109
+                    "endOffset": 3112
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 66,
+                        "startLine": 79,
                         "startColumn": 1,
-                        "startOffset": 2481,
+                        "startOffset": 3048,
                         "endColumn": 50,
-                        "endOffset": 2530
+                        "endOffset": 3097
                     }
                 }
             },
@@ -1093,18 +1093,18 @@
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 3114,
-                    "endColumn": 58,
-                    "endOffset": 3168
+                    "startOffset": 3117,
+                    "endColumn": 51,
+                    "endOffset": 3164
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 69,
+                        "startLine": 83,
                         "startColumn": 1,
-                        "startOffset": 2644,
-                        "endColumn": 55,
-                        "endOffset": 2698
+                        "startOffset": 3245,
+                        "endColumn": 48,
+                        "endOffset": 3292
                     }
                 }
             },
@@ -1112,18 +1112,18 @@
                 "to": {
                     "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 3173,
-                    "endColumn": 61,
-                    "endOffset": 3230
+                    "startOffset": 3169,
+                    "endColumn": 52,
+                    "endOffset": 3217
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 67,
+                        "startLine": 66,
                         "startColumn": 1,
-                        "startOffset": 2532,
-                        "endColumn": 58,
-                        "endOffset": 2589
+                        "startOffset": 2469,
+                        "endColumn": 49,
+                        "endOffset": 2517
                     }
                 }
             },
@@ -1131,18 +1131,18 @@
                 "to": {
                     "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 3235,
+                    "startOffset": 3222,
                     "endColumn": 55,
-                    "endOffset": 3286
+                    "endOffset": 3273
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 68,
+                        "startLine": 67,
                         "startColumn": 1,
-                        "startOffset": 2591,
+                        "startOffset": 2519,
                         "endColumn": 52,
-                        "endOffset": 2642
+                        "endOffset": 2570
                     }
                 }
             },
@@ -1150,18 +1150,18 @@
                 "to": {
                     "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 3291,
-                    "endColumn": 53,
-                    "endOffset": 3340
+                    "startOffset": 3278,
+                    "endColumn": 43,
+                    "endOffset": 3317
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 62,
+                        "startLine": 73,
                         "startColumn": 1,
-                        "startOffset": 2279,
-                        "endColumn": 50,
-                        "endOffset": 2328
+                        "startOffset": 2847,
+                        "endColumn": 40,
+                        "endOffset": 2886
                     }
                 }
             },
@@ -1169,18 +1169,18 @@
                 "to": {
                     "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 3345,
-                    "endColumn": 50,
-                    "endOffset": 3391
+                    "startOffset": 3322,
+                    "endColumn": 58,
+                    "endOffset": 3376
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 63,
+                        "startLine": 72,
                         "startColumn": 1,
-                        "startOffset": 2330,
-                        "endColumn": 47,
-                        "endOffset": 2376
+                        "startOffset": 2791,
+                        "endColumn": 55,
+                        "endOffset": 2845
                     }
                 }
             },
@@ -1188,18 +1188,18 @@
                 "to": {
                     "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 3396,
-                    "endColumn": 52,
-                    "endOffset": 3444
+                    "startOffset": 3381,
+                    "endColumn": 53,
+                    "endOffset": 3430
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 58,
+                        "startLine": 68,
                         "startColumn": 1,
-                        "startOffset": 2164,
-                        "endColumn": 49,
-                        "endOffset": 2212
+                        "startOffset": 2572,
+                        "endColumn": 50,
+                        "endOffset": 2621
                     }
                 }
             },
@@ -1207,18 +1207,18 @@
                 "to": {
                     "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 3449,
-                    "endColumn": 50,
-                    "endOffset": 3495
+                    "startOffset": 3435,
+                    "endColumn": 58,
+                    "endOffset": 3489
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 56,
+                        "startLine": 71,
                         "startColumn": 1,
-                        "startOffset": 2064,
-                        "endColumn": 47,
-                        "endOffset": 2110
+                        "startOffset": 2735,
+                        "endColumn": 55,
+                        "endOffset": 2789
                     }
                 }
             },
@@ -1226,18 +1226,18 @@
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 3500,
-                    "endColumn": 47,
-                    "endOffset": 3543
+                    "startOffset": 3494,
+                    "endColumn": 61,
+                    "endOffset": 3551
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 59,
+                        "startLine": 69,
                         "startColumn": 1,
-                        "startOffset": 2214,
-                        "endColumn": 44,
-                        "endOffset": 2257
+                        "startOffset": 2623,
+                        "endColumn": 58,
+                        "endOffset": 2680
                     }
                 }
             },
@@ -1245,18 +1245,18 @@
                 "to": {
                     "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 3548,
-                    "endColumn": 54,
-                    "endOffset": 3598
+                    "startOffset": 3556,
+                    "endColumn": 55,
+                    "endOffset": 3607
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 57,
+                        "startLine": 70,
                         "startColumn": 1,
-                        "startOffset": 2112,
-                        "endColumn": 51,
-                        "endOffset": 2162
+                        "startOffset": 2682,
+                        "endColumn": 52,
+                        "endOffset": 2733
                     }
                 }
             },
@@ -1264,18 +1264,18 @@
                 "to": {
                     "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 3603,
-                    "endColumn": 51,
-                    "endOffset": 3650
+                    "startOffset": 3612,
+                    "endColumn": 53,
+                    "endOffset": 3661
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 48,
+                        "startLine": 64,
                         "startColumn": 1,
-                        "startOffset": 1765,
-                        "endColumn": 48,
-                        "endOffset": 1812
+                        "startOffset": 2370,
+                        "endColumn": 50,
+                        "endOffset": 2419
                     }
                 }
             },
@@ -1283,18 +1283,18 @@
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 3655,
-                    "endColumn": 58,
-                    "endOffset": 3709
+                    "startOffset": 3666,
+                    "endColumn": 50,
+                    "endOffset": 3712
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 49,
+                        "startLine": 65,
                         "startColumn": 1,
-                        "startOffset": 1814,
-                        "endColumn": 55,
-                        "endOffset": 1868
+                        "startOffset": 2421,
+                        "endColumn": 47,
+                        "endOffset": 2467
                     }
                 }
             },
@@ -1302,18 +1302,18 @@
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 3714,
-                    "endColumn": 54,
-                    "endOffset": 3764
+                    "startOffset": 3717,
+                    "endColumn": 52,
+                    "endOffset": 3765
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 50,
+                        "startLine": 60,
                         "startColumn": 1,
-                        "startOffset": 1870,
-                        "endColumn": 51,
-                        "endOffset": 1920
+                        "startOffset": 2255,
+                        "endColumn": 49,
+                        "endOffset": 2303
                     }
                 }
             },
@@ -1321,18 +1321,18 @@
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 3769,
-                    "endColumn": 42,
-                    "endOffset": 3807
+                    "startOffset": 3770,
+                    "endColumn": 50,
+                    "endOffset": 3816
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 51,
+                        "startLine": 58,
                         "startColumn": 1,
-                        "startOffset": 1922,
-                        "endColumn": 39,
-                        "endOffset": 1960
+                        "startOffset": 2155,
+                        "endColumn": 47,
+                        "endOffset": 2201
                     }
                 }
             },
@@ -1340,18 +1340,18 @@
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 3812,
-                    "endColumn": 44,
-                    "endOffset": 3852
+                    "startOffset": 3821,
+                    "endColumn": 47,
+                    "endOffset": 3864
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 52,
+                        "startLine": 61,
                         "startColumn": 1,
-                        "startOffset": 1962,
-                        "endColumn": 41,
-                        "endOffset": 2002
+                        "startOffset": 2305,
+                        "endColumn": 44,
+                        "endOffset": 2348
                     }
                 }
             },
@@ -1359,18 +1359,18 @@
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 3857,
-                    "endColumn": 45,
-                    "endOffset": 3898
+                    "startOffset": 3869,
+                    "endColumn": 54,
+                    "endOffset": 3919
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 53,
+                        "startLine": 59,
                         "startColumn": 1,
-                        "startOffset": 2004,
-                        "endColumn": 42,
-                        "endOffset": 2045
+                        "startOffset": 2203,
+                        "endColumn": 51,
+                        "endOffset": 2253
                     }
                 }
             },
@@ -1378,18 +1378,18 @@
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 3903,
-                    "endColumn": 54,
-                    "endOffset": 3953
+                    "startOffset": 3924,
+                    "endColumn": 51,
+                    "endOffset": 3971
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 84,
+                        "startLine": 50,
                         "startColumn": 1,
-                        "startOffset": 3220,
-                        "endColumn": 51,
-                        "endOffset": 3270
+                        "startOffset": 1856,
+                        "endColumn": 48,
+                        "endOffset": 1903
                     }
                 }
             },
@@ -1397,18 +1397,18 @@
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 3958,
-                    "endColumn": 66,
-                    "endOffset": 4020
+                    "startOffset": 3976,
+                    "endColumn": 58,
+                    "endOffset": 4030
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 34,
+                        "startLine": 51,
                         "startColumn": 1,
-                        "startOffset": 1225,
-                        "endColumn": 63,
-                        "endOffset": 1287
+                        "startOffset": 1905,
+                        "endColumn": 55,
+                        "endOffset": 1959
                     }
                 }
             },
@@ -1416,18 +1416,18 @@
                 "to": {
                     "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 4025,
-                    "endColumn": 45,
-                    "endOffset": 4066
+                    "startOffset": 4035,
+                    "endColumn": 54,
+                    "endOffset": 4085
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 33,
+                        "startLine": 52,
                         "startColumn": 1,
-                        "startOffset": 1182,
-                        "endColumn": 42,
-                        "endOffset": 1223
+                        "startOffset": 1961,
+                        "endColumn": 51,
+                        "endOffset": 2011
                     }
                 }
             },
@@ -1435,18 +1435,18 @@
                 "to": {
                     "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 4071,
-                    "endColumn": 41,
-                    "endOffset": 4108
+                    "startOffset": 4090,
+                    "endColumn": 42,
+                    "endOffset": 4128
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 88,
+                        "startLine": 53,
                         "startColumn": 1,
-                        "startOffset": 3343,
-                        "endColumn": 38,
-                        "endOffset": 3380
+                        "startOffset": 2013,
+                        "endColumn": 39,
+                        "endOffset": 2051
                     }
                 }
             },
@@ -1454,18 +1454,18 @@
                 "to": {
                     "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 4113,
-                    "endColumn": 46,
-                    "endOffset": 4155
+                    "startOffset": 4133,
+                    "endColumn": 44,
+                    "endOffset": 4173
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 89,
+                        "startLine": 54,
                         "startColumn": 1,
-                        "startOffset": 3382,
-                        "endColumn": 43,
-                        "endOffset": 3424
+                        "startOffset": 2053,
+                        "endColumn": 41,
+                        "endOffset": 2093
                     }
                 }
             },
@@ -1473,18 +1473,18 @@
                 "to": {
                     "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 4160,
-                    "endColumn": 46,
-                    "endOffset": 4202
+                    "startOffset": 4178,
+                    "endColumn": 45,
+                    "endOffset": 4219
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 90,
+                        "startLine": 55,
                         "startColumn": 1,
-                        "startOffset": 3426,
-                        "endColumn": 43,
-                        "endOffset": 3468
+                        "startOffset": 2095,
+                        "endColumn": 42,
+                        "endOffset": 2136
                     }
                 }
             },
@@ -1492,18 +1492,18 @@
                 "to": {
                     "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 4207,
-                    "endColumn": 55,
-                    "endOffset": 4258
+                    "startOffset": 4224,
+                    "endColumn": 54,
+                    "endOffset": 4274
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 86,
                         "startColumn": 1,
-                        "startOffset": 593,
-                        "endColumn": 52,
-                        "endOffset": 644
+                        "startOffset": 3311,
+                        "endColumn": 51,
+                        "endOffset": 3361
                     }
                 }
             },
@@ -1511,18 +1511,18 @@
                 "to": {
                     "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 4263,
-                    "endColumn": 46,
-                    "endOffset": 4305
+                    "startOffset": 4279,
+                    "endColumn": 66,
+                    "endOffset": 4341
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 36,
                         "startColumn": 1,
-                        "startOffset": 549,
-                        "endColumn": 43,
-                        "endOffset": 591
+                        "startOffset": 1316,
+                        "endColumn": 63,
+                        "endOffset": 1378
                     }
                 }
             },
@@ -1530,18 +1530,18 @@
                 "to": {
                     "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 4310,
-                    "endColumn": 44,
-                    "endOffset": 4350
+                    "startOffset": 4346,
+                    "endColumn": 45,
+                    "endOffset": 4387
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 35,
                         "startColumn": 1,
-                        "startOffset": 460,
-                        "endColumn": 41,
-                        "endOffset": 500
+                        "startOffset": 1273,
+                        "endColumn": 42,
+                        "endOffset": 1314
                     }
                 }
             },
@@ -1549,18 +1549,18 @@
                 "to": {
                     "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 4355,
-                    "endColumn": 49,
-                    "endOffset": 4400
+                    "startOffset": 4392,
+                    "endColumn": 41,
+                    "endOffset": 4429
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 90,
                         "startColumn": 1,
-                        "startOffset": 502,
-                        "endColumn": 46,
-                        "endOffset": 547
+                        "startOffset": 3434,
+                        "endColumn": 38,
+                        "endOffset": 3471
                     }
                 }
             },
@@ -1568,18 +1568,18 @@
                 "to": {
                     "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 4405,
-                    "endColumn": 45,
-                    "endOffset": 4446
+                    "startOffset": 4434,
+                    "endColumn": 46,
+                    "endOffset": 4476
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 92,
+                        "startLine": 91,
                         "startColumn": 1,
-                        "startOffset": 3510,
-                        "endColumn": 42,
-                        "endOffset": 3551
+                        "startOffset": 3473,
+                        "endColumn": 43,
+                        "endOffset": 3515
                     }
                 }
             },
@@ -1587,18 +1587,18 @@
                 "to": {
                     "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 4451,
-                    "endColumn": 55,
-                    "endOffset": 4502
+                    "startOffset": 4481,
+                    "endColumn": 46,
+                    "endOffset": 4523
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 94,
+                        "startLine": 92,
                         "startColumn": 1,
-                        "startOffset": 3555,
-                        "endColumn": 52,
-                        "endOffset": 3606
+                        "startOffset": 3517,
+                        "endColumn": 43,
+                        "endOffset": 3559
                     }
                 }
             },
@@ -1606,18 +1606,18 @@
                 "to": {
                     "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 4507,
-                    "endColumn": 57,
-                    "endOffset": 4560
+                    "startOffset": 4528,
+                    "endColumn": 55,
+                    "endOffset": 4579
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 95,
+                        "startLine": 17,
                         "startColumn": 1,
-                        "startOffset": 3608,
-                        "endColumn": 54,
-                        "endOffset": 3661
+                        "startOffset": 629,
+                        "endColumn": 52,
+                        "endOffset": 680
                     }
                 }
             },
@@ -1625,18 +1625,18 @@
                 "to": {
                     "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 4565,
-                    "endColumn": 38,
-                    "endOffset": 4599
+                    "startOffset": 4584,
+                    "endColumn": 46,
+                    "endOffset": 4626
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 86,
+                        "startLine": 16,
                         "startColumn": 1,
-                        "startOffset": 3274,
-                        "endColumn": 35,
-                        "endOffset": 3308
+                        "startOffset": 585,
+                        "endColumn": 43,
+                        "endOffset": 627
                     }
                 }
             },
@@ -1644,18 +1644,18 @@
                 "to": {
                     "startLine": 95,
                     "startColumn": 4,
-                    "startOffset": 4604,
-                    "endColumn": 39,
-                    "endOffset": 4639
+                    "startOffset": 4631,
+                    "endColumn": 44,
+                    "endOffset": 4671
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 14,
                         "startColumn": 1,
-                        "startOffset": 208,
-                        "endColumn": 36,
-                        "endOffset": 243
+                        "startOffset": 496,
+                        "endColumn": 41,
+                        "endOffset": 536
                     }
                 }
             },
@@ -1663,18 +1663,18 @@
                 "to": {
                     "startLine": 96,
                     "startColumn": 4,
-                    "startOffset": 4644,
+                    "startOffset": 4676,
                     "endColumn": 49,
-                    "endOffset": 4689
+                    "endOffset": 4721
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 15,
                         "startColumn": 1,
-                        "startOffset": 772,
+                        "startOffset": 538,
                         "endColumn": 46,
-                        "endOffset": 817
+                        "endOffset": 583
                     }
                 }
             },
@@ -1682,18 +1682,18 @@
                 "to": {
                     "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 4694,
-                    "endColumn": 41,
-                    "endOffset": 4731
+                    "startOffset": 4726,
+                    "endColumn": 45,
+                    "endOffset": 4767
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 94,
                         "startColumn": 1,
-                        "startOffset": 247,
-                        "endColumn": 38,
-                        "endOffset": 284
+                        "startOffset": 3601,
+                        "endColumn": 42,
+                        "endOffset": 3642
                     }
                 }
             },
@@ -1701,18 +1701,18 @@
                 "to": {
                     "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 4736,
-                    "endColumn": 61,
-                    "endOffset": 4793
+                    "startOffset": 4772,
+                    "endColumn": 55,
+                    "endOffset": 4823
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 96,
                         "startColumn": 1,
-                        "startOffset": 341,
-                        "endColumn": 58,
-                        "endOffset": 398
+                        "startOffset": 3646,
+                        "endColumn": 52,
+                        "endOffset": 3697
                     }
                 }
             },
@@ -1720,18 +1720,18 @@
                 "to": {
                     "startLine": 99,
                     "startColumn": 4,
-                    "startOffset": 4798,
+                    "startOffset": 4828,
                     "endColumn": 57,
-                    "endOffset": 4851
+                    "endOffset": 4881
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 97,
                         "startColumn": 1,
-                        "startOffset": 286,
+                        "startOffset": 3699,
                         "endColumn": 54,
-                        "endOffset": 339
+                        "endOffset": 3752
                     }
                 }
             },
@@ -1739,18 +1739,18 @@
                 "to": {
                     "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 4856,
-                    "endColumn": 60,
-                    "endOffset": 4912
+                    "startOffset": 4886,
+                    "endColumn": 38,
+                    "endOffset": 4920
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 88,
                         "startColumn": 1,
-                        "startOffset": 400,
-                        "endColumn": 57,
-                        "endOffset": 456
+                        "startOffset": 3365,
+                        "endColumn": 35,
+                        "endOffset": 3399
                     }
                 }
             },
@@ -1758,18 +1758,18 @@
                 "to": {
                     "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 4917,
-                    "endColumn": 42,
-                    "endOffset": 4955
+                    "startOffset": 4925,
+                    "endColumn": 39,
+                    "endOffset": 4960
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 91,
+                        "startLine": 6,
                         "startColumn": 1,
-                        "startOffset": 3470,
-                        "endColumn": 39,
-                        "endOffset": 3508
+                        "startOffset": 204,
+                        "endColumn": 36,
+                        "endOffset": 239
                     }
                 }
             },
@@ -1777,10 +1777,143 @@
                 "to": {
                     "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 4960,
-                    "endLine": 108,
+                    "startOffset": 4965,
+                    "endColumn": 49,
+                    "endOffset": 5010
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 1,
+                        "startOffset": 808,
+                        "endColumn": 46,
+                        "endOffset": 853
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 5015,
+                    "endColumn": 41,
+                    "endOffset": 5052
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 1,
+                        "startOffset": 242,
+                        "endColumn": 38,
+                        "endOffset": 279
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 5057,
+                    "endColumn": 61,
+                    "endOffset": 5114
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 1,
+                        "startOffset": 377,
+                        "endColumn": 58,
+                        "endOffset": 434
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 5119,
+                    "endColumn": 57,
+                    "endOffset": 5172
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 1,
+                        "startOffset": 322,
+                        "endColumn": 54,
+                        "endOffset": 375
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 5177,
+                    "endColumn": 60,
+                    "endOffset": 5233
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 1,
+                        "startOffset": 436,
+                        "endColumn": 57,
+                        "endOffset": 492
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 5238,
+                    "endColumn": 43,
+                    "endOffset": 5277
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 1,
+                        "startOffset": 281,
+                        "endColumn": 40,
+                        "endOffset": 320
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 5282,
+                    "endColumn": 42,
+                    "endOffset": 5320
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 93,
+                        "startColumn": 1,
+                        "startOffset": 3561,
+                        "endColumn": 39,
+                        "endOffset": 3599
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 5325,
+                    "endLine": 115,
                     "endColumn": 12,
-                    "endOffset": 5246
+                    "endOffset": 5611
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\styles.xml",
@@ -1796,12 +1929,12 @@
             },
             {
                 "to": {
-                    "startLine": 109,
+                    "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 5251,
-                    "endLine": 113,
+                    "startOffset": 5616,
+                    "endLine": 120,
                     "endColumn": 12,
-                    "endOffset": 5546
+                    "endOffset": 5911
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\styles.xml",
@@ -1817,12 +1950,12 @@
             },
             {
                 "to": {
-                    "startLine": 114,
+                    "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 5551,
-                    "endLine": 118,
+                    "startOffset": 5916,
+                    "endLine": 125,
                     "endColumn": 9,
-                    "endOffset": 5810
+                    "endOffset": 6175
                 },
                 "from": {
                     "file": "D:\\AndroidStudioProjects\\KDNMobile\\res\\values\\styles.xml",

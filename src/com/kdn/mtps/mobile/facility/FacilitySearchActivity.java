@@ -29,21 +29,23 @@ import com.kdn.mtps.mobile.util.thread.ATask;
 public class FacilitySearchActivity extends BaseActivity implements TitleManager, OnClickListener, OnScrollListener{
 
 	Button btnName;
-	EditText editEqpName;
+	Button btnGubun;
+	//EditText editEqpName;
 	Button btnSearch;
 	ListView listFacility;
 	TextView tvNoData;
 	ImageView ivBox;
 	ArrayList<FacilityInfo> facList;
 	FacilitySearchBaseAdapter adapter;
+	int selectedGubunNo = -1;
 	int selectedNameNo = -1;
 	int selectedTypeNo = -1;
-	
+
 	FacilityList resultTowerList;
-	
+
 	boolean isLock;
 	boolean isEnd;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -95,10 +97,12 @@ public class FacilitySearchActivity extends BaseActivity implements TitleManager
 	
 	public void setInit() {
 
+		btnGubun = (Button)findViewById(R.id.btnGubun);
 		btnName = (Button)findViewById(R.id.btnName);
-		editEqpName = (EditText)findViewById(R.id.editEqpName);
+		//editEqpName = (EditText)findViewById(R.id.editEqpName);
 		btnSearch = (Button)findViewById(R.id.btnSearch);
-		
+
+		btnGubun.setOnClickListener(this);
 		btnName.setOnClickListener(this);
 		btnSearch.setOnClickListener(this);
 		
@@ -110,20 +114,36 @@ public class FacilitySearchActivity extends BaseActivity implements TitleManager
 		
 		adapter = new FacilitySearchBaseAdapter(this);
 	}
-	
+
 	public void showNameDialog() {
-		
-//		final String strItems[] = {"선로1","선로2","선로3"};
+
+		//final String strGItems[] = {"회선","전력구","관로"};
 		final String strItems[] = CodeInfo.getInstance(this).getTracksNames();
-		
+
 		AlertDialog.Builder dialog = new AlertDialog.Builder(this, AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
 		dialog.setTitle(getString(R.string.facility_name));
 		dialog.setSingleChoiceItems(strItems, selectedNameNo, new android.content.DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				selectedNameNo = which;
-                btnName.setText(strItems[which]);
-                dialog.dismiss();
+				btnName.setText(strItems[which]);
+				dialog.dismiss();
+			}
+		}).show();
+	}
+
+	public void showNameDialog1() {
+
+		final String strGItems[] = {"회선","전력구","관로"};
+
+		AlertDialog.Builder dialog = new AlertDialog.Builder(this, AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
+		dialog.setTitle(getString(R.string.facility_gubun_name));
+		dialog.setSingleChoiceItems(strGItems, selectedGubunNo, new android.content.DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				selectedGubunNo = which;
+				btnGubun.setText(strGItems[which]);
+				dialog.dismiss();
 			}
 		}).show();
 	}
@@ -131,6 +151,9 @@ public class FacilitySearchActivity extends BaseActivity implements TitleManager
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
+		case R.id.btnGubun:
+			showNameDialog1();
+			break;
 		case R.id.btnName:
 			showNameDialog();
 			break;
@@ -151,7 +174,7 @@ public class FacilitySearchActivity extends BaseActivity implements TitleManager
 	public void apiSearchTowerList() {
 		final String strName = btnName.getText().toString();
 		final String strCode = CodeInfo.getInstance(this).getTracksCode(strName);
-		final String strEqpName = editEqpName.getText().toString();
+		//final String strEqpName = editEqpName.getText().toString();
 		
 		ATask.executeVoidProgress(this, R.string.facility_searching, false, new ATask.OnTaskProgress() {
 			public void onPre() {
@@ -159,7 +182,7 @@ public class FacilitySearchActivity extends BaseActivity implements TitleManager
 	
 			public void onBG() {
 				TowerListDao towerListDao = TowerListDao.getInstance(FacilitySearchActivity.this);
-				facList = towerListDao.selectFacList(strName, strEqpName);
+				facList = towerListDao.selectFacList(strName, "");
 			}
 	
 			@Override

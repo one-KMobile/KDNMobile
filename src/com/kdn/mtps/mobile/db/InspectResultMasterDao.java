@@ -298,9 +298,10 @@ public class InspectResultMasterDao extends BaseDao{
 				
 				String[] types = sum_ins_type.split(",");
 				for (String type : types) {
-					if (ConstVALUE.CODE_NO_INSPECT_BT.equals(type))
+					/*if (ConstVALUE.CODE_NO_INSPECT_BT.equals(type))
 						info.has_bt = "Y";
-					else if (ConstVALUE.CODE_NO_INSPECT_JS.equals(type))
+					else*/
+					if (ConstVALUE.CODE_NO_INSPECT_JS.equals(type))
 						info.has_js = "Y";
 					else if (ConstVALUE.CODE_NO_INSPECT_JJ.equals(type))
 						info.has_jj = "Y";
@@ -316,14 +317,26 @@ public class InspectResultMasterDao extends BaseDao{
 						info.has_yb = "Y";
 					else if (ConstVALUE.CODE_NO_INSPECT_JP.equals(type))
 						info.has_jp = "Y";
+
+					else if (ConstVALUE.CODE_NO_INSPECT_JG.equals(type))
+						info.has_jg = "Y";
+					else if (ConstVALUE.CODE_NO_INSPECT_MH.equals(type))
+						info.has_mh = "Y";
+					else if (ConstVALUE.CODE_NO_INSPECT_GH.equals(type))
+						info.has_gh = "Y";
+					else if (ConstVALUE.CODE_NO_INSPECT_PR.equals(type))
+						info.has_pr = "Y";
+					else if (ConstVALUE.CODE_NO_INSPECT_JB.equals(type))
+						info.has_jb = "Y";
 				}
 				
 				if (sum_complete_ins_type != null) {
 					String[] complete_types = sum_complete_ins_type.split(",");
 					for (String type : complete_types) {
-						if (ConstVALUE.CODE_NO_INSPECT_BT.equals(type))
+						/*if (ConstVALUE.CODE_NO_INSPECT_BT.equals(type))
 							info.complete_yn_bt = "Y";
-						else if (ConstVALUE.CODE_NO_INSPECT_JS.equals(type))
+						else*/
+						if (ConstVALUE.CODE_NO_INSPECT_JS.equals(type))
 							info.complete_yn_js = "Y";
 						else if (ConstVALUE.CODE_NO_INSPECT_JJ.equals(type))
 							info.complete_yn_jj = "Y";
@@ -337,15 +350,29 @@ public class InspectResultMasterDao extends BaseDao{
 							info.complete_yn_br = "Y";
 						else if (ConstVALUE.CODE_NO_INSPECT_JP.equals(type))
 							info.complete_yn_jp = "Y";
+
+						else if (ConstVALUE.CODE_NO_INSPECT_JG.equals(type))
+							info.complete_yn_jg = "Y";
+						else if (ConstVALUE.CODE_NO_INSPECT_YB.equals(type))
+							info.complete_yn_yb = "Y";
+						else if (ConstVALUE.CODE_NO_INSPECT_MH.equals(type))
+							info.complete_yn_mh = "Y";
+						else if (ConstVALUE.CODE_NO_INSPECT_GH.equals(type))
+							info.complete_yn_gh = "Y";
+						else if (ConstVALUE.CODE_NO_INSPECT_PR.equals(type))
+							info.complete_yn_pr = "Y";
+						else if (ConstVALUE.CODE_NO_INSPECT_JB.equals(type))
+							info.complete_yn_jb = "Y";
 					}
 				}
 				
 				if (sum_send_ins_type != null) {
 					String[] send_types = sum_send_ins_type.split(",");
 					for (String type : send_types) {
-						if (ConstVALUE.CODE_NO_INSPECT_BT.equals(type))
+						/*if (ConstVALUE.CODE_NO_INSPECT_BT.equals(type))
 							info.send_yn_bt = "Y";
-						else if (ConstVALUE.CODE_NO_INSPECT_JS.equals(type))
+						else*/
+						if (ConstVALUE.CODE_NO_INSPECT_JS.equals(type))
 							info.send_yn_js = "Y";
 						else if (ConstVALUE.CODE_NO_INSPECT_JJ.equals(type))
 							info.send_yn_jj = "Y";
@@ -359,6 +386,19 @@ public class InspectResultMasterDao extends BaseDao{
 							info.send_yn_br = "Y";
 						else if (ConstVALUE.CODE_NO_INSPECT_JP.equals(type))
 							info.send_yn_jp = "Y";
+
+						else if (ConstVALUE.CODE_NO_INSPECT_JG.equals(type))
+							info.send_yn_jg = "Y";
+						else if (ConstVALUE.CODE_NO_INSPECT_YB.equals(type))
+							info.send_yn_yb = "Y";
+						else if (ConstVALUE.CODE_NO_INSPECT_MH.equals(type))
+							info.send_yn_mh = "Y";
+						else if (ConstVALUE.CODE_NO_INSPECT_GH.equals(type))
+							info.send_yn_gh = "Y";
+						else if (ConstVALUE.CODE_NO_INSPECT_PR.equals(type))
+							info.send_yn_pr = "Y";
+						else if (ConstVALUE.CODE_NO_INSPECT_JB.equals(type))
+							info.send_yn_jb = "Y";
 					}
 				}
 				
@@ -1542,9 +1582,10 @@ public class InspectResultMasterDao extends BaseDao{
 				info.eqpNo = eqpNo;
 				
 				if (send_yn_ins_type != null && !"".equals(send_yn_ins_type)){
-					if (ConstVALUE.CODE_NO_INSPECT_BT.equals(info.type))
+					/*if (ConstVALUE.CODE_NO_INSPECT_BT.equals(info.type))
 						info.send_yn_bt = send_yn_ins_type;
-					else if (ConstVALUE.CODE_NO_INSPECT_JS.equals(info.type))
+					else*/
+					if (ConstVALUE.CODE_NO_INSPECT_JS.equals(info.type))
 						info.send_yn_js = send_yn_ins_type;
 					else if (ConstVALUE.CODE_NO_INSPECT_JP.equals(info.type))
 						info.send_yn_jp = send_yn_ins_type;

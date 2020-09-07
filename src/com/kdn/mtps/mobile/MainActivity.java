@@ -150,8 +150,8 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		btnSetting.setOnClickListener(this);
 		//btnNotice = (Button)findViewById(R.id.btnSettin);
 		//btnNotice.setOnClickListener(this);
-		//btnFacility = (Button)findViewById(R.id.btnFacility);
-		//btnFacility.setOnClickListener(this);
+		btnFacility = (Button)findViewById(R.id.btnFacility);
+		btnFacility.setOnClickListener(this);
 		btnInspectSearch = (Button)findViewById(R.id.btnInspectSearch);
 		btnInspectSearch.setOnClickListener(this);
 		btnDataSync = (Button)findViewById(R.id.btnDataSync);
@@ -244,9 +244,9 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 			case R.id.btnSetting:
 				AppUtil.startActivity(MainActivity.this, new Intent(MainActivity.this, SettingActivity.class));
 				break;
-			//case R.id.btnFacility:
-			//	AppUtil.startActivity(MainActivity.this, new Intent(MainActivity.this, FacilitySearchActivity.class));
-			//	break;
+			case R.id.btnFacility:
+				AppUtil.startActivity(MainActivity.this, new Intent(MainActivity.this, FacilitySearchActivity.class));
+				break;
 			case R.id.btnInspectSearch:
 				intent = new Intent(MainActivity.this, InspectResultSearchActivity.class);
 				AppUtil.startActivity(MainActivity.this, intent);

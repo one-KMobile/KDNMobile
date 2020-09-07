@@ -45,6 +45,7 @@ import com.kdn.mtps.mobile.util.Logg;
 import com.kdn.mtps.mobile.util.Shared;
 import com.kdn.mtps.mobile.util.StringUtil;
 import com.kdn.mtps.mobile.util.UIUtil;
+import com.kdn.mtps.mobile.util.Logg;
 
 public class InputBTActivity extends BaseActivity implements TitleManager, OnClickListener {
 	
@@ -94,7 +95,7 @@ public class InputBTActivity extends BaseActivity implements TitleManager, OnCli
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_input_bt);
-		
+		Logg.d("=========== one test ===========" + "testtest");
 		mInfo = getIntent().getParcelableExtra("inspect");
 		strCurrentDate = getIntent().getStringExtra("currentDate");
 		

@@ -50,24 +50,24 @@ android:sharedUserId="smartkepco.mdm.app"
         <activity
             android:name="com.kdn.mtps.mobile.SplashActivity"
             android:label="@string/app_name"
-            android:screenOrientation="sensor" >
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name="com.kdn.mtps.mobile.MainActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <activity android:name="com.kdn.mtps.mobile.LoginActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <activity android:name="com.kdn.mtps.mobile.map.NMapViewer"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <activity android:name="com.kdn.mtps.mobile.notice.NoticeListActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <activity android:name="com.kdn.mtps.mobile.facility.FacilitySearchActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <activity android:name="com.kdn.mtps.mobile.facility.FacilityMapActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <service android:name="com.kdn.mtps.mobile.service.KDNService"></service>
         <receiver android:name="com.kdn.mtps.mobile.receiver.KDNReceiver">
             <intent-filter>
@@ -75,15 +75,15 @@ android:sharedUserId="smartkepco.mdm.app"
             </intent-filter>
         </receiver>
         <activity android:name="com.kdn.mtps.mobile.facility.FacilityMapListActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <activity android:name="com.kdn.mtps.mobile.inspect.InspectResultSearchActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <activity android:name="com.kdn.mtps.mobile.inspect.InspectResultDetailActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <activity android:name="com.kdn.mtps.mobile.datasync.DataSyncActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <activity android:name="com.kdn.mtps.mobile.nfc.NfcActivity"
-            android:screenOrientation="sensor">
+            android:screenOrientation="landscape">
         </activity>
         <activity android:name="com.kdn.mtps.mobile.nfc.NfcWriteActivity"
             ></activity>
@@ -114,16 +114,23 @@ android:sharedUserId="smartkepco.mdm.app"
         <activity android:name="com.kdn.mtps.mobile.input.InputYBActivity"
             android:windowSoftInputMode="adjustPan"
             android:configChanges="orientation|screenSize"></activity>
+        <activity android:name="com.kdn.mtps.mobile.input.InputJGActivity"
+            android:windowSoftInputMode="adjustUnspecified|adjustPan"
+            android:configChanges="orientation|screenSize"></activity>
+        <activity android:name="com.kdn.mtps.mobile.input.InputGHActivity"
+            android:windowSoftInputMode="adjustUnspecified|adjustPan"
+            android:configChanges="orientation|screenSize"></activity>
         <activity android:name="com.kdn.mtps.mobile.camera.CameraManageActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <activity android:name="com.kdn.mtps.mobile.inspect.InspectResultOutputActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <activity android:name="com.kdn.mtps.mobile.inspect.InspectMapListActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
         <activity android:name="com.kdn.mtps.mobile.gcm.PushDialog"
             android:theme="@style/NoTitleDialog"
-            android:screenOrientation="sensor"
+            android:screenOrientation="landscape"
             ></activity>
+        <!--
         <activity  
            android:name="com.google.zxing.client.android.CaptureActivity"  
            android:configChanges="orientation|keyboardHidden"  
@@ -139,8 +146,9 @@ android:sharedUserId="smartkepco.mdm.app"
              <category android:name="android.intent.category.DEFAULT" />  
            </intent-filter>  
        </activity>
+       -->
        <activity android:name="com.kdn.mtps.mobile.setting.SettingActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="landscape"></activity>
        
         <!-- GCM 리시버 -->
         <receiver

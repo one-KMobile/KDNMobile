@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/title_bg" >
+    android:background="@drawable/title_bg2" >
 
     <LinearLayout
         android:layout_width="0dp"
@@ -14,11 +14,11 @@
             android:id="@+id/btnHeaderLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/selector_header_prev" />
+            android:background="@drawable/header_btn_prev2" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="244dp"
+        android:layout_width="510dp"
         android:layout_height="match_parent"
         android:layout_weight="61.7"
         android:gravity="center">
@@ -29,10 +29,10 @@
             android:layout_height="wrap_content"
             android:background="#00000000"
             android:gravity="center"
-            android:textColor="#ffffff"
+            android:textColor="#3b6a9c"
             android:textSize="20sp" />
     </LinearLayout>
-    
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_weight="19"

@@ -35,8 +35,10 @@ import com.kdn.mtps.mobile.constant.ConstSP;
 import com.kdn.mtps.mobile.constant.ConstVALUE;
 import com.kdn.mtps.mobile.db.InputBRDao;
 import com.kdn.mtps.mobile.db.InputBTDao;
+import com.kdn.mtps.mobile.db.InputGHDao;
 import com.kdn.mtps.mobile.db.InputHJDao;
 import com.kdn.mtps.mobile.db.InputHKDao;
+import com.kdn.mtps.mobile.db.InputJGDao;
 import com.kdn.mtps.mobile.db.InputJJDao;
 import com.kdn.mtps.mobile.db.InputJPDao;
 import com.kdn.mtps.mobile.db.InputJSDao;
@@ -45,8 +47,10 @@ import com.kdn.mtps.mobile.db.InspectResultMasterDao;
 import com.kdn.mtps.mobile.info.CodeInfo;
 import com.kdn.mtps.mobile.input.InputBRActivity;
 import com.kdn.mtps.mobile.input.InputBTActivity;
+import com.kdn.mtps.mobile.input.InputGHActivity;
 import com.kdn.mtps.mobile.input.InputHJActivity;
 import com.kdn.mtps.mobile.input.InputHKActivity;
+import com.kdn.mtps.mobile.input.InputJGActivity;
 import com.kdn.mtps.mobile.input.InputJJActivity;
 import com.kdn.mtps.mobile.input.InputJPActivity;
 import com.kdn.mtps.mobile.input.InputJSActivity;
@@ -70,51 +74,46 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 	LinearLayout linearDateList;
 	
 	FrameLayout layoutBT;
-	FrameLayout layoutJP;
-	FrameLayout layoutJS;
-	FrameLayout layoutJJ;
-	FrameLayout layoutKB;
-	FrameLayout layoutHK;
-	FrameLayout layoutHJ;
-	FrameLayout layoutBR;
+	FrameLayout layoutJG;
+	FrameLayout layoutYB;
+	FrameLayout layoutMH;
+	FrameLayout layoutGH;
+	FrameLayout layoutPR;
+	FrameLayout layoutJB;
 	
 	TextView tvBTInput;
-	TextView tvJPInput;
-	TextView tvJSInput;
-	TextView tvJJInput;
-	TextView tvKBInput;
-	TextView tvHKInput;
-	TextView tvHJInput;
-	TextView tvBRInput;
+	TextView tvJGInput;
+	TextView tvYBInput;
+	TextView tvMHInput;
+	TextView tvGHInput;
+	TextView tvPRInput;
+	TextView tvJBInput;
 	
 	Button btnStatus;
 	Button btnEditStatus;
 	Button btnFacBT;
-	Button btnFacJS;
-	Button btnFacJJ;
-	Button btnFacKB;
-	Button btnFacHK;
-	Button btnFacHJ;
-	Button btnFacBR;
-	Button btnFacJP;
+	Button btnFacJG;
+	Button btnFacYB;
+	Button btnFacMH;
+	Button btnFacGH;
+	Button btnFacPR;
+	Button btnFacJB;
 	
 	Button btnFacBTCamera;
-	Button btnFacJSCamera;
-	Button btnFacJJCamera;
-	Button btnFacKBCamera;
-	Button btnFacHKCamera;
-	Button btnFacHJCamera;
-	Button btnFacBRCamera;
-	Button btnFacJPCamera;
+	Button btnFacJGCamera;
+	Button btnFacYBCamera;
+	Button btnFacMHCamera;
+	Button btnFacGHCamera;
+	Button btnFacPRCamera;
+	Button btnFacJBCamera;
 	
 	ImageView ivBTLine;
-	ImageView ivJSLine;
-	ImageView ivJJLine;
-	ImageView ivKBLine;
-	ImageView ivHKLine;
-	ImageView ivHJLine;
-	ImageView ivBRLine;
-	ImageView ivJPLine;
+	ImageView ivJGLine;
+	ImageView ivYBLine;
+	ImageView ivMHLine;
+	ImageView ivGHLine;
+	ImageView ivPRLine;
+	ImageView ivJBLine;
 	
 	InspectInfo mInfo;
 	InspectInfo mSelectedInfo;
@@ -198,60 +197,54 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 		linearDateList = (LinearLayout)findViewById(R.id.linearDateList);
 		
 		layoutBT = (FrameLayout)findViewById(R.id.layout_bt);
-		layoutJP = (FrameLayout)findViewById(R.id.layout_jp);
-		layoutJS = (FrameLayout)findViewById(R.id.layout_js);
-		layoutJJ = (FrameLayout)findViewById(R.id.layout_jj);
-		layoutKB = (FrameLayout)findViewById(R.id.layout_kb);
-		layoutHK = (FrameLayout)findViewById(R.id.layout_hk);
-		layoutHJ = (FrameLayout)findViewById(R.id.layout_hj);
-		layoutBR = (FrameLayout)findViewById(R.id.layout_br);
+		layoutJG = (FrameLayout)findViewById(R.id.layout_jg);
+		layoutYB = (FrameLayout)findViewById(R.id.layout_yb);
+		layoutMH = (FrameLayout)findViewById(R.id.layout_mh);
+		layoutGH = (FrameLayout)findViewById(R.id.layout_gh);
+		layoutPR = (FrameLayout)findViewById(R.id.layout_pr);
+		layoutJB = (FrameLayout)findViewById(R.id.layout_jb);
 		
 		tvBTInput = (TextView)findViewById(R.id.tvBTInput);
-		tvJPInput = (TextView)findViewById(R.id.tvJPInput);
-		tvJSInput = (TextView)findViewById(R.id.tvJSInput);
-		tvJJInput = (TextView)findViewById(R.id.tvJJInput);
-		tvKBInput = (TextView)findViewById(R.id.tvKBInput);
-		tvHKInput = (TextView)findViewById(R.id.tvHKInput);
-		tvHJInput = (TextView)findViewById(R.id.tvHJInput);
-		tvBRInput = (TextView)findViewById(R.id.tvBRInput);
+		tvJGInput = (TextView)findViewById(R.id.tvJGInput);
+		tvYBInput = (TextView)findViewById(R.id.tvYBInput);
+		tvMHInput = (TextView)findViewById(R.id.tvMHInput);
+		tvGHInput = (TextView)findViewById(R.id.tvGHInput);
+		tvPRInput = (TextView)findViewById(R.id.tvPRInput);
+		tvJBInput = (TextView)findViewById(R.id.tvJBInput);
 		
-		tvBTInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_BT));
-		tvJPInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_JP));
-		tvJSInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_JS));
-		tvJJInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_JJ));
-		tvKBInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_KB));
-		tvHKInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_HK));
-		tvHJInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_HJ));
-		tvBRInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_BR));
+	//	tvBTInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_BT));
+		tvJGInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_JG));
+		tvYBInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_YB));
+		tvMHInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_MH));
+		tvGHInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_GH));
+		tvPRInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_PR));
+		tvJBInput.setText(CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, ConstVALUE.CODE_NO_INSPECT_JB));
 		
 		btnStatus = (Button)findViewById(R.id.btnStatus);
 		btnEditStatus = (Button)findViewById(R.id.btnEditStatus);
 		btnFacBT = (Button)findViewById(R.id.btnFacBT);
-		btnFacJS = (Button)findViewById(R.id.btnFacJS);
-		btnFacJJ = (Button)findViewById(R.id.btnFacJJ);
-		btnFacKB = (Button)findViewById(R.id.btnFacKB);
-		btnFacHK = (Button)findViewById(R.id.btnFacHK);
-		btnFacHJ = (Button)findViewById(R.id.btnFacHJ);
-		btnFacBR = (Button)findViewById(R.id.btnFacBR);
-		btnFacJP = (Button)findViewById(R.id.btnFacJP);
+		btnFacJG = (Button)findViewById(R.id.btnFacJG);
+		btnFacYB = (Button)findViewById(R.id.btnFacYB);
+		btnFacMH = (Button)findViewById(R.id.btnFacMH);
+		btnFacGH = (Button)findViewById(R.id.btnFacGH);
+		btnFacPR = (Button)findViewById(R.id.btnFacPR);
+		btnFacJB = (Button)findViewById(R.id.btnFacJB);
 		
 		btnFacBTCamera = (Button)findViewById(R.id.btnFacBTCamera);
-		btnFacJSCamera = (Button)findViewById(R.id.btnFacJSCamera);
-		btnFacJJCamera = (Button)findViewById(R.id.btnFacJJCamera);
-		btnFacKBCamera = (Button)findViewById(R.id.btnFacKBCamera);
-		btnFacHKCamera = (Button)findViewById(R.id.btnFacHKCamera);
-		btnFacHJCamera = (Button)findViewById(R.id.btnFacHJCamera);
-		btnFacBRCamera = (Button)findViewById(R.id.btnFacBRCamera);
-		btnFacJPCamera = (Button)findViewById(R.id.btnFacJPCamera);
+		btnFacJGCamera = (Button)findViewById(R.id.btnFacJGCamera);
+		btnFacYBCamera = (Button)findViewById(R.id.btnFacYBCamera);
+		btnFacMHCamera = (Button)findViewById(R.id.btnFacMHCamera);
+		btnFacGHCamera = (Button)findViewById(R.id.btnFacGHCamera);
+		btnFacPRCamera = (Button)findViewById(R.id.btnFacPRCamera);
+		btnFacJBCamera = (Button)findViewById(R.id.btnFacJBCamera);
 		
 		ivBTLine = (ImageView)findViewById(R.id.ivBTLine);
-		ivJSLine = (ImageView)findViewById(R.id.ivJSLine);
-		ivJJLine = (ImageView)findViewById(R.id.ivJJLine);
-		ivKBLine = (ImageView)findViewById(R.id.ivKBLine);
-		ivHKLine = (ImageView)findViewById(R.id.ivHKLine);
-		ivHJLine = (ImageView)findViewById(R.id.ivHJLine);
-		ivBRLine = (ImageView)findViewById(R.id.ivBRLine);
-		ivJPLine = (ImageView)findViewById(R.id.ivJPLine);
+		ivJGLine = (ImageView)findViewById(R.id.ivJGLine);
+		ivYBLine = (ImageView)findViewById(R.id.ivYBLine);
+		ivMHLine = (ImageView)findViewById(R.id.ivMHLine);
+		ivGHLine = (ImageView)findViewById(R.id.ivGHLine);
+		ivPRLine = (ImageView)findViewById(R.id.ivPRLine);
+		ivJBLine = (ImageView)findViewById(R.id.ivJBLine);
 		
 //		btnFacBTCamera.setVisibility(View.GONE);
 //		btnFacJSCamera.setVisibility(View.GONE);
@@ -262,22 +255,20 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 		btnStatus.setOnClickListener(this);
 		btnEditStatus.setOnClickListener(this);
 		btnFacBT.setOnClickListener(this);
-		btnFacJS.setOnClickListener(this);
-		btnFacJJ.setOnClickListener(this);
-		btnFacKB.setOnClickListener(this);
-		btnFacHK.setOnClickListener(this);
-		btnFacHJ.setOnClickListener(this);
-		btnFacBR.setOnClickListener(this);
-		btnFacJP.setOnClickListener(this);
+		btnFacJG.setOnClickListener(this);
+		btnFacYB.setOnClickListener(this);
+		btnFacMH.setOnClickListener(this);
+		btnFacGH.setOnClickListener(this);
+		btnFacPR.setOnClickListener(this);
+		btnFacJB.setOnClickListener(this);
 		
 		btnFacBTCamera.setOnClickListener(this);
-		btnFacJSCamera.setOnClickListener(this);
-		btnFacJJCamera.setOnClickListener(this);
-		btnFacKBCamera.setOnClickListener(this);
-		btnFacHKCamera.setOnClickListener(this);
-		btnFacHJCamera.setOnClickListener(this);
-		btnFacBRCamera.setOnClickListener(this);
-		btnFacJPCamera.setOnClickListener(this);
+		btnFacJGCamera.setOnClickListener(this);
+		btnFacYBCamera.setOnClickListener(this);
+		btnFacMHCamera.setOnClickListener(this);
+		btnFacGHCamera.setOnClickListener(this);
+		btnFacPRCamera.setOnClickListener(this);
+		btnFacJBCamera.setOnClickListener(this);
 	}
 	
 	public void setData() {
@@ -374,7 +365,7 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 	
 	public void setLayout(String strDate) {
 		setGoneLayout();
-		
+
 		strCurrentDate = strDate; 
 				
 		ArrayList list = dateInsList.get(strDate);
@@ -384,7 +375,7 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 		
 		for (int i=0; i<list.size(); i++) {
 			mSelectedInfo = (InspectInfo) list.get(i);
-			if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_BT)) {
+			/*if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_BT)) {
 				btnFacBT.setTag(mSelectedInfo);
 				btnFacBTCamera.setTag(mSelectedInfo);
 				layoutBT.setVisibility(View.VISIBLE);
@@ -394,76 +385,67 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 					btnFacBT.setBackgroundResource(R.drawable.selector_input_bt_insert);
 				else
 					btnFacBT.setBackgroundResource(R.drawable.selector_input_bt_edit);
-			} else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_HK)) {
-				btnFacHK.setTag(mSelectedInfo);
-				btnFacHKCamera.setTag(mSelectedInfo);
-				layoutHK.setVisibility(View.VISIBLE);
-				ivHKLine.setVisibility(View.VISIBLE);
-				InputHKDao inputHKDao = InputHKDao.getInstance(this);
-				if (!inputHKDao.existHK(mSelectedInfo.master_idx))
-					btnFacHK.setBackgroundResource(R.drawable.selector_input_bt_insert);
+			} else */
+			if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_JG)) {
+				btnFacJG.setTag(mSelectedInfo);
+				btnFacJGCamera.setTag(mSelectedInfo);
+				layoutJG.setVisibility(View.VISIBLE);
+				ivJGLine.setVisibility(View.VISIBLE);
+				InputJGDao inputJGDao = InputJGDao.getInstance(this);
+				if (!inputJGDao.existJG(mSelectedInfo.master_idx))
+					btnFacJG.setBackgroundResource(R.drawable.selector_input_bt_insert);
 				else
-					btnFacHK.setBackgroundResource(R.drawable.selector_input_bt_edit);
-			} else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_JS)) {
-				btnFacJS.setTag(mSelectedInfo);
-				btnFacJSCamera.setTag(mSelectedInfo);
-				layoutJS.setVisibility(View.VISIBLE);
-				ivJSLine.setVisibility(View.VISIBLE);
+					btnFacJG.setBackgroundResource(R.drawable.selector_input_bt_edit);
+			} else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_YB)) {
+				btnFacYB.setTag(mSelectedInfo);
+				btnFacYBCamera.setTag(mSelectedInfo);
+				layoutYB.setVisibility(View.VISIBLE);
+				ivYBLine.setVisibility(View.VISIBLE);
 				InputJSDao inputJSDao = InputJSDao.getInstance(this);
 				if (!inputJSDao.existJS(mSelectedInfo.master_idx))
-					btnFacJS.setBackgroundResource(R.drawable.selector_input_bt_insert);
+					btnFacYB.setBackgroundResource(R.drawable.selector_input_bt_insert);
 				else
-					btnFacJS.setBackgroundResource(R.drawable.selector_input_bt_edit);
-			}  else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_JJ)) {
-				btnFacJJ.setTag(mSelectedInfo);
-				btnFacJJCamera.setTag(mSelectedInfo);
-				layoutJJ.setVisibility(View.VISIBLE);
-				ivJJLine.setVisibility(View.VISIBLE);
+					btnFacYB.setBackgroundResource(R.drawable.selector_input_bt_edit);
+			}  else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_MH)) {
+				btnFacMH.setTag(mSelectedInfo);
+				btnFacMHCamera.setTag(mSelectedInfo);
+				layoutMH.setVisibility(View.VISIBLE);
+				ivMHLine.setVisibility(View.VISIBLE);
 				InputJJDao inputJJDao = InputJJDao.getInstance(this);
 				if (!inputJJDao.existJJ(mSelectedInfo.master_idx))
-					btnFacJJ.setBackgroundResource(R.drawable.selector_input_bt_insert);
+					btnFacMH.setBackgroundResource(R.drawable.selector_input_bt_insert);
 				else
-					btnFacJJ.setBackgroundResource(R.drawable.selector_input_bt_edit);
-			}  else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_KB)) {
-				btnFacKB.setTag(mSelectedInfo);
-				btnFacKBCamera.setTag(mSelectedInfo);
-				layoutKB.setVisibility(View.VISIBLE);
-				ivKBLine.setVisibility(View.VISIBLE);
-				InputKBDao inputKBDao = InputKBDao.getInstance(this);
-				if (!inputKBDao.existKB(mSelectedInfo.master_idx))
-					btnFacKB.setBackgroundResource(R.drawable.selector_input_bt_insert);
+					btnFacMH.setBackgroundResource(R.drawable.selector_input_bt_edit);
+			}  else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_GH)) {
+				btnFacGH.setTag(mSelectedInfo);
+				btnFacGHCamera.setTag(mSelectedInfo);
+				layoutGH.setVisibility(View.VISIBLE);
+				ivGHLine.setVisibility(View.VISIBLE);
+				InputGHDao inputGHDao = InputGHDao.getInstance(this);
+				if (!inputGHDao.existGH(mSelectedInfo.master_idx))
+					btnFacGH.setBackgroundResource(R.drawable.selector_input_bt_insert);
 				else
-					btnFacKB.setBackgroundResource(R.drawable.selector_input_bt_edit);
-			}  else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_HJ)) {
-				btnFacHJ.setTag(mSelectedInfo);
-				btnFacHJCamera.setTag(mSelectedInfo);
-				layoutHJ.setVisibility(View.VISIBLE);
-				ivHJLine.setVisibility(View.VISIBLE);
+					btnFacGH.setBackgroundResource(R.drawable.selector_input_bt_edit);
+			}  else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_PR)) {
+				btnFacPR.setTag(mSelectedInfo);
+				btnFacPRCamera.setTag(mSelectedInfo);
+				layoutPR.setVisibility(View.VISIBLE);
+				ivPRLine.setVisibility(View.VISIBLE);
 				InputHJDao inputHJDao = InputHJDao.getInstance(this);
 				if (!inputHJDao.existHJ(mSelectedInfo.master_idx))
-					btnFacHJ.setBackgroundResource(R.drawable.selector_input_bt_insert);
+					btnFacPR.setBackgroundResource(R.drawable.selector_input_bt_insert);
 				else
-					btnFacHJ.setBackgroundResource(R.drawable.selector_input_bt_edit);
-			}  else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_BR)) {
-				btnFacBR.setTag(mSelectedInfo);
-				btnFacBRCamera.setTag(mSelectedInfo);
-				layoutBR.setVisibility(View.VISIBLE);
-				ivBRLine.setVisibility(View.VISIBLE);
+					btnFacPR.setBackgroundResource(R.drawable.selector_input_bt_edit);
+			}  else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_JB)) {
+				btnFacJB.setTag(mSelectedInfo);
+				btnFacJBCamera.setTag(mSelectedInfo);
+				layoutJB.setVisibility(View.VISIBLE);
+				ivJBLine.setVisibility(View.VISIBLE);
 				InputBRDao inputBRDao = InputBRDao.getInstance(this);
 				if (!inputBRDao.existBR(mSelectedInfo.master_idx))
-					btnFacBR.setBackgroundResource(R.drawable.selector_input_bt_insert);
+					btnFacJB.setBackgroundResource(R.drawable.selector_input_bt_insert);
 				else
-					btnFacBR.setBackgroundResource(R.drawable.selector_input_bt_edit);
-			}  else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_JP)) {
-				btnFacJP.setTag(mSelectedInfo);
-				btnFacJPCamera.setTag(mSelectedInfo);
-				layoutJP.setVisibility(View.VISIBLE);
-				ivJPLine.setVisibility(View.VISIBLE);
-				InputJPDao inputJPDao = InputJPDao.getInstance(this);
-				if (!inputJPDao.existJP(mSelectedInfo.master_idx))
-					btnFacJP.setBackgroundResource(R.drawable.selector_input_bt_insert);
-				else
-					btnFacJP.setBackgroundResource(R.drawable.selector_input_bt_edit);
+					btnFacJB.setBackgroundResource(R.drawable.selector_input_bt_edit);
 			}
 		}
 		
@@ -480,22 +462,20 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 	
 	public void setGoneLayout() {
 		layoutBT.setVisibility(View.GONE);
-		layoutJP.setVisibility(View.GONE);
-		layoutJS.setVisibility(View.GONE);
-		layoutJJ.setVisibility(View.GONE);
-		layoutKB.setVisibility(View.GONE);
-		layoutHK.setVisibility(View.GONE);
-		layoutHJ.setVisibility(View.GONE);
-		layoutBR.setVisibility(View.GONE);
+		layoutJG.setVisibility(View.GONE);
+		layoutYB.setVisibility(View.GONE);
+		layoutMH.setVisibility(View.GONE);
+		layoutGH.setVisibility(View.GONE);
+		layoutPR.setVisibility(View.GONE);
+		layoutJB.setVisibility(View.GONE);
 		
 		ivBTLine.setVisibility(View.GONE);
-		ivJSLine.setVisibility(View.GONE);
-		ivJJLine.setVisibility(View.GONE);
-		ivKBLine.setVisibility(View.GONE);
-		ivHKLine.setVisibility(View.GONE);
-		ivHJLine.setVisibility(View.GONE);
-		ivBRLine.setVisibility(View.GONE);
-		ivJPLine.setVisibility(View.GONE);
+		ivJGLine.setVisibility(View.GONE);
+		ivYBLine.setVisibility(View.GONE);
+		ivMHLine.setVisibility(View.GONE);
+		ivGHLine.setVisibility(View.GONE);
+		ivPRLine.setVisibility(View.GONE);
+		ivJBLine.setVisibility(View.GONE);
 	}
 
 	@Override
@@ -503,52 +483,47 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 		Intent intent;
 		switch (v.getId()) {
 		case R.id.btnFacBT:
-			goInputActivity(v, InputBTActivity.class);
+			//goInputActivity(v, InputBTActivity.class);
+			//goInputActivity(v, InputJGActivity.class);
 			break;
-		case R.id.btnFacJP:
-			goInputActivity(v, InputJPActivity.class);
+		case R.id.btnFacJG:
+			goInputActivity(v, InputJGActivity.class);
 			break;
-		case R.id.btnFacJS:
+		case R.id.btnFacYB:
 			goInputActivity(v, InputJSActivity.class);
 			break;
-		case R.id.btnFacJJ:
+		case R.id.btnFacMH:
 			goInputActivity(v, InputJJActivity.class);
 			break;
-		case R.id.btnFacKB:
-			goInputActivity(v, InputKBActivity.class);
+		case R.id.btnFacGH:
+			goInputActivity(v, InputGHActivity.class);
 			break;
-		case R.id.btnFacHK:
+		case R.id.btnFacPR:
 			goInputActivity(v, InputHKActivity.class);
 			break;
-		case R.id.btnFacHJ:
+		case R.id.btnFacJB:
 			goInputActivity(v, InputHJActivity.class);
-			break;
-		case R.id.btnFacBR:
-			goInputActivity(v, InputBRActivity.class);
 			break;
 		case R.id.btnFacBTCamera:
 			goCameraManage(v, "보통순시");
 			break;
-		case R.id.btnFacJPCamera:
-			goCameraManage(v, "전퍼접속개소순시");
+		case R.id.btnFacJGCamera:
+			goCameraManage(v, "정시순시");
 			break;
-		case R.id.btnFacJSCamera:
-			goCameraManage(v, "전선접속개소순시");
+		case R.id.btnFacYBCamera:
+			goCameraManage(v, "예방순시");
 			break;
-		case R.id.btnFacJJCamera:
-			goCameraManage(v, "접지저항 측정");
+		case R.id.btnFacMHCamera:
+			goCameraManage(v, "맨홀점검");
 			break;
-		case R.id.btnFacKBCamera:
-			goCameraManage(v, "기별점검");
+		case R.id.btnFacGHCamera:
+			goCameraManage(v, "경보회로점검");
 			break;
-		case R.id.btnFacHKCamera:
-			goCameraManage(v, "항공등 점등점검");
+		case R.id.btnFacPRCamera:
+			goCameraManage(v, "피뢰기점검");
 			break;
-		case R.id.btnFacHJCamera:
-			goCameraManage(v, "항공장애등 점검");
-			break;
-		case R.id.btnFacBRCamera:
-			goCameraManage(v, "불량애자 점검");
+		case R.id.btnFacJBCamera:
+			goCameraManage(v, "보통점검");
 			break;
 		}
 	}

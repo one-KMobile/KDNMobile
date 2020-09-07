@@ -44,12 +44,18 @@ public class ConstVALUE {
 	public static final String CODE_NO_INSPECT_BT = "001";
 	public static final String CODE_NO_INSPECT_JS = "027";
 	public static final String CODE_NO_INSPECT_JJ = "028";
-	public static final String CODE_NO_INSPECT_KB = "021";
+	public static final String CODE_NO_INSPECT_KB = "21";
 	public static final String CODE_NO_INSPECT_HK = "025";
 	public static final String CODE_NO_INSPECT_HJ = "024";
-	public static final String CODE_NO_INSPECT_BR = "029";
-	public static final String CODE_NO_INSPECT_YB = "003";
+	public static final String CODE_NO_INSPECT_BR = "29";
 	public static final String CODE_NO_INSPECT_JP = "026";
+
+	public static final String CODE_NO_INSPECT_JG = "001";/*정기순시*/
+	public static final String CODE_NO_INSPECT_YB = "003";/*예방순시*/
+	public static final String CODE_NO_INSPECT_MH = "046";/*맨홀점검*/
+	public static final String CODE_NO_INSPECT_GH = "056";/*경보회로점검*/
+	public static final String CODE_NO_INSPECT_PR = "055";/*피뢰기점검*/
+	public static final String CODE_NO_INSPECT_JB = "059";/*전력구소방시설_보통점검 */
 	
 	/** 파일경로를 URI로 변경할때 앞에 붙일 prefix */
 	public static final String MEDIA_FILEPATH_PREFIX = "file://";

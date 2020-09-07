@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\selector_main_bt_qr.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xhdpi\\selector_main_bt_qr.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\app_icon.png",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xhdpi\\app_icon.png"
     },
