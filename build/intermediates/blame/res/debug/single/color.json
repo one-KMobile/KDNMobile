@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\color\\callout_textcolor.xml",
+        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\color\\callout_textcolor.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\color\\callout_textcolor.xml",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\color\\callout_textcolor.xml"
     }

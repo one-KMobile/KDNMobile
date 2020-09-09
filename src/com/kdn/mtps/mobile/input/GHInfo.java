@@ -14,6 +14,16 @@ public class GHInfo implements Parcelable {
 	public String current_load = "";
 	public String conductor_cnt = "";
 	public String location = "";
+	public String c1 = "";
+	public String c2 = "";
+	public String c3 = "";
+	public String c4 = "";
+	public String c5 = "";
+	public String c6 = "";
+	public String c7 = "";
+	public String c8 = "";
+	public String c9 = "";
+
 	public String c1_js = "";
 	public String c1_jsj = "";
 	public String c1_yb_result = "";
@@ -75,6 +85,15 @@ public class GHInfo implements Parcelable {
 		current_load = source.readString();
 		conductor_cnt = source.readString();
 		location = source.readString();
+		c1 = source.readString();
+		c2 = source.readString();
+		c3 = source.readString();
+		c4 = source.readString();
+		c5 = source.readString();
+		c6 = source.readString();
+		c7 = source.readString();
+		c8 = source.readString();
+		c9 = source.readString();
 		c1_js = source.readString();
 		c1_jsj = source.readString();
 		c1_yb_result = source.readString();
@@ -103,6 +122,15 @@ public class GHInfo implements Parcelable {
 		arg0.writeString(current_load);
 		arg0.writeString(conductor_cnt);
 		arg0.writeString(location);
+		arg0.writeString(c1);
+		arg0.writeString(c2);
+		arg0.writeString(c3);
+		arg0.writeString(c4);
+		arg0.writeString(c5);
+		arg0.writeString(c6);
+		arg0.writeString(c7);
+		arg0.writeString(c8);
+		arg0.writeString(c9);
 		arg0.writeString(c1_js);
 		arg0.writeString(c1_jsj);
 		arg0.writeString(c1_yb_result);
@@ -185,6 +213,76 @@ public class GHInfo implements Parcelable {
 
 	public void setConductor_cnt(String conductor_cnt) {
 		this.conductor_cnt = conductor_cnt;
+	}
+
+	public String getC1() {
+		return c1;
+	}
+
+	public void setC1(String c1) {
+		this.c1 = c1;
+	}
+
+	public String getC2() {
+		return c2;
+	}
+
+	public void setC2(String c2) {
+		this.c2 = c2;
+	}
+
+	public String getC3() {
+		return c3;
+	}
+
+	public void setC3(String c3) {
+		this.c3 = c3;
+	}
+
+	public String getC4() {
+		return c4;
+	}
+
+	public void setC4(String c4) {
+		this.c4 = c4;
+	}
+
+	public String getC5() {
+		return c5;
+	}
+
+	public void setC5(String c5) {
+		this.c5 = c5;
+	}
+
+	public String getC6() {
+		return c6;
+	}
+
+	public void setC6(String c6) {
+		this.c6 = c6;
+	}
+
+	public String getC7() {	return c7; }
+
+	public void setC7(String c7) {
+		this.c7 = c7;
+	}
+
+	public String getC8() {
+		return c8;
+	}
+
+	public void setC8(String c8) {
+		this.c8 = c8;
+	}
+
+	public String getC9() {
+		return c9;
+	}
+
+	public void setC9(String c9) {
+		this.c9 = c9;
 	}
 
 	public String getC1_js() {

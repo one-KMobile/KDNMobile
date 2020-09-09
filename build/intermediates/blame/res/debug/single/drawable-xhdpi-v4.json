@@ -4,8 +4,20 @@
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xhdpi\\selector_main_bt_qr.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\app_icon.png",
+        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-xhdpi\\app_icon.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\app_icon.png",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-xhdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\selector_main_bt_qr.xml",
+        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-xhdpi\\selector_main_bt_qr.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",

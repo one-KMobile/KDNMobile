@@ -4,11 +4,23 @@
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\xml\\list_color.xml"
     },
     {
+        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\xml\\filter_nfc.xml",
+        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\xml\\filter_nfc.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\xml\\list_color.xml",
+        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\xml\\list_color.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\xml\\rect.xml",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\xml\\rect.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\xml\\filter_nfc.xml",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\xml\\filter_nfc.xml"
+    },
+    {
+        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\xml\\rect.xml",
+        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\xml\\rect.xml"
     }
 ]

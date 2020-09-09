@@ -489,7 +489,7 @@
 
 				<ScrollView
 					android:id="@+id/svParent"
-					android:layout_width="wrap_content"
+					android:layout_width="match_parent"
 					android:layout_height="wrap_content">
 
 					<HorizontalScrollView
@@ -513,7 +513,7 @@
 								android:orientation="horizontal">
 
 								<TextView
-									android:layout_width="282dp"
+									android:layout_width="365dp"
 									android:layout_height="match_parent"
 									android:gravity="center"
 									android:text="급유설비명" />
@@ -545,7 +545,7 @@
 										android:orientation="horizontal">
 
 										<TextView
-											android:layout_width="201dp"
+											android:layout_width="236dp"
 											android:layout_height="match_parent"
 											android:gravity="center"
 											android:text="시점" />
@@ -556,7 +556,7 @@
 											android:background="@drawable/table_line_h_s" />
 
 										<TextView
-											android:layout_width="60dp"
+											android:layout_width="85dp"
 											android:layout_height="match_parent"
 											android:gravity="center"
 											android:text="종점" />

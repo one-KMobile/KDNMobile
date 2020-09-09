@@ -13,7 +13,7 @@ public class InputGHSubInfoDao extends BaseDao{
 	static InputGHSubInfoDao inputGHSubInfoDao;
 
 	private InputGHSubInfoDao(Context ctx) {
-		tableName = "INPUT_GH_U_SUBINFO";
+		tableName = "INPUT_GH_SUBINFO";
 		this.ctx = ctx;
 	}
 

@@ -328,12 +328,17 @@ public class InputGHActivity extends BaseActivity implements TitleManager, OnCli
 		boolean isEmpty = true;
 		for (Entry<Integer, ViewHolder> entry : jgList.entrySet()) {
 			ViewHolder viewHolder = entry.getValue();
-			String strc1_js = viewHolder.editc1_js.getText().toString();
-			String strc1_jsj= viewHolder.editc1_jsj.getText().toString();
-			String strc2_js = viewHolder.editc2_js.getText().toString();
-			String strc2_jsj= viewHolder.editc2_jsj.getText().toString();
+			String strc1 = viewHolder.editc1.getText().toString();
+			String strc2= viewHolder.editc2.getText().toString();
+			String strc3 = viewHolder.editc3.getText().toString();
+			String strc4= viewHolder.editc4.getText().toString();
+			String strc5 = viewHolder.editc5.getText().toString();
+			String strc6= viewHolder.editc6.getText().toString();
+			String strc7 = viewHolder.editc7.getText().toString();
+			String strc8= viewHolder.editc8.getText().toString();
+			String strc9= viewHolder.editc9.getText().toString();
 
-			if (!"".equals(strc1_js) || !"".equals(strc1_jsj) || !"".equals(strc2_js) || !"".equals(strc2_jsj) ) {
+			if (!"".equals(strc1) || !"".equals(strc2) || !"".equals(strc3) || !"".equals(strc4) || !"".equals(strc5) || !"".equals(strc6) || !"".equals(strc7) || !"".equals(strc8) || !"".equals(strc9) ) {
 				isEmpty = false;
 				break;
 			}
@@ -353,11 +358,16 @@ public class InputGHActivity extends BaseActivity implements TitleManager, OnCli
 			String strCurrentLoad = viewHolder.tvCurrentLoad.getText().toString();
 			String strConductor_cnt = viewHolder.tvConductor_cnt.getText().toString();
 			String strLocation = viewHolder.tvLocation.getText().toString();
-					
-			String strc1_js = viewHolder.editc1_js.getText().toString();
-			String strc1_jsj= viewHolder.editc1_jsj.getText().toString();
-			String strc2_js = viewHolder.editc2_js.getText().toString();
-			String strc2_jsj= viewHolder.editc2_jsj.getText().toString();
+
+			String strc1 = viewHolder.editc1.getText().toString();
+			String strc2 = viewHolder.editc2.getText().toString();
+			String strc3 = viewHolder.editc3.getText().toString();
+			String strc4 = viewHolder.editc4.getText().toString();
+			String strc5 = viewHolder.editc5.getText().toString();
+			String strc6 = viewHolder.editc6.getText().toString();
+			String strc7 = viewHolder.editc7.getText().toString();
+			String strc8 = viewHolder.editc8.getText().toString();
+			String strc9 = viewHolder.editc9.getText().toString();
 			
 			GHInfo log = new GHInfo();
 			log.master_idx = mInfo.master_idx;
@@ -368,15 +378,15 @@ public class InputGHActivity extends BaseActivity implements TitleManager, OnCli
 			log.current_load = strCurrentLoad;
 			log.conductor_cnt = strConductor_cnt;
 			log.location = strLocation;
-			log.c1_js = strc1_js;
-			log.c1_js = log.c1_js.replace("=", "");
-			log.c1_jsj = strc1_jsj;
-			log.c1_jsj = log.c1_jsj.replace("=", "");
+			log.c1 = strc1;
+			log.c1 = log.c1.replace("=", "");
+			log.c2 = strc2;
+			log.c2 = log.c2.replace("=", "");
 			log.c1_power_no = viewHolder.ghInfo.c1_power_no;
-			log.c2_js = strc2_js;
-			log.c2_js = log.c2_js.replace("=", "");
-			log.c2_jsj = strc2_jsj;
-			log.c2_jsj = log.c2_jsj.replace("=", "");
+			log.c2 = strc2;
+			log.c2 = log.c2.replace("=", "");
+			log.c3 = strc3;
+			log.c3 = log.c3.replace("=", "");
 			log.c2_power_no = viewHolder.ghInfo.c2_power_no;
 			
 			if (isEdit) {
@@ -463,7 +473,7 @@ public class InputGHActivity extends BaseActivity implements TitleManager, OnCli
 	public void addItem(int idx, GHInfo ghInfo) {
 		
 		final ViewHolder viewHolder = new ViewHolder();
-		View view = LayoutInflater.from(this).inflate(R.layout.item_jg_u, null);
+		View view = LayoutInflater.from(this).inflate(R.layout.item_gh, null);
 		LinearLayout llItemParent = (LinearLayout) view.findViewById(R.id.llItemParent);
 		
 		UIUtil.setFont(this, (ViewGroup)llItemParent);
@@ -477,11 +487,15 @@ public class InputGHActivity extends BaseActivity implements TitleManager, OnCli
 		viewHolder.tvc2_temp = (TextView) view.findViewById(R.id.tvc2_temp);
 		viewHolder.tvc3_temp = (TextView) view.findViewById(R.id.tvc3_temp);
 
-		viewHolder.editc1_js = (EditText) view.findViewById(R.id.editc1);
-        viewHolder.editc1_jsj = (EditText) view.findViewById(R.id.editc1_jsj);
-        viewHolder.editc2_js = (EditText) view.findViewById(R.id.editc3);
-        viewHolder.editc2_jsj = (EditText) view.findViewById(R.id.editc2);
-        setTextWatcher(viewHolder);
+		viewHolder.editc1 = (EditText) view.findViewById(R.id.editc1);
+		viewHolder.editc2 = (EditText) view.findViewById(R.id.editc2);
+		viewHolder.editc3 = (EditText) view.findViewById(R.id.editc3);
+		viewHolder.editc4 = (EditText) view.findViewById(R.id.editc4);
+		viewHolder.editc5 = (EditText) view.findViewById(R.id.editc5);
+		viewHolder.editc6 = (EditText) view.findViewById(R.id.editc6);
+		viewHolder.editc7 = (EditText) view.findViewById(R.id.editc7);
+		viewHolder.editc8 = (EditText) view.findViewById(R.id.editc8);
+        //setTextWatcher(viewHolder);
 
 		viewHolder.tvCurrentLoad.setText(idx + "");
 		viewHolder.tvConductor_cnt.setText((idx + 1) + "");
@@ -497,10 +511,15 @@ public class InputGHActivity extends BaseActivity implements TitleManager, OnCli
 			setDiff(ghInfo.c2_js, ghInfo.c2_jsj, viewHolder.tvc2_temp);
 			setDiff(ghInfo.c3_js, ghInfo.c3_jsj, viewHolder.tvc3_temp);
 
-			viewHolder.editc1_js.setText(ghInfo.c1_js);
-			viewHolder.editc1_jsj.setText(ghInfo.c1_jsj);
-			viewHolder.editc2_js.setText(ghInfo.c2_js);
-			viewHolder.editc2_jsj.setText(ghInfo.c2_jsj);
+			viewHolder.editc1.setText(ghInfo.c1);
+			viewHolder.editc2.setText(ghInfo.c2);
+			viewHolder.editc3.setText(ghInfo.c3);
+			viewHolder.editc4.setText(ghInfo.c4);
+			viewHolder.editc5.setText(ghInfo.c5);
+			viewHolder.editc6.setText(ghInfo.c6);
+			viewHolder.editc7.setText(ghInfo.c7);
+			viewHolder.editc8.setText(ghInfo.c8);
+			viewHolder.editc9.setText(ghInfo.c9);
 		}
 		
 		jgList.put(idx, viewHolder);
@@ -517,64 +536,17 @@ public class InputGHActivity extends BaseActivity implements TitleManager, OnCli
 		TextView tvc1_temp;
 		TextView tvc2_temp;
 		TextView tvc3_temp;
-        EditText editc1_js;
-        EditText editc1_jsj;
-        EditText editc2_js;
-        EditText editc2_jsj;
+		EditText editc1;
+		EditText editc2;
+		EditText editc3;
+		EditText editc4;
+		EditText editc5;
+		EditText editc6;
+		EditText editc7;
+		EditText editc8;
+		EditText editc9;
         
         GHInfo ghInfo;
-	}
-
-	public void setTextWatcher(final ViewHolder viewHolder) {
-		viewHolder.editc1_js.addTextChangedListener(new TextWatcher() {
-			@Override
-			public void onTextChanged(CharSequence s, int start, int before, int count) {
-				String str1 = viewHolder.editc1_js.getText().toString();
-				String str2 = viewHolder.editc1_jsj.getText().toString();
-				setDiff(str1, str2, viewHolder.tvc1_temp);
-			}
-			@Override
-			public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-			@Override
-			public void afterTextChanged(Editable s) {}
-		});
-		viewHolder.editc1_jsj.addTextChangedListener(new TextWatcher() {
-			@Override
-			public void onTextChanged(CharSequence s, int start, int before, int count) {
-				String str1 = viewHolder.editc1_js.getText().toString();
-				String str2 = viewHolder.editc1_jsj.getText().toString();
-				setDiff(str1, str2, viewHolder.tvc1_temp);
-			}
-			@Override
-			public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-			@Override
-			public void afterTextChanged(Editable s) {}
-		});
-
-		viewHolder.editc2_js.addTextChangedListener(new TextWatcher() {
-			@Override
-			public void onTextChanged(CharSequence s, int start, int before, int count) {
-				String str1 = viewHolder.editc2_js.getText().toString();
-				String str2 = viewHolder.editc2_jsj.getText().toString();
-				setDiff(str1, str2, viewHolder.tvc2_temp);
-			}
-			@Override
-			public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-			@Override
-			public void afterTextChanged(Editable s) {}
-		});
-		viewHolder.editc2_jsj.addTextChangedListener(new TextWatcher() {
-			@Override
-			public void onTextChanged(CharSequence s, int start, int before, int count) {
-				String str1 = viewHolder.editc2_js.getText().toString();
-				String str2 = viewHolder.editc2_jsj.getText().toString();
-				setDiff(str1, str2, viewHolder.tvc2_temp);
-			}
-			@Override
-			public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-			@Override
-			public void afterTextChanged(Editable s) {}
-		});
 	}
 
 	public void setDiff(String str1, String str2, TextView tv) {
