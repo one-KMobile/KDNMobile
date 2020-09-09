@@ -13,7 +13,7 @@ public class InputGHDao extends BaseDao{
 	static InputGHDao InputJGDao;
 
 	private InputGHDao(Context ctx) {
-		tableName = "INPUT_JS";
+		tableName = "INPUT_GH";
 		this.ctx = ctx;
 	}
 
@@ -76,7 +76,7 @@ public class InputGHDao extends BaseDao{
 		db.execSQL(sql);
 	}
 	
-	public ArrayList<GHInfo> selectJG(String mIdx) {
+	public ArrayList<GHInfo> selectGH(String mIdx) {
 		
 		ArrayList<GHInfo> jsList = new ArrayList<GHInfo>();
 		

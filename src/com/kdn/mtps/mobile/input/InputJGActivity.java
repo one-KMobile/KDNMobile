@@ -35,9 +35,9 @@ import com.kdn.mtps.mobile.TitleManager;
 import com.kdn.mtps.mobile.camera.CameraManageActivity;
 import com.kdn.mtps.mobile.constant.ConstSP;
 import com.kdn.mtps.mobile.constant.ConstVALUE;
-import com.kdn.mtps.mobile.db.InputJGDao;
+import com.kdn.mtps.mobile.db.InputJGUDao;
 import com.kdn.mtps.mobile.db.InputJGSubInfo2Dao;
-import com.kdn.mtps.mobile.db.InputJGSubInfoDao;
+import com.kdn.mtps.mobile.db.InputJGUSubInfoDao;
 import com.kdn.mtps.mobile.db.InspectResultMasterDao;
 import com.kdn.mtps.mobile.info.CodeInfo;
 import com.kdn.mtps.mobile.inspect.InspectInfo;
@@ -82,8 +82,8 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 	LinearLayout llLayout;
 	LinearLayout llLayout2;
 
-	ArrayList<JGInfo> jgInfoList;
-	JGInfo selectJgInfo;
+	ArrayList<JGUInfo> jguInfoList;
+	JGUInfo selectJgUInfo;
 	LinearLayout linearDateList;
 
 	FrameLayout layout1;
@@ -99,7 +99,6 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 	int selectedClaimContentNo = 0;
 
 	final String strWeatherItems[] = CodeInfo.getInstance(this).getNames(ConstVALUE.CODE_TYPE_WEATHER);
-	final String strYBItems[] = CodeInfo.getInstance(this).getNames(ConstVALUE.CODE_TYPE_GOOD_SECD);
 	final String strClainContentItems[] = CodeInfo.getInstance(this).getNames(ConstVALUE.CODE_TYPE_GOOD_SECD);
 
 	boolean isAdd;
@@ -176,8 +175,8 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		String insType = CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_INS_TYPE, mInfo.type);
 		tvType.setText(insType);
 
-		InputJGSubInfoDao inputJGSubInfoDao = InputJGSubInfoDao.getInstance(this);
-		ArrayList<JGSubInfo> list = inputJGSubInfoDao.selectList(mInfo.eqpNo);
+		InputJGUSubInfoDao inputJGUSubInfoDao = InputJGUSubInfoDao.getInstance(this);
+		ArrayList<JGUSubInfo> list = inputJGUSubInfoDao.selectList(mInfo.eqpNo);
 
 		InputJGSubInfo2Dao inputJGSubInfo2Dao = InputJGSubInfo2Dao.getInstance(this);
 		ArrayList<JGSubInfo2> list2 = inputJGSubInfo2Dao.selectList(mInfo.eqpNo);
@@ -187,7 +186,7 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 			btnAdd.setEnabled(false);
 		}
 
-		for (JGSubInfo info : list) {
+		for (JGUSubInfo info : list) {
 			Logg.d("sub info : " + info.FNCT_LC_DTLS);
 		}
 
@@ -212,20 +211,20 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		} else {
 			ivComplte.setBackgroundResource(R.drawable.input_js_edit);
 
-			InputJGDao inputJGDao = InputJGDao.getInstance(this);
-			jgInfoList = inputJGDao.selectJG(mInfo.master_idx);
+			InputJGUDao inputJGDao = InputJGUDao.getInstance(this);
+			jguInfoList = inputJGDao.selectJGU(mInfo.master_idx);
 
-			selectJgInfo = jgInfoList.get(0);
+			selectJgUInfo = jguInfoList.get(0);
 
-			strWeather = CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_WEATHER, selectJgInfo.weather);
+			strWeather = CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_WEATHER, selectJgUInfo.weather);
 			selectedWeatherNo = StringUtil.getIndex(strWeatherItems, strWeather);
 
 			//String strClaimContent = CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_GOOD_SECD, selectJgInfo.claim_content);
 			//btnClaimContent.setText(strClaimContent);
 			//selectedClaimContentNo = StringUtil.getIndex(strClainContentItems, strClaimContent);
 
-			for (int i=0; i<jgInfoList.size(); i++) {
-				addItem(i, jgInfoList.get(i));
+			for (int i=0; i<jguInfoList.size(); i++) {
+				addItem(i, jguInfoList.get(i));
 			}
 
 			addBottomPadding();
@@ -286,8 +285,8 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 			update(true);
 			break;
 		case R.id.btnDelete:
-			InputJGDao inputJGDao = InputJGDao.getInstance(this);
-			inputJGDao.Delete(mInfo.master_idx);
+			InputJGUDao inputJGUDao = InputJGUDao.getInstance(this);
+			inputJGUDao.Delete(mInfo.master_idx);
 			InspectResultMasterDao insRetDao = InspectResultMasterDao.getInstance(this);
 			insRetDao.updateComplete(mInfo.master_idx, "N", ConstVALUE.CODE_NO_INSPECT_JS);
 			setResult();
@@ -339,8 +338,8 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 	}
 
 	public void setInputType() {
-		InputJGDao inputJGDao = InputJGDao.getInstance(this);
-		if (inputJGDao.existJG(mInfo.master_idx))
+		InputJGUDao inputJGUDao = InputJGUDao.getInstance(this);
+		if (inputJGUDao.existJGU(mInfo.master_idx))
 			isAdd = false;
 		else
 			isAdd = true;
@@ -380,8 +379,8 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 			return;
 		}
 		
-		InputJGDao inputJGDao = InputJGDao.getInstance(this);
-		inputJGDao.Delete(mInfo.master_idx);
+		InputJGUDao inputJGUDao = InputJGUDao.getInstance(this);
+		inputJGUDao.Delete(mInfo.master_idx);
 		
 		for (Entry<Integer, ViewHolder> entry : jgList.entrySet()) {
 			ViewHolder viewHolder = entry.getValue();
@@ -395,10 +394,10 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 			String strc2_js = viewHolder.editc2_js.getText().toString();
 			String strc2_jsj= viewHolder.editc2_jsj.getText().toString();
 			
-			JGInfo log = new JGInfo();
+			JGUInfo log = new JGUInfo();
 			log.master_idx = mInfo.master_idx;
 			log.weather = CodeInfo.getInstance(this).getKey(ConstVALUE.CODE_TYPE_WEATHER, strWeather);
-			log.circuit_no = viewHolder.jgInfo.circuit_no;
+			log.circuit_no = viewHolder.jguInfo.circuit_no;
 			log.circuit_name = strCircuitName;
 			log.circuit_name = strCircuitName;
 			log.current_load = strCurrentLoad;
@@ -408,17 +407,17 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 			log.c1_js = log.c1_js.replace("=", "");
 			log.c1_jsj = strc1_jsj;
 			log.c1_jsj = log.c1_jsj.replace("=", "");
-			log.c1_power_no = viewHolder.jgInfo.c1_power_no;
+			log.c1_power_no = viewHolder.jguInfo.c1_power_no;
 			log.c2_js = strc2_js;
 			log.c2_js = log.c2_js.replace("=", "");
 			log.c2_jsj = strc2_jsj;
 			log.c2_jsj = log.c2_jsj.replace("=", "");
-			log.c2_power_no = viewHolder.jgInfo.c2_power_no;
+			log.c2_power_no = viewHolder.jguInfo.c2_power_no;
 			
 			if (isEdit) {
-				inputJGDao.Append(log, viewHolder.jgInfo.idx);
+				inputJGUDao.Append(log, viewHolder.jguInfo.idx);
 			} else {
-				inputJGDao.Append(log);
+				inputJGUDao.Append(log);
 			}
 	    }
 		
@@ -481,25 +480,25 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 	};
 
 	/*유압 리스트*/
-	public void addItem(int idx, JGSubInfo jgSubInfo) {
-		JGInfo jgInfo = new JGInfo();
-		jgInfo.conductor_cnt = jgSubInfo.CONT_NUM;
-		jgInfo.location = jgSubInfo.SN;
-		jgInfo.current_load = jgSubInfo.TTM_LOAD;
-		jgInfo.circuit_name = jgSubInfo.FNCT_LC_DTLS;
-		jgInfo.circuit_no = jgSubInfo.FNCT_LC_NO;
-		jgInfo.c1_power_no = jgSubInfo.POWER_NO_C1;
-		jgInfo.c2_power_no = jgSubInfo.POWER_NO_C2;
-		jgInfo.c3_power_no = jgSubInfo.POWER_NO_C3;
+	public void addItem(int idx, JGUSubInfo jguSubInfo) {
+		JGUInfo jguInfo = new JGUInfo();
+		jguInfo.conductor_cnt = jguSubInfo.CONT_NUM;
+		jguInfo.location = jguSubInfo.SN;
+		jguInfo.current_load = jguSubInfo.TTM_LOAD;
+		jguInfo.circuit_name = jguSubInfo.FNCT_LC_DTLS;
+		jguInfo.circuit_no = jguSubInfo.FNCT_LC_NO;
+		jguInfo.c1_power_no = jguSubInfo.POWER_NO_C1;
+		jguInfo.c2_power_no = jguSubInfo.POWER_NO_C2;
+		jguInfo.c3_power_no = jguSubInfo.POWER_NO_C3;
 				
 		
-		addItem(idx, jgInfo);
+		addItem(idx, jguInfo);
 	}
 	
-	public void addItem(int idx, JGInfo jgInfo) {
+	public void addItem(int idx, JGUInfo jguInfo) {
 		
 		final ViewHolder viewHolder = new ViewHolder();
-		View view = LayoutInflater.from(this).inflate(R.layout.item_jg, null);
+		View view = LayoutInflater.from(this).inflate(R.layout.item_jg_u, null);
 		LinearLayout llItemParent = (LinearLayout) view.findViewById(R.id.llItemParent);
 		
 		UIUtil.setFont(this, (ViewGroup)llItemParent);
@@ -522,21 +521,21 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		viewHolder.tvCurrentLoad.setText(idx + "");
 		viewHolder.tvConductor_cnt.setText((idx + 1) + "");
 		
-		if (jgInfo != null) {
-			viewHolder.jgInfo = jgInfo;
-			viewHolder.tvCircuitName.setText(jgInfo.circuit_name);
-			viewHolder.tvCurrentLoad.setText(jgInfo.current_load);
-			viewHolder.tvConductor_cnt.setText(jgInfo.conductor_cnt);
-			viewHolder.tvLocation.setText(jgInfo.location);
+		if (jguInfo != null) {
+			viewHolder.jguInfo = jguInfo;
+			viewHolder.tvCircuitName.setText(jguInfo.circuit_name);
+			viewHolder.tvCurrentLoad.setText(jguInfo.current_load);
+			viewHolder.tvConductor_cnt.setText(jguInfo.conductor_cnt);
+			viewHolder.tvLocation.setText(jguInfo.location);
 
-			setDiff(jgInfo.c1_js, jgInfo.c1_jsj, viewHolder.tvc1_temp);
-			setDiff(jgInfo.c2_js, jgInfo.c2_jsj, viewHolder.tvc2_temp);
-			setDiff(jgInfo.c3_js, jgInfo.c3_jsj, viewHolder.tvc3_temp);
+			setDiff(jguInfo.c1_js, jguInfo.c1_jsj, viewHolder.tvc1_temp);
+			setDiff(jguInfo.c2_js, jguInfo.c2_jsj, viewHolder.tvc2_temp);
+			setDiff(jguInfo.c3_js, jguInfo.c3_jsj, viewHolder.tvc3_temp);
 
-			viewHolder.editc1_js.setText(jgInfo.c1_js);
-			viewHolder.editc1_jsj.setText(jgInfo.c1_jsj);
-			viewHolder.editc2_js.setText(jgInfo.c2_js);
-			viewHolder.editc2_jsj.setText(jgInfo.c2_jsj);
+			viewHolder.editc1_js.setText(jguInfo.c1_js);
+			viewHolder.editc1_jsj.setText(jguInfo.c1_jsj);
+			viewHolder.editc2_js.setText(jguInfo.c2_js);
+			viewHolder.editc2_jsj.setText(jguInfo.c2_jsj);
 		}
 		
 		jgList.put(idx, viewHolder);
@@ -558,7 +557,7 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
         EditText editc2_js;
         EditText editc2_jsj;
         
-        JGInfo jgInfo;
+        JGUInfo jguInfo;
 	}
 
 	public void setTextWatcher(final ViewHolder viewHolder) {

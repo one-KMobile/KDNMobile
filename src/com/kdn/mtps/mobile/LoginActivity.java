@@ -38,6 +38,8 @@ import com.kdn.mtps.mobile.db.InputBTDao;
 import com.kdn.mtps.mobile.db.InputHJDao;
 import com.kdn.mtps.mobile.db.InputHKDao;
 import com.kdn.mtps.mobile.db.InputHKSubInfoDao;
+import com.kdn.mtps.mobile.db.InputJGUDao;
+import com.kdn.mtps.mobile.db.InputJGUSubInfoDao;
 import com.kdn.mtps.mobile.db.InputJJDao;
 import com.kdn.mtps.mobile.db.InputJPDao;
 import com.kdn.mtps.mobile.db.InputJSDao;
@@ -278,6 +280,10 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnSy
 						InputBRDao.getInstance(LoginActivity.this).DeleteAll();
 						InputBRSubInfoDao.getInstance(LoginActivity.this).DeleteAll();
 						InspectResultMasterDao.getInstance(LoginActivity.this).DeleteAll();
+
+						InputJGUDao.getInstance(LoginActivity.this).DeleteAll();
+						InputJGUSubInfoDao.getInstance(LoginActivity.this).DeleteAll();
+						
 						DBHelper.getInstance(LoginActivity.this).setTransactionSuccessful();
 						DBHelper.getInstance(LoginActivity.this).endTransaction();
 						

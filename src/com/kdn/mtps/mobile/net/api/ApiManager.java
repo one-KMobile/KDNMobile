@@ -38,7 +38,9 @@ import com.kdn.mtps.mobile.net.api.bean.BRSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.BaseResult;
 import com.kdn.mtps.mobile.net.api.bean.CodeList;
 import com.kdn.mtps.mobile.net.api.bean.FacilityList;
+import com.kdn.mtps.mobile.net.api.bean.GHSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.HKSubInfoList;
+import com.kdn.mtps.mobile.net.api.bean.JGUSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.JSSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.LoginData;
 import com.kdn.mtps.mobile.net.api.bean.NfcTagInfo;
@@ -101,6 +103,12 @@ public class ApiManager {
 	
 	/** 항공등 정보 **/
 	public static final String API_INPUT_HK_SUB_LIST= API_PREFIX + "error/air.json";
+
+	/** 정기순시_유압 정보 **/
+	public static final String API_INPUT_JG_U_SUB_LIST= API_PREFIX + "circuit/in/schedule.json";
+
+	/** 경보회로_점검 정보 **/
+	public static final String API_INPUT_GH_SUB_LIST= API_PREFIX + "circuit/in/schedule.json";
 	
 	/** 순시결과 전송 **/
 	public static final String API_INPUT_BT= API_PREFIX + "result/normal/inspection.json";
@@ -804,7 +812,43 @@ public class ApiManager {
 		}
 		return null;
 	}
-	
+
+	public static JGUSubInfoList jguInfoSubList() {
+		try {
+			List<NameValuePair> getParameters = new ArrayList<NameValuePair>();
+
+			String response = HttpUtil.connectPost(API_INPUT_JG_U_SUB_LIST, getParameters, 1000 * 300);
+			Logg.d(response);
+			if (response == null) {// 서버에서 받아오지 못했다면
+				return null;
+			} else {
+				JGUSubInfoList jguSubInfoList = new Gson().fromJson(response, JGUSubInfoList.class);
+				return jguSubInfoList;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public static GHSubInfoList ghInfoSubList() {
+		try {
+			List<NameValuePair> getParameters = new ArrayList<NameValuePair>();
+
+			String response = HttpUtil.connectPost(API_INPUT_GH_SUB_LIST, getParameters, 1000 * 300);
+			Logg.d(response);
+			if (response == null) {// 서버에서 받아오지 못했다면
+				return null;
+			} else {
+				GHSubInfoList ghSubInfoList = new Gson().fromJson(response, GHSubInfoList.class);
+				return ghSubInfoList;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
 	public static YBInfoList ybInfoList(String tracksCode) {
 		try {
 			List<NameValuePair> getParameters = new ArrayList<NameValuePair>();

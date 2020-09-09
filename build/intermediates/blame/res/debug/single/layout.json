@@ -60,10 +60,6 @@
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\listview_camera_item_.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\item_jg.xml",
-        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\item_jg.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_list_item.xml",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\dialog_list_item.xml"
     },
@@ -82,6 +78,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\item_js.xml",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\item_js.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\item_jg_u.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\layout\\item_jg_u.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\layout\\activity_facility_detail_search.xml",

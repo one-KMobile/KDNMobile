@@ -19,9 +19,11 @@ import com.kdn.mtps.mobile.db.DBHelper;
 import com.kdn.mtps.mobile.db.InputBRDao;
 import com.kdn.mtps.mobile.db.InputBRSubInfoDao;
 import com.kdn.mtps.mobile.db.InputBTDao;
+import com.kdn.mtps.mobile.db.InputGHSubInfoDao;
 import com.kdn.mtps.mobile.db.InputHJDao;
 import com.kdn.mtps.mobile.db.InputHKDao;
 import com.kdn.mtps.mobile.db.InputHKSubInfoDao;
+import com.kdn.mtps.mobile.db.InputJGUSubInfoDao;
 import com.kdn.mtps.mobile.db.InputJJDao;
 import com.kdn.mtps.mobile.db.InputJPDao;
 import com.kdn.mtps.mobile.db.InputJSDao;
@@ -38,9 +40,11 @@ import com.kdn.mtps.mobile.info.UserInfo;
 import com.kdn.mtps.mobile.input.BRInfo;
 import com.kdn.mtps.mobile.input.BRSubInfo;
 import com.kdn.mtps.mobile.input.BTInfo;
+import com.kdn.mtps.mobile.input.GHSubInfo;
 import com.kdn.mtps.mobile.input.HJInfo;
 import com.kdn.mtps.mobile.input.HKInfo;
 import com.kdn.mtps.mobile.input.HKSubInfo;
+import com.kdn.mtps.mobile.input.JGUSubInfo;
 import com.kdn.mtps.mobile.input.JJInfo;
 import com.kdn.mtps.mobile.input.JSInfo;
 import com.kdn.mtps.mobile.input.JSSubInfo;
@@ -54,6 +58,8 @@ import com.kdn.mtps.mobile.net.api.bean.CodeList.CodeDef;
 import com.kdn.mtps.mobile.net.api.bean.FacilityList;
 import com.kdn.mtps.mobile.net.api.bean.HKSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.JSSubInfoList;
+import com.kdn.mtps.mobile.net.api.bean.JGUSubInfoList;
+import com.kdn.mtps.mobile.net.api.bean.GHSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.NoticeList;
 import com.kdn.mtps.mobile.net.api.bean.ScheduleList;
 import com.kdn.mtps.mobile.net.api.bean.ScheduleList.ScheduleInfo;
@@ -75,9 +81,12 @@ public class DataSync {
 	public final int TAG_END_SYNC = TAG_DATASYNC_DEFAULT + 3;
 	public final int TAG_CALL_API_SCHDULE = TAG_DATASYNC_DEFAULT + 4;
 	public final int TAG_CALL_API_TOWER_LIST = TAG_DATASYNC_DEFAULT + 5;
-	public final int TAG_CALL_API_JSINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 6;
-	public final int TAG_CALL_API_BRINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 7;
-	public final int TAG_CALL_API_HKINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 8;
+	//public final int TAG_CALL_API_JSINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 6;
+	//public final int TAG_CALL_API_BRINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 7;
+	//public final int TAG_CALL_API_HKINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 8;
+
+	public final int TAG_CALL_API_JGUINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 6;
+	public final int TAG_CALL_API_GHINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 7;
 	
 	
 	public static Context ctx;
@@ -96,6 +105,9 @@ public class DataSync {
 	JSSubInfoList jsSubInfoList;
 	BRSubInfoList brSubInfoList;
 	HKSubInfoList hkSubInfoList;
+
+	JGUSubInfoList jguSubInfoList;
+	GHSubInfoList ghSubInfoList;
 	
 	int callType;
 	boolean isLogin;
@@ -138,27 +150,35 @@ public class DataSync {
 				apiTracksList();
 				break;
 			}
-			case TAG_CALL_API_JSINFO_SUBLIST: // 4
+			/*case TAG_CALL_API_JSINFO_SUBLIST: //
 				pd.setProgress((int) ((3 / (float) 7) * 100));
 				getJSInfoSubList();
 				break;
-			case TAG_CALL_API_BRINFO_SUBLIST: // 5
+			case TAG_CALL_API_BRINFO_SUBLIST: //
 				pd.setProgress((int) ((4 / (float) 7) * 100));
 				getBRInfoSubList();
 				break;
-			case TAG_CALL_API_HKINFO_SUBLIST: // 6
+			case TAG_CALL_API_HKINFO_SUBLIST: //
 				pd.setProgress((int) ((5 / (float) 7) * 100));
 				getHKInfoSubList();
-				break;
+				break;*/
 			case TAG_CALL_API_SCHDULE: // 1
 			{
 				pd.setProgress((int) ((0 / (float) 7) * 100));
 				getScheduleList();
 				break;
 			}
-			case TAG_CALL_API_TOWER_LIST: // 7
-				pd.setProgress((int) ((6 / (float) 7) * 100));
+			case TAG_CALL_API_TOWER_LIST: // 6
+				pd.setProgress((int) ((5 / (float) 7) * 100));
 				getTowerList();
+				break;
+			case TAG_CALL_API_JGUINFO_SUBLIST: // 4
+				pd.setProgress((int) ((3 / (float) 7) * 100));
+				getJGUInfoSubList();
+				break;
+			case TAG_CALL_API_GHINFO_SUBLIST: // 5
+				pd.setProgress((int) ((4 / (float) 7) * 100));
+				getGHInfoSubList();
 				break;
 			case TAG_END_SYNC:
 			{
@@ -258,7 +278,7 @@ public class DataSync {
 					return;
 				
 				if (isComplete) {
-					mHandler.sendEmptyMessage(TAG_CALL_API_JSINFO_SUBLIST);
+					mHandler.sendEmptyMessage(TAG_CALL_API_JGUINFO_SUBLIST);
 					//mHandler.sendEmptyMessage(TAG_CALL_API_TOWER_LIST);
 				} else {
 					mHandler.sendEmptyMessage(TAG_END_SYNC);
@@ -639,7 +659,7 @@ public class DataSync {
 					return;
 				
 				if (isComplete) {
-					mHandler.sendEmptyMessage(TAG_CALL_API_HKINFO_SUBLIST);
+					//mHandler.sendEmptyMessage(TAG_CALL_API_HKINFO_SUBLIST);
 				} else {
 					mHandler.sendEmptyMessage(TAG_END_SYNC);
 				}
@@ -706,6 +726,124 @@ public class DataSync {
 				
 			}
 			
+		});
+	}
+	/*정기순시_유압리스트*/
+	public void getJGUInfoSubList() {
+
+		ATask.executeVoidPublishProgress(new ATask.OnTaskPublishProgress() {
+			public void onPre() {
+			}
+
+			@Override
+			public void onBG(OnPublishProgress onPublish) {
+				jguSubInfoList = ApiManager.jguInfoSubList();
+
+				isComplete = false;
+
+				if (jguSubInfoList != null && jguSubInfoList.result != null && ApiManager.RESULT_OK.equals(jguSubInfoList.code)) {
+
+					SQLiteDatabase db = DBHelper.getInstance(ctx);
+					try {
+						db.beginTransaction();
+						InputJGUSubInfoDao.getInstance(ctx).DeleteAll();
+
+						List<JGUSubInfo> subList = jguSubInfoList.result;
+						for (int i=0; i<subList.size(); i++) {
+							JGUSubInfo subInfo = subList.get(i);
+							InputJGUSubInfoDao inputJGUSubInfoDao = InputJGUSubInfoDao.getInstance(ctx);
+							inputJGUSubInfoDao.Append(subInfo);
+						}
+
+						db.setTransactionSuccessful();
+					} catch (Exception e){
+						e.printStackTrace();
+					} finally {
+						db.endTransaction();
+					}
+
+					isComplete = true;
+				}
+			}
+
+			@Override
+			public void onPost() {
+				if (isCancel)
+					return;
+
+				if (isComplete) {
+					//mHandler.sendEmptyMessage(TAG_CALL_API_BRINFO_SUBLIST);
+					mHandler.sendEmptyMessage(TAG_CALL_API_GHINFO_SUBLIST);
+				} else {
+					mHandler.sendEmptyMessage(TAG_END_SYNC);
+				}
+			}
+
+			@Override
+			public void onProgress(int progress) {
+				// TODO Auto-generated method stub
+
+			}
+
+		});
+	}
+	/*경보회로점검_점검리스트*/
+	public void getGHInfoSubList() {
+
+		ATask.executeVoidPublishProgress(new ATask.OnTaskPublishProgress() {
+			public void onPre() {
+			}
+
+			@Override
+			public void onBG(OnPublishProgress onPublish) {
+				ghSubInfoList = ApiManager.ghInfoSubList();
+
+				isComplete = false;
+
+				if (ghSubInfoList != null && ghSubInfoList.result != null && ApiManager.RESULT_OK.equals(ghSubInfoList.code)) {
+
+					SQLiteDatabase db = DBHelper.getInstance(ctx);
+					try {
+						db.beginTransaction();
+						InputGHSubInfoDao.getInstance(ctx).DeleteAll();
+
+						List<GHSubInfo> subList = ghSubInfoList.result;
+						for (int i=0; i<subList.size(); i++) {
+							GHSubInfo subInfo = subList.get(i);
+							InputGHSubInfoDao inputGHSubInfoDao = InputGHSubInfoDao.getInstance(ctx);
+							inputGHSubInfoDao.Append(subInfo);
+						}
+
+						db.setTransactionSuccessful();
+					} catch (Exception e){
+						e.printStackTrace();
+					} finally {
+						db.endTransaction();
+					}
+
+					isComplete = true;
+				}
+			}
+
+			@Override
+			public void onPost() {
+				if (isCancel)
+					return;
+
+				if (isComplete) {
+					//mHandler.sendEmptyMessage(TAG_CALL_API_BRINFO_SUBLIST);
+					mHandler.sendEmptyMessage(TAG_CALL_API_TOWER_LIST);
+				} else {
+					mHandler.sendEmptyMessage(TAG_END_SYNC);
+				}
+			}
+
+			@Override
+			public void onProgress(int progress) {
+				// TODO Auto-generated method stub
+
+			}
+
 		});
 	}
 
