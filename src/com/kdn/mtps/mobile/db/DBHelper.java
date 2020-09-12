@@ -254,18 +254,14 @@ public class DBHelper extends SQLiteOpenHelper {
 			+ "CURRENT_LOAD VARCHAR2(10),"
 			+ "CONDUCTOR_CNT VARCHAR2(10),"
 			+ "LOCATION VARCHAR2(10),"
-			+ "C1_JS VARCHAR2(10),"
-			+ "C1_JSJ VARCHAR2(10),"
-			+ "C1_YB_RESULT VARCHAR2(10),"
-			+ "C1_POWER_NO VARCHAR2(10),"
-			+ "C2_JS VARCHAR2(10),"
-			+ "C2_JSJ VARCHAR2(10),"
-			+ "C2_YB_RESULT VARCHAR2(10),"
-			+ "C2_POWER_NO VARCHAR2(10),"
-			+ "C3_JS VARCHAR2(10),"
-			+ "C3_JSJ VARCHAR2(10),"
-			+ "C3_YB_RESULT VARCHAR2(10),"
-			+ "C3_POWER_NO VARCHAR2(10))";
+			+ "T_GUBUN VARCHAR2(10),"
+			+ "T1_C1 VARCHAR2(10),"
+			+ "T1_C2 VARCHAR2(10),"
+			+ "T1_C3 VARCHAR2(10),"
+			+ "T1_C4 VARCHAR2(10),"
+			+ "T2_C1 VARCHAR2(10),"
+			+ "T2_C2 VARCHAR2(10),"
+			+ "T2_C3 VARCHAR2(10))";
 
 	/*정기순시 유압리스트*/
 	private static final String INPUT_JG_U_SUBINFO = "CREATE TABLE INPUT_JG_U_SUBINFO ("
@@ -277,10 +273,19 @@ public class DBHelper extends SQLiteOpenHelper {
 			+ "FNCT_LC_DTLS VARCHAR2(50),"
 			+ "EQP_NM VARCHAR2(50),"
 			+ "FNCT_LC_NO VARCHAR2(50),"
-			+ "EQP_NO VARCHAR2(20),"
-			+ "POWER_NO_C1 VARCHAR2(20),"
-			+ "POWER_NO_C2 VARCHAR2(20),"
-			+ "POWER_NO_C3 VARCHAR2(20))";
+			+ "EQP_NO VARCHAR2(20))";
+
+	/*정기순시 피뢰기리스트*/
+	private static final String INPUT_JG_P_SUBINFO = "CREATE TABLE INPUT_JG_P_SUBINFO ("
+			+ "IDX INTEGER PRIMARY KEY AUTOINCREMENT,"
+			+ "TOWER_IDX VARCHAR2(20),"
+			+ "CONT_NUM VARCHAR2(20),"
+			+ "SN VARCHAR2(20),"
+			+ "TTM_LOAD VARCHAR2(10),"
+			+ "FNCT_LC_DTLS VARCHAR2(50),"
+			+ "EQP_NM VARCHAR2(50),"
+			+ "FNCT_LC_NO VARCHAR2(50),"
+			+ "EQP_NO VARCHAR2(20))";
 
 	/*경보회로점검*/
 	private static final String INPUT_GH = "CREATE TABLE INPUT_GH ("
@@ -293,18 +298,15 @@ public class DBHelper extends SQLiteOpenHelper {
 			+ "CURRENT_LOAD VARCHAR2(10),"
 			+ "CONDUCTOR_CNT VARCHAR2(10),"
 			+ "LOCATION VARCHAR2(10),"
-			+ "C1_JS VARCHAR2(10),"
-			+ "C1_JSJ VARCHAR2(10),"
-			+ "C1_YB_RESULT VARCHAR2(10),"
-			+ "C1_POWER_NO VARCHAR2(10),"
-			+ "C2_JS VARCHAR2(10),"
-			+ "C2_JSJ VARCHAR2(10),"
-			+ "C2_YB_RESULT VARCHAR2(10),"
-			+ "C2_POWER_NO VARCHAR2(10),"
-			+ "C3_JS VARCHAR2(10),"
-			+ "C3_JSJ VARCHAR2(10),"
-			+ "C3_YB_RESULT VARCHAR2(10),"
-			+ "C3_POWER_NO VARCHAR2(10))";
+			+ "C1 VARCHAR2(10),"
+			+ "C2 VARCHAR2(10),"
+			+ "C3 VARCHAR2(10),"
+			+ "C4 VARCHAR2(10),"
+			+ "C5 VARCHAR2(10),"
+			+ "C6 VARCHAR2(10),"
+			+ "C7 VARCHAR2(10),"
+			+ "C8 VARCHAR2(10),"
+			+ "C9 VARCHAR2(10))";
 
 	/*경보회로점검 _점검리스트정보*/
 	private static final String INPUT_GH_SUBINFO = "CREATE TABLE INPUT_GH_SUBINFO ("
@@ -388,6 +390,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
 			db.execSQL(INPUT_JG);
 			db.execSQL(INPUT_JG_U_SUBINFO);
+			db.execSQL(INPUT_JG_P_SUBINFO);
 			db.execSQL(INPUT_GH);
 			db.execSQL(INPUT_GH_SUBINFO);
 			

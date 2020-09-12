@@ -24,6 +24,7 @@ import com.kdn.mtps.mobile.db.InputHJDao;
 import com.kdn.mtps.mobile.db.InputHKDao;
 import com.kdn.mtps.mobile.db.InputHKSubInfoDao;
 import com.kdn.mtps.mobile.db.InputJGUSubInfoDao;
+import com.kdn.mtps.mobile.db.InputJGPSubInfoDao;
 import com.kdn.mtps.mobile.db.InputJJDao;
 import com.kdn.mtps.mobile.db.InputJPDao;
 import com.kdn.mtps.mobile.db.InputJSDao;
@@ -44,6 +45,7 @@ import com.kdn.mtps.mobile.input.GHSubInfo;
 import com.kdn.mtps.mobile.input.HJInfo;
 import com.kdn.mtps.mobile.input.HKInfo;
 import com.kdn.mtps.mobile.input.HKSubInfo;
+import com.kdn.mtps.mobile.input.JGPSubInfo;
 import com.kdn.mtps.mobile.input.JGUSubInfo;
 import com.kdn.mtps.mobile.input.JJInfo;
 import com.kdn.mtps.mobile.input.JSInfo;
@@ -57,6 +59,7 @@ import com.kdn.mtps.mobile.net.api.bean.CodeList;
 import com.kdn.mtps.mobile.net.api.bean.CodeList.CodeDef;
 import com.kdn.mtps.mobile.net.api.bean.FacilityList;
 import com.kdn.mtps.mobile.net.api.bean.HKSubInfoList;
+import com.kdn.mtps.mobile.net.api.bean.JGPSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.JSSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.JGUSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.GHSubInfoList;
@@ -85,7 +88,7 @@ public class DataSync {
 	//public final int TAG_CALL_API_BRINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 7;
 	//public final int TAG_CALL_API_HKINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 8;
 
-	public final int TAG_CALL_API_JGUINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 6;
+	public final int TAG_CALL_API_JGINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 6;
 	public final int TAG_CALL_API_GHINFO_SUBLIST = TAG_DATASYNC_DEFAULT + 7;
 	
 	
@@ -107,6 +110,7 @@ public class DataSync {
 	HKSubInfoList hkSubInfoList;
 
 	JGUSubInfoList jguSubInfoList;
+	JGPSubInfoList jgpSubInfoList;
 	GHSubInfoList ghSubInfoList;
 	
 	int callType;
@@ -172,9 +176,9 @@ public class DataSync {
 				pd.setProgress((int) ((5 / (float) 7) * 100));
 				getTowerList();
 				break;
-			case TAG_CALL_API_JGUINFO_SUBLIST: // 4
+			case TAG_CALL_API_JGINFO_SUBLIST: // 4
 				pd.setProgress((int) ((3 / (float) 7) * 100));
-				getJGUInfoSubList();
+				getJGInfoSubList();
 				break;
 			case TAG_CALL_API_GHINFO_SUBLIST: // 5
 				pd.setProgress((int) ((4 / (float) 7) * 100));
@@ -278,7 +282,7 @@ public class DataSync {
 					return;
 				
 				if (isComplete) {
-					mHandler.sendEmptyMessage(TAG_CALL_API_JGUINFO_SUBLIST);
+					mHandler.sendEmptyMessage(TAG_CALL_API_JGINFO_SUBLIST);
 					//mHandler.sendEmptyMessage(TAG_CALL_API_TOWER_LIST);
 				} else {
 					mHandler.sendEmptyMessage(TAG_END_SYNC);
@@ -728,8 +732,8 @@ public class DataSync {
 			
 		});
 	}
-	/*정기순시_유압리스트*/
-	public void getJGUInfoSubList() {
+	/*정기순시_탭리스트*/
+	public void getJGInfoSubList() {
 
 		ATask.executeVoidPublishProgress(new ATask.OnTaskPublishProgress() {
 			public void onPre() {
@@ -738,6 +742,7 @@ public class DataSync {
 			@Override
 			public void onBG(OnPublishProgress onPublish) {
 				jguSubInfoList = ApiManager.jguInfoSubList();
+				jgpSubInfoList = ApiManager.jgpInfoSubList();
 
 				isComplete = false;
 
@@ -763,6 +768,34 @@ public class DataSync {
 					}
 
 					isComplete = true;
+				} else {
+					isComplete = false;
+				}
+
+				if (jgpSubInfoList != null && jgpSubInfoList.result != null && ApiManager.RESULT_OK.equals(jgpSubInfoList.code)) {
+
+					SQLiteDatabase db = DBHelper.getInstance(ctx);
+					try {
+						db.beginTransaction();
+						InputJGPSubInfoDao.getInstance(ctx).DeleteAll();
+
+						List<JGPSubInfo> subList = jgpSubInfoList.result;
+						for (int i=0; i<subList.size(); i++) {
+							JGPSubInfo subInfo = subList.get(i);
+							InputJGPSubInfoDao inputJGPSubInfoDao = InputJGPSubInfoDao.getInstance(ctx);
+							inputJGPSubInfoDao.Append(subInfo);
+						}
+
+						db.setTransactionSuccessful();
+					} catch (Exception e){
+						e.printStackTrace();
+					} finally {
+						db.endTransaction();
+					}
+
+					isComplete = true;
+				} else {
+					isComplete = false;
 				}
 			}
 

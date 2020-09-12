@@ -13,9 +13,6 @@ public class JGUSubInfo implements Parcelable {
 	public String EQP_NM;
 	public String FNCT_LC_NO;
 	public String EQP_NO;
-	public String POWER_NO_C1;
-	public String POWER_NO_C2;
-	public String POWER_NO_C3;
 
 	public JGUSubInfo() {
 	}
@@ -31,9 +28,6 @@ public class JGUSubInfo implements Parcelable {
 		EQP_NM  = source.readString();
 		FNCT_LC_NO  = source.readString();
 		EQP_NO  = source.readString();
-		POWER_NO_C1  = source.readString();
-		POWER_NO_C2  = source.readString();
-		POWER_NO_C3  = source.readString();
 	}
 
 	@Override
@@ -52,9 +46,6 @@ public class JGUSubInfo implements Parcelable {
 		arg0.writeString(EQP_NM);
 		arg0.writeString(FNCT_LC_NO);
 		arg0.writeString(EQP_NO);
-		arg0.writeString(POWER_NO_C1);
-		arg0.writeString(POWER_NO_C2);
-		arg0.writeString(POWER_NO_C3);
 
 	}
 
@@ -146,30 +137,6 @@ public class JGUSubInfo implements Parcelable {
 		FNCT_LC_NO = fNCT_LC_NO;
 	}
 
-	public String getPOWER_NO_C1() {
-		return POWER_NO_C1;
-	}
-
-	public void setPOWER_NO_C1(String pOWER_NO_C1) {
-		POWER_NO_C1 = pOWER_NO_C1;
-	}
-
-	public String getPOWER_NO_C2() {
-		return POWER_NO_C2;
-	}
-
-	public void setPOWER_NO_C2(String pOWER_NO_C2) {
-		POWER_NO_C2 = pOWER_NO_C2;
-	}
-
-	public String getPOWER_NO_C3() {
-		return POWER_NO_C3;
-	}
-
-	public void setPOWER_NO_C3(String pOWER_NO_C3) {
-		POWER_NO_C3 = pOWER_NO_C3;
-	}
-
 
 	public static class COLS {
 		public static final String IDX = "IDX";
@@ -181,8 +148,5 @@ public class JGUSubInfo implements Parcelable {
 		public static final String EQP_NM = "EQP_NM";
 		public static final String FNCT_LC_NO = "FNCT_LC_NO";
 		public static final String EQP_NO = "EQP_NO";
-		public static final String POWER_NO_C1 = "POWER_NO_C1";
-		public static final String POWER_NO_C2 = "POWER_NO_C2";
-		public static final String POWER_NO_C3 = "POWER_NO_C3";
 	}
 }

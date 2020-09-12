@@ -393,19 +393,15 @@ public class GHInfo implements Parcelable {
 		public static final String CURRENT_LOAD = "CURRENT_LOAD";
 		public static final String CONDUCTOR_CNT = "CONDUCTOR_CNT";
 		public static final String LOCATION = "LOCATION";
-		public static final String C1_JS = "C1_JS";
-		public static final String C1_JSJ = "C1_JSJ";
-		public static final String C1_YB_RESULT = "C1_YB_RESULT";
-		public static final String C1_POWER_NO = "C1_POWER_NO";
-		public static final String C2_JS = "C2_JS";
-		public static final String C2_JSJ = "C2_JSJ";
-		public static final String C2_YB_RESULT = "C2_YB_RESULT";
-		public static final String C2_POWER_NO = "C2_POWER_NO";
-		public static final String C3_JS = "C3_JS";
-		public static final String C3_JSJ = "C3_JSJ";
-		public static final String C3_YB_RESULT = "C3_YB_RESULT";
-		public static final String C3_POWER_NO = "C3_POWER_NO";
-		public static final String CLAIM_CONTENT = "CLAIM_CONTENT";
+		public static final String C1 = "C1";
+		public static final String C2 = "C2";
+		public static final String C3 = "C3";
+		public static final String C4 = "C4";
+		public static final String C5 = "C5";
+		public static final String C6 = "C6";
+		public static final String C7 = "C7";
+		public static final String C8 = "C8";
+		public static final String C9 = "C9";
 		
 	}
 }

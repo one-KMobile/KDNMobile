@@ -38,7 +38,7 @@ import com.kdn.mtps.mobile.db.InputBTDao;
 import com.kdn.mtps.mobile.db.InputGHDao;
 import com.kdn.mtps.mobile.db.InputHJDao;
 import com.kdn.mtps.mobile.db.InputHKDao;
-import com.kdn.mtps.mobile.db.InputJGUDao;
+import com.kdn.mtps.mobile.db.InputJGDao;
 import com.kdn.mtps.mobile.db.InputJJDao;
 import com.kdn.mtps.mobile.db.InputJPDao;
 import com.kdn.mtps.mobile.db.InputJSDao;
@@ -391,8 +391,8 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 				btnFacJGCamera.setTag(mSelectedInfo);
 				layoutJG.setVisibility(View.VISIBLE);
 				ivJGLine.setVisibility(View.VISIBLE);
-				InputJGUDao inputJGUDao = InputJGUDao.getInstance(this);
-				if (!inputJGUDao.existJGU(mSelectedInfo.master_idx))
+				InputJGDao inputJGDao = InputJGDao.getInstance(this);
+				if (!inputJGDao.existJG(mSelectedInfo.master_idx))
 					btnFacJG.setBackgroundResource(R.drawable.selector_input_bt_insert);
 				else
 					btnFacJG.setBackgroundResource(R.drawable.selector_input_bt_edit);

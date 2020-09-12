@@ -40,6 +40,7 @@ import com.kdn.mtps.mobile.net.api.bean.CodeList;
 import com.kdn.mtps.mobile.net.api.bean.FacilityList;
 import com.kdn.mtps.mobile.net.api.bean.GHSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.HKSubInfoList;
+import com.kdn.mtps.mobile.net.api.bean.JGPSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.JGUSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.JSSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.LoginData;
@@ -824,6 +825,24 @@ public class ApiManager {
 			} else {
 				JGUSubInfoList jguSubInfoList = new Gson().fromJson(response, JGUSubInfoList.class);
 				return jguSubInfoList;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public static JGPSubInfoList jgpInfoSubList() {
+		try {
+			List<NameValuePair> getParameters = new ArrayList<NameValuePair>();
+
+			String response = HttpUtil.connectPost(API_INPUT_JG_U_SUB_LIST, getParameters, 1000 * 300);
+			Logg.d(response);
+			if (response == null) {// 서버에서 받아오지 못했다면
+				return null;
+			} else {
+				JGPSubInfoList jgpSubInfoList = new Gson().fromJson(response, JGPSubInfoList.class);
+				return jgpSubInfoList;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

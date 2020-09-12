@@ -43,9 +43,6 @@ public class InputJGUSubInfoDao extends BaseDao{
 		updateRow.put(JGUSubInfo.COLS.EQP_NM, row.EQP_NM);
 		updateRow.put(JGUSubInfo.COLS.FNCT_LC_NO, row.FNCT_LC_NO);
 		updateRow.put(JGUSubInfo.COLS.EQP_NO, row.EQP_NO);
-		updateRow.put(JGUSubInfo.COLS.POWER_NO_C1, row.POWER_NO_C1);
-		updateRow.put(JGUSubInfo.COLS.POWER_NO_C2, row.POWER_NO_C2);
-		updateRow.put(JGUSubInfo.COLS.POWER_NO_C3, row.POWER_NO_C3);
 			
 		db.replace(tableName, null, updateRow);
 
@@ -80,9 +77,6 @@ public class InputJGUSubInfoDao extends BaseDao{
 				String EQP_NM = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.EQP_NM));
 				String FNCT_LC_NO = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.FNCT_LC_NO));
 				String EQP_NO = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.EQP_NO));
-				String POWER_NO_C1 = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.POWER_NO_C1));
-				String POWER_NO_C2 = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.POWER_NO_C2));
-				String POWER_NO_C3 = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.POWER_NO_C3));
 				
 				JGUSubInfo info = new JGUSubInfo();
 				
@@ -95,9 +89,6 @@ public class InputJGUSubInfoDao extends BaseDao{
 				info.EQP_NM = EQP_NM;
 				info.FNCT_LC_NO = FNCT_LC_NO;
 				info.EQP_NO = EQP_NO;
-				info.POWER_NO_C1 = POWER_NO_C1;
-				info.POWER_NO_C2 = POWER_NO_C2;
-				info.POWER_NO_C3 = POWER_NO_C3;
 				
 				jsList.add(info);
 			}

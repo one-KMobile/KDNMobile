@@ -43,19 +43,15 @@ public class InputGHDao extends BaseDao{
 		updateRow.put(GHInfo.COLS.CURRENT_LOAD, row.current_load);
 		updateRow.put(GHInfo.COLS.CONDUCTOR_CNT, row.conductor_cnt);
 		updateRow.put(GHInfo.COLS.LOCATION, row.location);
-		updateRow.put(GHInfo.COLS.C1_JS, row.c1_js);
-		updateRow.put(GHInfo.COLS.C1_JSJ, row.c1_jsj);
-		updateRow.put(GHInfo.COLS.C1_YB_RESULT, row.c1_yb_result);
-		updateRow.put(GHInfo.COLS.C1_POWER_NO, row.c1_power_no);
-		updateRow.put(GHInfo.COLS.C2_JS, row.c2_js);
-		updateRow.put(GHInfo.COLS.C2_JSJ, row.c2_jsj);
-		updateRow.put(GHInfo.COLS.C2_YB_RESULT, row.c2_yb_result);
-		updateRow.put(GHInfo.COLS.C2_POWER_NO, row.c2_power_no);
-		updateRow.put(GHInfo.COLS.C3_JS, row.c3_js);
-		updateRow.put(GHInfo.COLS.C3_JSJ, row.c3_jsj);
-		updateRow.put(GHInfo.COLS.C3_YB_RESULT, row.c3_yb_result);
-		updateRow.put(GHInfo.COLS.C3_POWER_NO, row.c3_power_no);
-		
+		updateRow.put(GHInfo.COLS.C1, row.c1);
+		updateRow.put(GHInfo.COLS.C2, row.c2);
+		updateRow.put(GHInfo.COLS.C3, row.c3);
+		updateRow.put(GHInfo.COLS.C4, row.c4);
+		updateRow.put(GHInfo.COLS.C5, row.c5);
+		updateRow.put(GHInfo.COLS.C6, row.c6);
+		updateRow.put(GHInfo.COLS.C7, row.c7);
+		updateRow.put(GHInfo.COLS.C8, row.c8);
+		updateRow.put(GHInfo.COLS.C9, row.c9);
 
 		db.replace(tableName, null, updateRow);
 
@@ -98,18 +94,15 @@ public class InputGHDao extends BaseDao{
 				String current_load = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.CURRENT_LOAD));
 				String conductor_cnt = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.CONDUCTOR_CNT));
 				String location = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.LOCATION));
-				String c1_js = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C1_JS));
-				String c1_jsj = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C1_JSJ));
-				String c1_yb_result = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C1_YB_RESULT));
-				String c1_power_no = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C1_POWER_NO));
-				String c2_js = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C2_JS));
-				String c2_jsj = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C2_JSJ));
-				String c2_yb_result = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C2_YB_RESULT));
-				String c2_power_no = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C2_POWER_NO));
-				String c3_js = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C3_JS));
-				String c3_jsj = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C3_JSJ));
-				String c3_yb_result = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C3_YB_RESULT));
-				String c3_power_no = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C3_POWER_NO));
+				String c1 = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C1));
+				String c2 = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C2));
+				String c3 = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C3));
+				String c4 = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C4));
+				String c5 = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C5));
+				String c6 = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C6));
+				String c7 = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C7));
+				String c8 = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C8));
+				String c9 = cursor.getString(cursor.getColumnIndex(GHInfo.COLS.C9));
 				
 				GHInfo info = new GHInfo();
 				
@@ -123,18 +116,15 @@ public class InputGHDao extends BaseDao{
 				info.current_load = current_load;
 				info.conductor_cnt = conductor_cnt;
 				info.location = location;
-				info.c1_js= c1_js;
-				info.c1_jsj = c1_jsj;
-				info.c1_yb_result = c1_yb_result;
-				info.c1_power_no = c1_power_no;
-				info.c2_js = c2_js;
-				info.c2_jsj = c2_jsj;
-				info.c2_yb_result = c2_yb_result;
-				info.c2_power_no = c2_power_no;
-				info.c3_js = c3_js;
-				info.c3_jsj = c3_jsj;
-				info.c3_yb_result = c3_yb_result;
-				info.c3_power_no = c3_power_no;
+				info.c1= c1;
+				info.c2 = c2;
+				info.c3 = c3;
+				info.c4 = c4;
+				info.c5 = c5;
+				info.c6 = c6;
+				info.c7 = c7;
+				info.c8 = c8;
+				info.c9 = c9;
 				
 				jsList.add(info);
 			}

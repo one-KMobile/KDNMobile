@@ -38,7 +38,7 @@ import com.kdn.mtps.mobile.db.InputBTDao;
 import com.kdn.mtps.mobile.db.InputHJDao;
 import com.kdn.mtps.mobile.db.InputHKDao;
 import com.kdn.mtps.mobile.db.InputHKSubInfoDao;
-import com.kdn.mtps.mobile.db.InputJGUDao;
+import com.kdn.mtps.mobile.db.InputJGDao;
 import com.kdn.mtps.mobile.db.InputJGUSubInfoDao;
 import com.kdn.mtps.mobile.db.InputJJDao;
 import com.kdn.mtps.mobile.db.InputJPDao;
@@ -152,8 +152,8 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnSy
 				ToastUtil.show(this, "실서버 적용!!!");
 //				ConstVALUE.PREFIX_API_SERVER = "http://kdn.testbed.kr/";
 //				ConstVALUE.PREFIX_API_SERVER = "http://10.0.2.2:8080/kdnweb/";
-				//ConstVALUE.PREFIX_API_SERVER = "http://172.30.1.35:8080/kdnweb/";
-				ConstVALUE.PREFIX_API_SERVER = "http://172.30.1.34:8080/kdnweb/";
+				ConstVALUE.PREFIX_API_SERVER = "http://172.30.1.35:8080/kdnweb/";
+				//ConstVALUE.PREFIX_API_SERVER = "http://172.30.1.34:8080/kdnweb/";
 			} else if (devCount == 10){
 				ToastUtil.show(this, "192.168.0.12 서버 적용!");
 				ConstVALUE.PREFIX_API_SERVER = "http://192.168.0.12:8080/";
@@ -282,7 +282,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnSy
 						InputBRSubInfoDao.getInstance(LoginActivity.this).DeleteAll();
 						InspectResultMasterDao.getInstance(LoginActivity.this).DeleteAll();
 
-						InputJGUDao.getInstance(LoginActivity.this).DeleteAll();
+						InputJGDao.getInstance(LoginActivity.this).DeleteAll();
 						InputJGUSubInfoDao.getInstance(LoginActivity.this).DeleteAll();
 						
 						DBHelper.getInstance(LoginActivity.this).setTransactionSuccessful();

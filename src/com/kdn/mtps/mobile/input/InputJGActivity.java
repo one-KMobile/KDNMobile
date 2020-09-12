@@ -35,8 +35,8 @@ import com.kdn.mtps.mobile.TitleManager;
 import com.kdn.mtps.mobile.camera.CameraManageActivity;
 import com.kdn.mtps.mobile.constant.ConstSP;
 import com.kdn.mtps.mobile.constant.ConstVALUE;
-import com.kdn.mtps.mobile.db.InputJGUDao;
-import com.kdn.mtps.mobile.db.InputJGSubInfo2Dao;
+import com.kdn.mtps.mobile.db.InputJGDao;
+import com.kdn.mtps.mobile.db.InputJGPSubInfoDao;
 import com.kdn.mtps.mobile.db.InputJGUSubInfoDao;
 import com.kdn.mtps.mobile.db.InspectResultMasterDao;
 import com.kdn.mtps.mobile.info.CodeInfo;
@@ -82,8 +82,9 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 	LinearLayout llLayout;
 	LinearLayout llLayout2;
 
-	ArrayList<JGUInfo> jguInfoList;
-	JGUInfo selectJgUInfo;
+	ArrayList<JGInfo> jgInfoList1;
+	ArrayList<JGInfo> jgInfoList2;
+	JGInfo selectJgInfo;
 	LinearLayout linearDateList;
 
 	FrameLayout layout1;
@@ -93,8 +94,8 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 
 	int selectedWeatherNo = 0;
 
-	public LinkedHashMap<Integer, ViewHolder> jgList = new LinkedHashMap<Integer, ViewHolder>();
-	public LinkedHashMap<Integer, ViewHolder2> jgList2 = new LinkedHashMap<Integer, ViewHolder2>();
+	public LinkedHashMap<Integer, ViewHolder> jguList = new LinkedHashMap<Integer, ViewHolder>();
+	public LinkedHashMap<Integer, ViewHolder> jgpList = new LinkedHashMap<Integer, ViewHolder>();
 
 	int selectedClaimContentNo = 0;
 
@@ -178,8 +179,8 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		InputJGUSubInfoDao inputJGUSubInfoDao = InputJGUSubInfoDao.getInstance(this);
 		ArrayList<JGUSubInfo> list = inputJGUSubInfoDao.selectList(mInfo.eqpNo);
 
-		InputJGSubInfo2Dao inputJGSubInfo2Dao = InputJGSubInfo2Dao.getInstance(this);
-		ArrayList<JGSubInfo2> list2 = inputJGSubInfo2Dao.selectList(mInfo.eqpNo);
+		InputJGPSubInfoDao inputJGPSubInfoDao = InputJGPSubInfoDao.getInstance(this);
+		ArrayList<JGPSubInfo> list2 = inputJGPSubInfoDao.selectList(mInfo.eqpNo);
 
 		Logg.d("sub info - eqpNo : " + mInfo.eqpNo);
 		if (list.isEmpty()) {
@@ -190,7 +191,7 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 			Logg.d("sub info : " + info.FNCT_LC_DTLS);
 		}
 
-		for (JGSubInfo2 info : list2) {
+		for (JGPSubInfo info : list2) {
 			Logg.d("sub info2 : " + info.FNCT_LC_DTLS);
 		}
 
@@ -211,20 +212,24 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		} else {
 			ivComplte.setBackgroundResource(R.drawable.input_js_edit);
 
-			InputJGUDao inputJGDao = InputJGUDao.getInstance(this);
-			jguInfoList = inputJGDao.selectJGU(mInfo.master_idx);
+			InputJGDao inputJGDao = InputJGDao.getInstance(this);
+			jgInfoList1 = inputJGDao.selectJGU(mInfo.master_idx);
+			jgInfoList2 = inputJGDao.selectJGP(mInfo.master_idx);
 
-			selectJgUInfo = jguInfoList.get(0);
+			selectJgInfo = jgInfoList1.get(0);
 
-			strWeather = CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_WEATHER, selectJgUInfo.weather);
+			strWeather = CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_WEATHER, selectJgInfo.weather);
 			selectedWeatherNo = StringUtil.getIndex(strWeatherItems, strWeather);
 
 			//String strClaimContent = CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_GOOD_SECD, selectJgInfo.claim_content);
 			//btnClaimContent.setText(strClaimContent);
 			//selectedClaimContentNo = StringUtil.getIndex(strClainContentItems, strClaimContent);
 
-			for (int i=0; i<jguInfoList.size(); i++) {
-				addItem(i, jguInfoList.get(i));
+			for (int i=0; i<jgInfoList1.size(); i++) {
+				addItem(i, jgInfoList1.get(i));
+			}
+			for (int i=0; i<jgInfoList2.size(); i++) {
+				addItem2(i, jgInfoList2.get(i));
 			}
 
 			addBottomPadding();
@@ -285,8 +290,8 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 			update(true);
 			break;
 		case R.id.btnDelete:
-			InputJGUDao inputJGUDao = InputJGUDao.getInstance(this);
-			inputJGUDao.Delete(mInfo.master_idx);
+			InputJGDao inputJGDao = InputJGDao.getInstance(this);
+			inputJGDao.Delete(mInfo.master_idx);
 			InspectResultMasterDao insRetDao = InspectResultMasterDao.getInstance(this);
 			insRetDao.updateComplete(mInfo.master_idx, "N", ConstVALUE.CODE_NO_INSPECT_JS);
 			setResult();
@@ -338,8 +343,8 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 	}
 
 	public void setInputType() {
-		InputJGUDao inputJGUDao = InputJGUDao.getInstance(this);
-		if (inputJGUDao.existJGU(mInfo.master_idx))
+		InputJGDao inputJGDao = InputJGDao.getInstance(this);
+		if (inputJGDao.existJG(mInfo.master_idx))
 			isAdd = false;
 		else
 			isAdd = true;
@@ -361,65 +366,111 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 	
 	public void update(boolean isEdit) {
 		boolean isEmpty = true;
-		for (Entry<Integer, ViewHolder> entry : jgList.entrySet()) {
+		for (Entry<Integer, ViewHolder> entry : jguList.entrySet()) {
 			ViewHolder viewHolder = entry.getValue();
-			String strc1_js = viewHolder.editc1_js.getText().toString();
-			String strc1_jsj= viewHolder.editc1_jsj.getText().toString();
-			String strc2_js = viewHolder.editc2_js.getText().toString();
-			String strc2_jsj= viewHolder.editc2_jsj.getText().toString();
+			String strc1 = viewHolder.t1_editc1.getText().toString();
+			String strc2= viewHolder.t1_editc2.getText().toString();
+			String strc3 = viewHolder.t1_editc3.getText().toString();
+			String strc4= viewHolder.t1_editc4.getText().toString();
 
-			if (!"".equals(strc1_js) || !"".equals(strc1_jsj) || !"".equals(strc2_js) || !"".equals(strc2_jsj) ) {
+			if (!"".equals(strc1) || !"".equals(strc2) || !"".equals(strc3) || !"".equals(strc4) ) {
 				isEmpty = false;
 				break;
 			}
 		}
-		
-		if (isEmpty) {
-			ToastUtil.show(this, "정보를 입력해 주시기 바랍니다.");
-			return;
+
+		for (Entry<Integer, ViewHolder> entry : jgpList.entrySet()) {
+			ViewHolder viewHolder = entry.getValue();
+			String strc1 = viewHolder.t2_editc1.getText().toString();
+			String strc2= viewHolder.t2_editc2.getText().toString();
+			String strc3 = viewHolder.t2_editc3.getText().toString();
+
+			if (!"".equals(strc1) || !"".equals(strc2) || !"".equals(strc3) ) {
+				isEmpty = false;
+				break;
+			}
 		}
+
+		//if (isEmpty) {
+		//	ToastUtil.show(this, "정보를 입력해 주시기 바랍니다.");
+		//	return;
+		//}
 		
-		InputJGUDao inputJGUDao = InputJGUDao.getInstance(this);
-		inputJGUDao.Delete(mInfo.master_idx);
-		
-		for (Entry<Integer, ViewHolder> entry : jgList.entrySet()) {
+		InputJGDao inputJGDao = InputJGDao.getInstance(this);
+		inputJGDao.Delete(mInfo.master_idx);
+
+		for (Entry<Integer, ViewHolder> entry : jguList.entrySet()) {
 			ViewHolder viewHolder = entry.getValue();
 			String strCircuitName = viewHolder.tvCircuitName.getText().toString();
 			String strCurrentLoad = viewHolder.tvCurrentLoad.getText().toString();
 			String strConductor_cnt = viewHolder.tvConductor_cnt.getText().toString();
 			String strLocation = viewHolder.tvLocation.getText().toString();
-					
-			String strc1_js = viewHolder.editc1_js.getText().toString();
-			String strc1_jsj= viewHolder.editc1_jsj.getText().toString();
-			String strc2_js = viewHolder.editc2_js.getText().toString();
-			String strc2_jsj= viewHolder.editc2_jsj.getText().toString();
-			
-			JGUInfo log = new JGUInfo();
+
+			String strt1_c1 = viewHolder.t1_editc1.getText().toString();
+			String strt1_c2= viewHolder.t1_editc2.getText().toString();
+			String strt1_c3 = viewHolder.t1_editc3.getText().toString();
+			String strt1_c4= viewHolder.t1_editc4.getText().toString();
+
+			JGInfo log = new JGInfo();
 			log.master_idx = mInfo.master_idx;
 			log.weather = CodeInfo.getInstance(this).getKey(ConstVALUE.CODE_TYPE_WEATHER, strWeather);
-			log.circuit_no = viewHolder.jguInfo.circuit_no;
+			log.circuit_no = viewHolder.jgInfo.circuit_no;
 			log.circuit_name = strCircuitName;
 			log.circuit_name = strCircuitName;
 			log.current_load = strCurrentLoad;
 			log.conductor_cnt = strConductor_cnt;
 			log.location = strLocation;
-			log.c1_js = strc1_js;
-			log.c1_js = log.c1_js.replace("=", "");
-			log.c1_jsj = strc1_jsj;
-			log.c1_jsj = log.c1_jsj.replace("=", "");
-			log.c1_power_no = viewHolder.jguInfo.c1_power_no;
-			log.c2_js = strc2_js;
-			log.c2_js = log.c2_js.replace("=", "");
-			log.c2_jsj = strc2_jsj;
-			log.c2_jsj = log.c2_jsj.replace("=", "");
-			log.c2_power_no = viewHolder.jguInfo.c2_power_no;
-			
+			log.t_gubun = "1";
+			log.t1_c1 = strt1_c1;
+			log.t1_c1 = log.t1_c1.replace("=", "");
+			log.t1_c2 = strt1_c2;
+			log.t1_c2 = log.t1_c2.replace("=", "");
+			log.t1_c3 = strt1_c3;
+			log.t1_c3 = log.t1_c3.replace("=", "");
+			log.t1_c4 = strt1_c4;
+			log.t1_c4 = log.t1_c4.replace("=", "");
+
 			if (isEdit) {
-				inputJGUDao.Append(log, viewHolder.jguInfo.idx);
+				inputJGDao.Append(log, viewHolder.jgInfo.idx);
 			} else {
-				inputJGUDao.Append(log);
+				inputJGDao.Append(log);
 			}
-	    }
+		}
+
+		for (Entry<Integer, ViewHolder> entry : jgpList.entrySet()) {
+			ViewHolder viewHolder = entry.getValue();
+			String strCircuitName = viewHolder.tvCircuitName.getText().toString();
+			String strCurrentLoad = viewHolder.tvCurrentLoad.getText().toString();
+			String strConductor_cnt = "";
+			String strLocation = "";
+
+			String strt1_c1 = viewHolder.t2_editc1.getText().toString();
+			String strt1_c2= viewHolder.t2_editc2.getText().toString();
+			String strt1_c3 = viewHolder.t2_editc3.getText().toString();
+
+			JGInfo log = new JGInfo();
+			log.master_idx = mInfo.master_idx;
+			log.weather = CodeInfo.getInstance(this).getKey(ConstVALUE.CODE_TYPE_WEATHER, strWeather);
+			log.circuit_no = viewHolder.jgInfo.circuit_no;
+			log.circuit_name = strCircuitName;
+			log.circuit_name = strCircuitName;
+			log.current_load = strCurrentLoad;
+			log.conductor_cnt = strConductor_cnt;
+			log.location = strLocation;
+			log.t_gubun = "2";
+			log.t2_c1 = strt1_c1;
+			log.t2_c1 = log.t2_c1.replace("=", "");
+			log.t2_c2 = strt1_c2;
+			log.t2_c2 = log.t2_c2.replace("=", "");
+			log.t2_c3 = strt1_c3;
+			log.t2_c3 = log.t2_c3.replace("=", "");
+
+			if (isEdit) {
+				inputJGDao.Append(log, viewHolder.jgInfo.idx);
+			} else {
+				inputJGDao.Append(log);
+			}
+		}
 		
 		if (!isEdit)
 			LocManager.getInstance(this).startGetLocation(listener);
@@ -481,21 +532,17 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 
 	/*유압 리스트*/
 	public void addItem(int idx, JGUSubInfo jguSubInfo) {
-		JGUInfo jguInfo = new JGUInfo();
-		jguInfo.conductor_cnt = jguSubInfo.CONT_NUM;
-		jguInfo.location = jguSubInfo.SN;
-		jguInfo.current_load = jguSubInfo.TTM_LOAD;
-		jguInfo.circuit_name = jguSubInfo.FNCT_LC_DTLS;
-		jguInfo.circuit_no = jguSubInfo.FNCT_LC_NO;
-		jguInfo.c1_power_no = jguSubInfo.POWER_NO_C1;
-		jguInfo.c2_power_no = jguSubInfo.POWER_NO_C2;
-		jguInfo.c3_power_no = jguSubInfo.POWER_NO_C3;
-				
+		JGInfo jgInfo = new JGInfo();
+		jgInfo.conductor_cnt = jguSubInfo.CONT_NUM;
+		jgInfo.location = jguSubInfo.SN;
+		jgInfo.current_load = jguSubInfo.TTM_LOAD;
+		jgInfo.circuit_name = jguSubInfo.FNCT_LC_DTLS;
+		jgInfo.circuit_no = jguSubInfo.FNCT_LC_NO;
 		
-		addItem(idx, jguInfo);
+		addItem(idx, jgInfo);
 	}
 	
-	public void addItem(int idx, JGUInfo jguInfo) {
+	public void addItem(int idx, JGInfo jgInfo) {
 		
 		final ViewHolder viewHolder = new ViewHolder();
 		View view = LayoutInflater.from(this).inflate(R.layout.item_jg_u, null);
@@ -504,42 +551,37 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		UIUtil.setFont(this, (ViewGroup)llItemParent);
 		
 		llItemParent.setOnTouchListener(hideKeyboardListener);
-		viewHolder.tvCircuitName = (TextView) view.findViewById(R.id.tvCircuitName); 
+		viewHolder.tvCircuitName = (TextView) view.findViewById(R.id.tvCircuitName);
 		viewHolder.tvCurrentLoad = (TextView) view.findViewById(R.id.tvCurrentLoad);
 		viewHolder.tvConductor_cnt = (TextView) view.findViewById(R.id.tvConductor_cnt);
 		viewHolder.tvLocation = (TextView) view.findViewById(R.id.tvLocation);
-		viewHolder.tvc1_temp = (TextView) view.findViewById(R.id.tvc1_temp);
-		viewHolder.tvc2_temp = (TextView) view.findViewById(R.id.tvc2_temp);
-		viewHolder.tvc3_temp = (TextView) view.findViewById(R.id.tvc3_temp);
 
-		viewHolder.editc1_js = (EditText) view.findViewById(R.id.editc1);
-        viewHolder.editc1_jsj = (EditText) view.findViewById(R.id.editc1_jsj);
-        viewHolder.editc2_js = (EditText) view.findViewById(R.id.editc3);
-        viewHolder.editc2_jsj = (EditText) view.findViewById(R.id.editc2);
-        setTextWatcher(viewHolder);
+		viewHolder.t1_editc1 = (EditText) view.findViewById(R.id.editc1);
+		viewHolder.t1_editc2 = (EditText) view.findViewById(R.id.editc2);
+        viewHolder.t1_editc3 = (EditText) view.findViewById(R.id.editc3);
+		viewHolder.t1_editc4 = (EditText) view.findViewById(R.id.editc4);
+        //setTextWatcher(viewHolder);
 
 		viewHolder.tvCurrentLoad.setText(idx + "");
 		viewHolder.tvConductor_cnt.setText((idx + 1) + "");
 		
-		if (jguInfo != null) {
-			viewHolder.jguInfo = jguInfo;
-			viewHolder.tvCircuitName.setText(jguInfo.circuit_name);
-			viewHolder.tvCurrentLoad.setText(jguInfo.current_load);
-			viewHolder.tvConductor_cnt.setText(jguInfo.conductor_cnt);
-			viewHolder.tvLocation.setText(jguInfo.location);
+		if (jgInfo != null) {
+			viewHolder.jgInfo = jgInfo;
+			viewHolder.tvCircuitName.setText(jgInfo.circuit_name);
+			viewHolder.tvCurrentLoad.setText(jgInfo.current_load);
+			viewHolder.tvConductor_cnt.setText(jgInfo.conductor_cnt);
+			viewHolder.tvLocation.setText(jgInfo.location);
 
-			setDiff(jguInfo.c1_js, jguInfo.c1_jsj, viewHolder.tvc1_temp);
-			setDiff(jguInfo.c2_js, jguInfo.c2_jsj, viewHolder.tvc2_temp);
-			setDiff(jguInfo.c3_js, jguInfo.c3_jsj, viewHolder.tvc3_temp);
-
-			viewHolder.editc1_js.setText(jguInfo.c1_js);
-			viewHolder.editc1_jsj.setText(jguInfo.c1_jsj);
-			viewHolder.editc2_js.setText(jguInfo.c2_js);
-			viewHolder.editc2_jsj.setText(jguInfo.c2_jsj);
+			viewHolder.t1_editc1.setText(jgInfo.t1_c1);
+			viewHolder.t1_editc2.setText(jgInfo.t1_c2);
+			viewHolder.t1_editc3.setText(jgInfo.t1_c3);
+			viewHolder.t1_editc4.setText(jgInfo.t1_c4);
 		}
-		
-		jgList.put(idx, viewHolder);
-		
+
+		jguList.put(idx, viewHolder);
+
+		Logg.d("$$$$$$$$$$$$$ jguList t1_editc1 : " + viewHolder.t1_editc1);
+		Logg.d("$$$$$$$$$$$$$ jguList jgInfo : " + jgInfo);
 		llLayout.addView(view);
 		
 	}
@@ -549,82 +591,30 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		TextView tvCurrentLoad;
 		TextView tvConductor_cnt;
 		TextView tvLocation;
-		TextView tvc1_temp;
-		TextView tvc2_temp;
-		TextView tvc3_temp;
-        EditText editc1_js;
-        EditText editc1_jsj;
-        EditText editc2_js;
-        EditText editc2_jsj;
+		EditText t1_editc1;
+        EditText t1_editc2;
+        EditText t1_editc3;
+        EditText t1_editc4;
+		EditText t2_editc1;
+		EditText t2_editc2;
+		EditText t2_editc3;
         
-        JGUInfo jguInfo;
-	}
-
-	public void setTextWatcher(final ViewHolder viewHolder) {
-		viewHolder.editc1_js.addTextChangedListener(new TextWatcher() {
-			@Override
-			public void onTextChanged(CharSequence s, int start, int before, int count) {
-				String str1 = viewHolder.editc1_js.getText().toString();
-				String str2 = viewHolder.editc1_jsj.getText().toString();
-				setDiff(str1, str2, viewHolder.tvc1_temp);
-			}
-			@Override
-			public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-			@Override
-			public void afterTextChanged(Editable s) {}
-		});
-		viewHolder.editc1_jsj.addTextChangedListener(new TextWatcher() {
-			@Override
-			public void onTextChanged(CharSequence s, int start, int before, int count) {
-				String str1 = viewHolder.editc1_js.getText().toString();
-				String str2 = viewHolder.editc1_jsj.getText().toString();
-				setDiff(str1, str2, viewHolder.tvc1_temp);
-			}
-			@Override
-			public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-			@Override
-			public void afterTextChanged(Editable s) {}
-		});
-
-		viewHolder.editc2_js.addTextChangedListener(new TextWatcher() {
-			@Override
-			public void onTextChanged(CharSequence s, int start, int before, int count) {
-				String str1 = viewHolder.editc2_js.getText().toString();
-				String str2 = viewHolder.editc2_jsj.getText().toString();
-				setDiff(str1, str2, viewHolder.tvc2_temp);
-			}
-			@Override
-			public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-			@Override
-			public void afterTextChanged(Editable s) {}
-		});
-		viewHolder.editc2_jsj.addTextChangedListener(new TextWatcher() {
-			@Override
-			public void onTextChanged(CharSequence s, int start, int before, int count) {
-				String str1 = viewHolder.editc2_js.getText().toString();
-				String str2 = viewHolder.editc2_jsj.getText().toString();
-				setDiff(str1, str2, viewHolder.tvc2_temp);
-			}
-			@Override
-			public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-			@Override
-			public void afterTextChanged(Editable s) {}
-		});
+        JGInfo jgInfo;
 	}
 
 	/*피뢰기 리스트*/
-	public void addItem2(int idx, JGSubInfo2 jgSubInfo) {
-		JGInfo2 jgInfo = new JGInfo2();
-		jgInfo.current_load = jgSubInfo.FNCT_LC_DTLS;
-		jgInfo.circuit_name = jgSubInfo.FNCT_LC_NO;
+	public void addItem2(int idx, JGPSubInfo jgpSubInfo) {
+		JGInfo jgInfo = new JGInfo();
+		jgInfo.current_load = jgpSubInfo.FNCT_LC_DTLS;
+		jgInfo.circuit_name = jgpSubInfo.FNCT_LC_NO;
 
 		addItem2(idx, jgInfo);
 	}
 
-	public void addItem2(int idx, JGInfo2 jgInfo) {
+	public void addItem2(int idx, JGInfo jgInfo) {
 
-		final ViewHolder2 viewHolder = new ViewHolder2();
-		View view = LayoutInflater.from(this).inflate(R.layout.item_jg2, null);
+		final ViewHolder viewHolder = new ViewHolder();
+		View view = LayoutInflater.from(this).inflate(R.layout.item_jg_p, null);
 		LinearLayout llItemParent = (LinearLayout) view.findViewById(R.id.llItemParent);
 
 		UIUtil.setFont(this, (ViewGroup)llItemParent);
@@ -632,10 +622,12 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		llItemParent.setOnTouchListener(hideKeyboardListener);
 		viewHolder.tvCircuitName = (TextView) view.findViewById(R.id.tvCircuitName);
 		viewHolder.tvCurrentLoad = (TextView) view.findViewById(R.id.tvCurrentLoad);
+		//viewHolder.tvConductor_cnt = (TextView) view.findViewById(R.id.tvConductor_cnt);
+		//viewHolder.tvLocation = (TextView) view.findViewById(R.id.tvLocation);
 
-		viewHolder.editc1 = (EditText) view.findViewById(R.id.editc1);
-		viewHolder.editc2 = (EditText) view.findViewById(R.id.editc2);
-		viewHolder.editc3 = (EditText) view.findViewById(R.id.editc3);
+		viewHolder.t2_editc1 = (EditText) view.findViewById(R.id.editc1);
+		viewHolder.t2_editc2 = (EditText) view.findViewById(R.id.editc2);
+		viewHolder.t2_editc3 = (EditText) view.findViewById(R.id.editc3);
 
 		viewHolder.tvCurrentLoad.setText(idx + "");
 
@@ -643,13 +635,15 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 			viewHolder.jgInfo = jgInfo;
 			viewHolder.tvCircuitName.setText(jgInfo.circuit_name);
 			viewHolder.tvCurrentLoad.setText(jgInfo.current_load);
+			//viewHolder.tvConductor_cnt.setText("");
+			//viewHolder.tvLocation.setText("");
 
-			viewHolder.editc1.setText(jgInfo.c1);
-			viewHolder.editc2.setText(jgInfo.c2);
-			viewHolder.editc3.setText(jgInfo.c3);
+			viewHolder.t2_editc1.setText(jgInfo.t2_c1);
+			viewHolder.t2_editc2.setText(jgInfo.t2_c2);
+			viewHolder.t2_editc3.setText(jgInfo.t2_c3);
 		}
 
-		jgList2.put(idx, viewHolder);
+		jgpList.put(idx, viewHolder);
 
 		llLayout2.addView(view);
 
@@ -662,7 +656,7 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		EditText editc2;
 		EditText editc3;
 
-		JGInfo2 jgInfo;
+		JGInfo jgInfo;
 	}
 
 	public void setDiff(String str1, String str2, TextView tv) {

@@ -382,12 +382,22 @@ public class InputGHActivity extends BaseActivity implements TitleManager, OnCli
 			log.c1 = log.c1.replace("=", "");
 			log.c2 = strc2;
 			log.c2 = log.c2.replace("=", "");
-			log.c1_power_no = viewHolder.ghInfo.c1_power_no;
 			log.c2 = strc2;
 			log.c2 = log.c2.replace("=", "");
 			log.c3 = strc3;
 			log.c3 = log.c3.replace("=", "");
-			log.c2_power_no = viewHolder.ghInfo.c2_power_no;
+			log.c4 = strc4;
+			log.c4 = log.c4.replace("=", "");
+			log.c5 = strc5;
+			log.c5 = log.c5.replace("=", "");
+			log.c6 = strc6;
+			log.c6 = log.c6.replace("=", "");
+			log.c7 = strc7;
+			log.c7 = log.c7.replace("=", "");
+			log.c8 = strc8;
+			log.c8 = log.c8.replace("=", "");
+			log.c9 = strc9;
+			log.c9 = log.c9.replace("=", "");
 			
 			if (isEdit) {
 				inputGHDao.Append(log, viewHolder.ghInfo.idx);
@@ -462,10 +472,10 @@ public class InputGHActivity extends BaseActivity implements TitleManager, OnCli
 		ghInfo.current_load = ghSubInfo.TTM_LOAD;
 		ghInfo.circuit_name = ghSubInfo.FNCT_LC_DTLS;
 		ghInfo.circuit_no = ghSubInfo.FNCT_LC_NO;
-		ghInfo.c1_power_no = ghSubInfo.POWER_NO_C1;
-		ghInfo.c2_power_no = ghSubInfo.POWER_NO_C2;
-		ghInfo.c3_power_no = ghSubInfo.POWER_NO_C3;
-				
+		//ghInfo.c1_power_no = ghSubInfo.POWER_NO_C1;
+		//ghInfo.c2_power_no = ghSubInfo.POWER_NO_C2;
+		//ghInfo.c3_power_no = ghSubInfo.POWER_NO_C3;
+
 		
 		addItem(idx, ghInfo);
 	}
@@ -495,6 +505,7 @@ public class InputGHActivity extends BaseActivity implements TitleManager, OnCli
 		viewHolder.editc6 = (EditText) view.findViewById(R.id.editc6);
 		viewHolder.editc7 = (EditText) view.findViewById(R.id.editc7);
 		viewHolder.editc8 = (EditText) view.findViewById(R.id.editc8);
+		viewHolder.editc9 = (EditText) view.findViewById(R.id.editc9);
         //setTextWatcher(viewHolder);
 
 		viewHolder.tvCurrentLoad.setText(idx + "");
@@ -507,9 +518,9 @@ public class InputGHActivity extends BaseActivity implements TitleManager, OnCli
 			viewHolder.tvConductor_cnt.setText(ghInfo.conductor_cnt);
 			viewHolder.tvLocation.setText(ghInfo.location);
 
-			setDiff(ghInfo.c1_js, ghInfo.c1_jsj, viewHolder.tvc1_temp);
-			setDiff(ghInfo.c2_js, ghInfo.c2_jsj, viewHolder.tvc2_temp);
-			setDiff(ghInfo.c3_js, ghInfo.c3_jsj, viewHolder.tvc3_temp);
+			//setDiff(ghInfo.c1_js, ghInfo.c1_jsj, viewHolder.tvc1_temp);
+			//setDiff(ghInfo.c2_js, ghInfo.c2_jsj, viewHolder.tvc2_temp);
+			//setDiff(ghInfo.c3_js, ghInfo.c3_jsj, viewHolder.tvc3_temp);
 
 			viewHolder.editc1.setText(ghInfo.c1);
 			viewHolder.editc2.setText(ghInfo.c2);

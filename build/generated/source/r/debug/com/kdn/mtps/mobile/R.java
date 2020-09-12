@@ -403,7 +403,7 @@ public final class R {
         public static final int btnYBresult=0x7f0b00cb;
         public static final int btn_cancel=0x7f0b00fe;
         public static final int btn_ok=0x7f0b00fd;
-        public static final int btnc1_yb_result=0x7f0b00e7;
+        public static final int btnc1_yb_result=0x7f0b00e6;
         public static final int btnc2_yb_result=0x7f0b00e8;
         public static final int btnc3_yb_result=0x7f0b00ea;
         public static final int callout_overlay=0x7f0b00b3;
@@ -441,7 +441,7 @@ public final class R {
         public static final int editc1_jsj=0x7f0b00e5;
         public static final int editc2=0x7f0b00d3;
         public static final int editc3=0x7f0b00d4;
-        public static final int editc3_js=0x7f0b00e6;
+        public static final int editc3_js=0x7f0b00e7;
         public static final int editc3_jsj=0x7f0b00e9;
         public static final int editc4=0x7f0b00d5;
         public static final int editc5=0x7f0b00d6;
@@ -617,7 +617,7 @@ public final class R {
         public static final int item_gh=0x7f030028;
         public static final int item_hj=0x7f030029;
         public static final int item_hk=0x7f03002a;
-        public static final int item_jg2=0x7f03002b;
+        public static final int item_jg_p=0x7f03002b;
         public static final int item_jg_u=0x7f03002c;
         public static final int item_js=0x7f03002d;
         public static final int listview_camera_item_=0x7f03002e;

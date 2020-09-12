@@ -4,52 +4,24 @@
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\pin_ballon_arrow.png"
     },
     {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_green_pressed.9.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\btn_green_pressed.9.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_start.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_start.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pin_ballon_bg.9.png",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\pin_ballon_bg.9.png"
     },
     {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_white_50x40.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\btn_white_50x40.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_arrive_over.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_arrive_over.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\on_1.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\on_1.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pin_ballon_arrow.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\pin_ballon_arrow.png"
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_speech.9.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\bg_speech.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_pin_01.png",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_pin_01.png"
     },
     {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_white_50x40_over.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\btn_white_50x40_over.png"
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_txt_infor.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\a_txt_infor.png"
     },
     {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pin_ballon_on_arrow.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\pin_ballon_on_arrow.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_angle.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_angle.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_start_over.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_start_over.png"
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_angle.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_angle.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_no_02.png",
@@ -60,12 +32,20 @@
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\btn_green_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pubtrans_ic_mylocation_on.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\pubtrans_ic_mylocation_on.png"
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_arrive_over.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_arrive_over.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_start_over.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_start_over.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pin_ballon_on_arrow.png",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\pin_ballon_on_arrow.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_white_50x40_over.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\btn_white_50x40_over.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_pin_02.png",
@@ -76,92 +56,8 @@
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\pubtrans_ic_mylocation_on.png"
     },
     {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\app_icon.png",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\app_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pubtrans_ic_mylocation_off.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\pubtrans_ic_mylocation_off.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\on_1.png",
-        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\on_1.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_txt_infor.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\a_txt_infor.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pubtrans_ic_mylocation_off.png",
-        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\pubtrans_ic_mylocation_off.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon.png",
-        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\icon.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_no_01.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_no_01.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_arrive.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_arrive.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_pin_01.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_pin_01.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_speech.9.png",
-        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\bg_speech.9.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_pin_02.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_pin_02.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_txt_infor.png",
-        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\a_txt_infor.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_speech.9.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\bg_speech.9.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_green_highlight.9.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\btn_green_highlight.9.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\off_1.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\off_1.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_angle.png",
-        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_angle.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_no_02.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_no_02.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_arrive_over.png",
-        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_arrive_over.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\app_icon.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\app_icon.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_start_over.png",
-        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_start_over.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_white_50x40_over.png",
-        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\btn_white_50x40_over.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\off_1.png",
@@ -172,16 +68,12 @@
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\btn_green_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\icon.png"
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\on_1.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\on_1.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_no_01.png",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_no_01.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_green_normal.9.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\btn_green_normal.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_green_highlight.9.png",
@@ -190,6 +82,14 @@
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_arrive.png",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_arrive.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pubtrans_ic_mylocation_off.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\pubtrans_ic_mylocation_off.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon.png",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\icon.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_white_50x40.png",
@@ -202,9 +102,5 @@
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_map_start.png",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-hdpi\\ic_map_start.png"
-    },
-    {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pin_ballon_bg.9.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-hdpi\\pin_ballon_bg.9.png"
     }
 ]

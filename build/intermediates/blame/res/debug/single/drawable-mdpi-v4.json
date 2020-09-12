@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\owner\\StudioProjects\\KDNMobile\\res\\drawable-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable-mdpi\\ic_launcher.png"
     }
