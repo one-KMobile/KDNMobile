@@ -187,17 +187,7 @@ public class InputGHDao extends BaseDao{
 //				String spt_mgt_yn = cursor.getString(6);
 				
 				Log.d("Test", "idx : " + idx);
-				Log.d("Test", "master_idx : " + master_idx);
-				Log.d("Test", "wether : " + wether);
-				Log.d("Test", "worker_cnt : " + worker_cnt);
-				Log.d("Test", "claim_content : " + claim_content);
-				Log.d("Test", "check_result : " + check_result);
-				Log.d("Test", "etc : " + etc);
-//				Log.d("Test", "ins_result_code : " + ins_result_code);
-//				Log.d("Test", "check_result_code : " + check_result_code);
-//				Log.d("Test", "eqp_type_code : " + eqp_type_code);
-//				Log.d("Test", "detail_item_code : " + detail_item_code);
-//				Log.d("Test", "spt_mgt_yn : " + spt_mgt_yn);
+
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

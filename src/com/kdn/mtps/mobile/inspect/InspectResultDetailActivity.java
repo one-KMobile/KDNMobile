@@ -38,11 +38,14 @@ import com.kdn.mtps.mobile.db.InputBTDao;
 import com.kdn.mtps.mobile.db.InputGHDao;
 import com.kdn.mtps.mobile.db.InputHJDao;
 import com.kdn.mtps.mobile.db.InputHKDao;
+import com.kdn.mtps.mobile.db.InputJBDao;
 import com.kdn.mtps.mobile.db.InputJGDao;
 import com.kdn.mtps.mobile.db.InputJJDao;
 import com.kdn.mtps.mobile.db.InputJPDao;
 import com.kdn.mtps.mobile.db.InputJSDao;
 import com.kdn.mtps.mobile.db.InputKBDao;
+import com.kdn.mtps.mobile.db.InputMHDao;
+import com.kdn.mtps.mobile.db.InputPRDao;
 import com.kdn.mtps.mobile.db.InspectResultMasterDao;
 import com.kdn.mtps.mobile.info.CodeInfo;
 import com.kdn.mtps.mobile.input.InputBRActivity;
@@ -50,11 +53,14 @@ import com.kdn.mtps.mobile.input.InputBTActivity;
 import com.kdn.mtps.mobile.input.InputGHActivity;
 import com.kdn.mtps.mobile.input.InputHJActivity;
 import com.kdn.mtps.mobile.input.InputHKActivity;
+import com.kdn.mtps.mobile.input.InputJBActivity;
 import com.kdn.mtps.mobile.input.InputJGActivity;
 import com.kdn.mtps.mobile.input.InputJJActivity;
 import com.kdn.mtps.mobile.input.InputJPActivity;
 import com.kdn.mtps.mobile.input.InputJSActivity;
 import com.kdn.mtps.mobile.input.InputKBActivity;
+import com.kdn.mtps.mobile.input.InputMHActivity;
+import com.kdn.mtps.mobile.input.InputPRActivity;
 import com.kdn.mtps.mobile.setting.SettingActivity;
 import com.kdn.mtps.mobile.util.AppUtil;
 import com.kdn.mtps.mobile.util.Logg;
@@ -411,8 +417,8 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 				btnFacMHCamera.setTag(mSelectedInfo);
 				layoutMH.setVisibility(View.VISIBLE);
 				ivMHLine.setVisibility(View.VISIBLE);
-				InputJJDao inputJJDao = InputJJDao.getInstance(this);
-				if (!inputJJDao.existJJ(mSelectedInfo.master_idx))
+				InputMHDao inputMHDao = InputMHDao.getInstance(this);
+				if (!inputMHDao.existMH(mSelectedInfo.master_idx))
 					btnFacMH.setBackgroundResource(R.drawable.selector_input_bt_insert);
 				else
 					btnFacMH.setBackgroundResource(R.drawable.selector_input_bt_edit);
@@ -431,18 +437,28 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 				btnFacPRCamera.setTag(mSelectedInfo);
 				layoutPR.setVisibility(View.VISIBLE);
 				ivPRLine.setVisibility(View.VISIBLE);
-				InputHJDao inputHJDao = InputHJDao.getInstance(this);
-				if (!inputHJDao.existHJ(mSelectedInfo.master_idx))
+				InputPRDao inputPRDao = InputPRDao.getInstance(this);
+				if (!inputPRDao.existPR(mSelectedInfo.master_idx))
 					btnFacPR.setBackgroundResource(R.drawable.selector_input_bt_insert);
 				else
 					btnFacPR.setBackgroundResource(R.drawable.selector_input_bt_edit);
+			}  else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_MH)) {
+				btnFacMH.setTag(mSelectedInfo);
+				btnFacMHCamera.setTag(mSelectedInfo);
+				layoutMH.setVisibility(View.VISIBLE);
+				ivMHLine.setVisibility(View.VISIBLE);
+				InputMHDao inputMHDao = InputMHDao.getInstance(this);
+				if (!inputMHDao.existMH(mSelectedInfo.master_idx))
+					btnFacMH.setBackgroundResource(R.drawable.selector_input_bt_insert);
+				else
+					btnFacMH.setBackgroundResource(R.drawable.selector_input_bt_edit);
 			}  else if (mSelectedInfo.type.equals(ConstVALUE.CODE_NO_INSPECT_JB)) {
 				btnFacJB.setTag(mSelectedInfo);
 				btnFacJBCamera.setTag(mSelectedInfo);
 				layoutJB.setVisibility(View.VISIBLE);
 				ivJBLine.setVisibility(View.VISIBLE);
-				InputBRDao inputBRDao = InputBRDao.getInstance(this);
-				if (!inputBRDao.existBR(mSelectedInfo.master_idx))
+				InputJBDao inputJBDao = InputJBDao.getInstance(this);
+				if (!inputJBDao.existJB(mSelectedInfo.master_idx))
 					btnFacJB.setBackgroundResource(R.drawable.selector_input_bt_insert);
 				else
 					btnFacJB.setBackgroundResource(R.drawable.selector_input_bt_edit);
@@ -493,16 +509,16 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 			goInputActivity(v, InputJSActivity.class);
 			break;
 		case R.id.btnFacMH:
-			goInputActivity(v, InputJJActivity.class);
+			goInputActivity(v, InputMHActivity.class);
 			break;
 		case R.id.btnFacGH:
 			goInputActivity(v, InputGHActivity.class);
 			break;
 		case R.id.btnFacPR:
-			goInputActivity(v, InputHKActivity.class);
+			goInputActivity(v, InputPRActivity.class);
 			break;
 		case R.id.btnFacJB:
-			goInputActivity(v, InputHJActivity.class);
+			goInputActivity(v, InputJBActivity.class);
 			break;
 		case R.id.btnFacBTCamera:
 			goCameraManage(v, "보통순시");
@@ -523,7 +539,7 @@ public class InspectResultDetailActivity extends BaseActivity implements TitleMa
 			goCameraManage(v, "피뢰기점검");
 			break;
 		case R.id.btnFacJBCamera:
-			goCameraManage(v, "보통점검");
+			goCameraManage(v, "전력구소방시설 보통점검");
 			break;
 		}
 	}

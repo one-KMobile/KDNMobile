@@ -24,6 +24,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.kdn.mtps.mobile.BaseActivity;
+import com.kdn.mtps.mobile.MainActivity;
 import com.kdn.mtps.mobile.R;
 import com.kdn.mtps.mobile.TitleManager;
 import com.kdn.mtps.mobile.constant.ConstVALUE;
@@ -82,7 +83,7 @@ public class InspectResultSearchActivity extends BaseActivity implements TitleMa
 		
 		btnHeaderTitle.setText("순시결과조회");
 		
-		btnHeaderRight.setBackgroundResource(R.drawable.selector_btn_map);
+		//btnHeaderRight.setBackgroundResource(R.drawable.selector_btn_map);
 		
 		btnHeaderLeft.setOnClickListener(new OnClickListener() {
 			@Override
@@ -90,22 +91,11 @@ public class InspectResultSearchActivity extends BaseActivity implements TitleMa
 				finish();
 			}
 		});
-		
+
 		btnHeaderRight.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				ArrayList<InspectInfo>list = (ArrayList<InspectInfo>) adapter.getList();
-				
-				if (list.isEmpty()) {
-					ToastUtil.show(InspectResultSearchActivity.this, "검색된 데이터가 없습니다.");
-					return;
-				}
-				
-				Intent intent = new Intent(InspectResultSearchActivity.this, InspectMapListActivity.class);
-				intent.putExtra("locations", list);
-//				intent.putParcelableArrayListExtra("locations", infoList);
-				AppUtil.startActivity(InspectResultSearchActivity.this, intent);
-				
+				AppUtil.startActivity(InspectResultSearchActivity.this, new Intent(InspectResultSearchActivity.this, MainActivity.class));
 			}
 		});
 	}
@@ -115,7 +105,7 @@ public class InspectResultSearchActivity extends BaseActivity implements TitleMa
 		btnDate = (Button)findViewById(R.id.btnDate);
 		btnType = (Button)findViewById(R.id.btnType);
 		btnSearch = (Button)findViewById(R.id.btnSearch);
-		editTowerNo = (EditText)findViewById(R.id.editTowerNo);
+		//editTowerNo = (EditText)findViewById(R.id.editTowerNo);
 		
 		btnName.setOnClickListener(this);
 		btnDate.setOnClickListener(this);
@@ -228,7 +218,8 @@ public class InspectResultSearchActivity extends BaseActivity implements TitleMa
 		
 		final String strTracksName = btnName.getText().toString();
 		String strInsType = btnType.getText().toString();
-		final String strTowerNo = editTowerNo.getText().toString();
+		//final String strTowerNo = editTowerNo.getText().toString();
+		final String strTowerNo = "";
 		final String strDate = StringUtil.removeDot(btnDate.getText().toString());
 		final String insType = CodeInfo.getInstance(this).getKey(ConstVALUE.CODE_TYPE_INS_TYPE, strInsType);
 		

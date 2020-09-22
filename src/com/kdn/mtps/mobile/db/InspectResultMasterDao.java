@@ -1585,20 +1585,18 @@ public class InspectResultMasterDao extends BaseDao{
 					/*if (ConstVALUE.CODE_NO_INSPECT_BT.equals(info.type))
 						info.send_yn_bt = send_yn_ins_type;
 					else*/
-					if (ConstVALUE.CODE_NO_INSPECT_JS.equals(info.type))
-						info.send_yn_js = send_yn_ins_type;
-					else if (ConstVALUE.CODE_NO_INSPECT_JP.equals(info.type))
-						info.send_yn_jp = send_yn_ins_type;
-					else if (ConstVALUE.CODE_NO_INSPECT_JJ.equals(info.type))
-						info.send_yn_jj = send_yn_ins_type;
-					else if (ConstVALUE.CODE_NO_INSPECT_HK.equals(info.type))
-						info.send_yn_hk = send_yn_ins_type;
-					else if (ConstVALUE.CODE_NO_INSPECT_HJ.equals(info.type))
-						info.send_yn_hj = send_yn_ins_type;
-					else if (ConstVALUE.CODE_NO_INSPECT_KB.equals(info.type))
-						info.send_yn_kb = send_yn_ins_type;
-					else if (ConstVALUE.CODE_NO_INSPECT_BR.equals(info.type))
-						info.send_yn_br = send_yn_ins_type;
+					if (ConstVALUE.CODE_NO_INSPECT_JG.equals(info.type))
+						info.send_yn_jg = send_yn_ins_type;
+					else if (ConstVALUE.CODE_NO_INSPECT_YB.equals(info.type))
+						info.send_yn_yb = send_yn_ins_type;
+					else if (ConstVALUE.CODE_NO_INSPECT_MH.equals(info.type))
+						info.send_yn_mh = send_yn_ins_type;
+					else if (ConstVALUE.CODE_NO_INSPECT_GH.equals(info.type))
+						info.send_yn_gh = send_yn_ins_type;
+					else if (ConstVALUE.CODE_NO_INSPECT_PR.equals(info.type))
+						info.send_yn_pr = send_yn_ins_type;
+					else if (ConstVALUE.CODE_NO_INSPECT_JB.equals(info.type))
+						info.send_yn_jb = send_yn_ins_type;
 				}
 				
 				insList.add(info);

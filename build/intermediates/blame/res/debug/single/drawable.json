@@ -12,6 +12,10 @@
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_main_bt_facility.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_main_bt_join.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_main_bt_join.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_login.xml",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_login.xml"
     },
@@ -46,6 +50,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_main_bt_notice.xml",
         "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_main_bt_notice.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_comm_bt_add.xml",
+        "source": "D:\\AndroidStudioProjects\\KDNMobile\\res\\drawable\\selector_comm_bt_add.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\KDNMobile\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_input_bt_delete.xml",

@@ -62,6 +62,7 @@ public class ConstVALUE {
 	
 	/** api 서버 **/
 	//public static String PREFIX_API_SERVER = "http://kdn.testbed.kr:8989/";
+//	public static String PREFIX_API_SERVER = "http://172.30.1.34:8080/kdnweb/";
 	public static String PREFIX_API_SERVER = "http://172.30.1.35:8080/kdnweb/";
 //	public static String PREFIX_API_SERVER = "http://192.168.0.12:8080/";
 	public static final String NOTICE_LIST_URL = PREFIX_API_SERVER + "mobileWeb/noticeList.do";

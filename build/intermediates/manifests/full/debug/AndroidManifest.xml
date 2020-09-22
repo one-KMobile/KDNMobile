@@ -148,6 +148,18 @@ android:sharedUserId="smartkepco.mdm.app"
             android:configChanges="orientation|screenSize"
             android:windowSoftInputMode="adjustPan" />
         <activity
+            android:name="com.kdn.mtps.mobile.input.InputPRActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.kdn.mtps.mobile.input.InputMHActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.kdn.mtps.mobile.input.InputJBActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
             android:name="com.kdn.mtps.mobile.camera.CameraManageActivity"
             android:screenOrientation="landscape" />
         <activity
@@ -157,43 +169,49 @@ android:sharedUserId="smartkepco.mdm.app"
             android:name="com.kdn.mtps.mobile.inspect.InspectMapListActivity"
             android:screenOrientation="landscape" />
         <activity
+            android:name="com.kdn.mtps.mobile.report.JoinReportSearchActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.kdn.mtps.mobile.input.InputJoinReportAddActivity"
+            android:screenOrientation="landscape" />
+        <activity
             android:name="com.kdn.mtps.mobile.gcm.PushDialog"
             android:screenOrientation="landscape"
             android:theme="@style/NoTitleDialog" />
-        <activity
-            android:name="com.google.zxing.client.android.CaptureActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:windowSoftInputMode="stateAlwaysHidden" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.google.zxing.client.android.SCAN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+        <!--
+       <activity
+          android:name="com.google.zxing.client.android.CaptureActivity"
+          android:configChanges="orientation|keyboardHidden"
+          android:screenOrientation="landscape"
+          android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+          android:windowSoftInputMode="stateAlwaysHidden" >
+          <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.DEFAULT" />
+          </intent-filter>
+          <intent-filter>
+            <action android:name="com.google.zxing.client.android.SCAN" />
+            <category android:name="android.intent.category.DEFAULT" />
+          </intent-filter>
+      </activity>
+        -->
         <activity
             android:name="com.kdn.mtps.mobile.setting.SettingActivity"
             android:screenOrientation="landscape" />
 
-        <!-- GCM 리시버 -->
-        <receiver
-            android:name="com.google.android.gcm.GCMBroadcastReceiver"
-            android:permission="com.google.android.c2dm.permission.SEND" >
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        <!--
+       GCM 리시버
+       <receiver
+           android:name="com.google.android.gcm.GCMBroadcastReceiver"
+           android:permission="com.google.android.c2dm.permission.SEND" >
+           <intent-filter>
+               <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+               <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-                <category android:name="com.kdn.mtps.mobile" />
- <!-- 젤리빈 부터는 category 빼도 된다 -->
-            </intent-filter>
-        </receiver>
-
+               <category android:name="com.kdn.mtps.mobile" />  젤리빈 부터는 category 빼도 된다
+           </intent-filter>
+       </receiver>
+        -->
         <service android:name="com.kdn.mtps.mobile.GCMIntentService" />
     </application>
 

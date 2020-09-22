@@ -31,6 +31,7 @@ import com.kdn.mtps.mobile.net.api.ApiManager;
 import com.kdn.mtps.mobile.net.api.bean.LoginData;
 import com.kdn.mtps.mobile.nfc.NfcActivity;
 import com.kdn.mtps.mobile.notice.NoticeListActivity;
+import com.kdn.mtps.mobile.report.JoinReportSearchActivity;
 import com.kdn.mtps.mobile.setting.SettingActivity;
 import com.kdn.mtps.mobile.util.*;
 import com.kdn.mtps.mobile.util.thread.ATask;
@@ -46,6 +47,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 	Button btnDataSync;
 	Button btnNfc;
 	Button btnInspectRegist;
+	Button btnJoinReportSearch;
 	boolean mIsFinish = false;
 	Context mContext;
 	LoginData loginData;
@@ -160,6 +162,8 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		//btnNfc.setOnClickListener(this);
 		btnInspectRegist = (Button)findViewById(R.id.btnInspectRegist);
 		btnInspectRegist.setOnClickListener(this);
+		btnJoinReportSearch  = (Button)findViewById(R.id.btnJoinReportSearch);
+		btnJoinReportSearch.setOnClickListener(this);
 	}
 	
 	public void setData() {
@@ -257,6 +261,10 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 				break;
 			case R.id.btnDataSync:
 				AppUtil.startActivity(MainActivity.this, new Intent(MainActivity.this, DataSyncActivity.class));
+				break;
+			case R.id.btnJoinReportSearch:
+				intent = new Intent(MainActivity.this, JoinReportSearchActivity.class);
+				AppUtil.startActivity(MainActivity.this, intent);
 				break;
 			//case R.id.btnNfc:
 			//	AppUtil.startActivity(MainActivity.this, new Intent(MainActivity.this, NfcActivity.class));

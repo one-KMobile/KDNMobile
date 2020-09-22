@@ -5,14 +5,21 @@ import android.os.Parcelable;
 
 public class JGUSubInfo implements Parcelable {
 	public int IDX;
+	public String FNCT_LC_NO;
+	public String FNCT_LC_DTLS;
+	public String EQP_NO;
+	public String EQP_NM;
+	public String UPTLVL_UPLMT;
+	public String UPTLVL_LWLT;
+	public String UPTLVL_INTRCP;
+	public String MNG_01;
+	public String MNG_02;
+	public String SD;
+
 	public String TOWER_IDX;
 	public String CONT_NUM;
 	public String SN;
 	public String TTM_LOAD;
-	public String FNCT_LC_DTLS;
-	public String EQP_NM;
-	public String FNCT_LC_NO;
-	public String EQP_NO;
 
 	public JGUSubInfo() {
 	}
@@ -20,12 +27,19 @@ public class JGUSubInfo implements Parcelable {
 	private JGUSubInfo(Parcel source) {
 		// TODO Auto-generated constructor stub
 		IDX = source.readInt();
+		EQP_NM  = source.readString();
+		UPTLVL_UPLMT = source.readString();
+		UPTLVL_LWLT = source.readString();
+		UPTLVL_INTRCP = source.readString();
+		MNG_01 = source.readString();
+		MNG_02 = source.readString();
+		SD = source.readString();
+
 		TOWER_IDX  = source.readString();
 		CONT_NUM  = source.readString();
 		SN  = source.readString();
 		TTM_LOAD  = source.readString();
 		FNCT_LC_DTLS  = source.readString();
-		EQP_NM  = source.readString();
 		FNCT_LC_NO  = source.readString();
 		EQP_NO  = source.readString();
 	}
@@ -37,15 +51,21 @@ public class JGUSubInfo implements Parcelable {
 	@Override
 	public void writeToParcel(Parcel arg0, int arg1) {
 		arg0.writeInt(IDX);
+		arg0.writeString(FNCT_LC_NO);
+		arg0.writeString(FNCT_LC_DTLS);
+		arg0.writeString(EQP_NO);
+		arg0.writeString(EQP_NM);
+		arg0.writeString(UPTLVL_UPLMT);
+		arg0.writeString(UPTLVL_LWLT);
+		arg0.writeString(UPTLVL_INTRCP);
+		arg0.writeString(MNG_01);
+		arg0.writeString(MNG_02);
+		arg0.writeString(SD);
 
 		arg0.writeString(TOWER_IDX);
 		arg0.writeString(CONT_NUM);
 		arg0.writeString(SN);
 		arg0.writeString(TTM_LOAD);
-		arg0.writeString(FNCT_LC_DTLS);
-		arg0.writeString(EQP_NM);
-		arg0.writeString(FNCT_LC_NO);
-		arg0.writeString(EQP_NO);
 
 	}
 
@@ -72,6 +92,63 @@ public class JGUSubInfo implements Parcelable {
 	public void setIDX(int iDX) {
 		IDX = iDX;
 	}
+
+	public String getEQP_NM() {
+		return EQP_NM;
+	}
+
+	public void setEQP_NM(String EQP_NM) {
+		EQP_NM = EQP_NM;
+	}
+
+	public String getUPTLVL_UPLMT() {
+		return UPTLVL_UPLMT;
+	}
+
+	public void setUPTLVL_UPLMT(String UPTLVL_UPLMT) {
+		EQP_NM = UPTLVL_UPLMT;
+	}
+
+	public String getUPTLVL_LWLT() {
+		return UPTLVL_LWLT;
+	}
+
+	public void setUPTLVL_LWLT(String UPTLVL_LWLT) {
+		UPTLVL_LWLT = UPTLVL_LWLT;
+	}
+
+	public String getUPTLVL_INTRCP() {
+		return UPTLVL_INTRCP;
+	}
+
+	public void setUPTLVL_INTRCP(String UPTLVL_INTRCP) {
+		UPTLVL_INTRCP = UPTLVL_INTRCP;
+	}
+
+	public String getMNG_01() {
+		return MNG_01;
+	}
+
+	public void setMNG_01(String MNG_01) {
+		MNG_01 = MNG_01;
+	}
+
+	public String getMNG_02() {
+		return MNG_02;
+	}
+
+	public void setMNG_02(String MNG_02) {
+		MNG_02 = MNG_02;
+	}
+
+	public String getSD() {
+		return SD;
+	}
+
+	public void setSD(String SD) {
+		SD = SD;
+	}
+
 
 	public String getEQP_NO() {
 		return EQP_NO;
@@ -121,14 +198,6 @@ public class JGUSubInfo implements Parcelable {
 		FNCT_LC_DTLS = fNCT_LC_DTLS;
 	}
 
-	public String getEQP_NM() {
-		return EQP_NM;
-	}
-
-	public void setEQP_NM(String eQP_NM) {
-		EQP_NM = eQP_NM;
-	}
-
 	public String getFNCT_LC_NO() {
 		return FNCT_LC_NO;
 	}
@@ -140,13 +209,20 @@ public class JGUSubInfo implements Parcelable {
 
 	public static class COLS {
 		public static final String IDX = "IDX";
+		public static final String FNCT_LC_NO = "FNCT_LC_NO";
+		public static final String FNCT_LC_DTLS = "FNCT_LC_DTLS";
+		public static final String EQP_NO = "EQP_NO";
+		public static final String EQP_NM = "EQP_NM";
+		public static final String UPTLVL_UPLMT = "UPTLVL_UPLMT";
+		public static final String UPTLVL_LWLT = "UPTLVL_LWLT";
+		public static final String UPTLVL_INTRCP = "UPTLVL_INTRCP";
+		public static final String MNG_01 = "MNG_01";
+		public static final String MNG_02 = "MNG_02";
+		public static final String SD = "SD";
+
 		public static final String TOWER_IDX = "TOWER_IDX";
 		public static final String CONT_NUM = "CONT_NUM";
 		public static final String SN = "SN";
 		public static final String TTM_LOAD = "TTM_LOAD";
-		public static final String FNCT_LC_DTLS = "FNCT_LC_DTLS";
-		public static final String EQP_NM = "EQP_NM";
-		public static final String FNCT_LC_NO = "FNCT_LC_NO";
-		public static final String EQP_NO = "EQP_NO";
 	}
 }

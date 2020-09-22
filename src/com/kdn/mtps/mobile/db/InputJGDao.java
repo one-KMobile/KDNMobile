@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 import com.kdn.mtps.mobile.input.JGInfo;
+import com.kdn.mtps.mobile.input.JGUSubInfo;
 
 import java.util.ArrayList;
 
@@ -38,12 +39,15 @@ public class InputJGDao extends BaseDao{
 		updateRow.put(JGInfo.COLS.MASTER_IDX, row.master_idx);
 		updateRow.put(JGInfo.COLS.WEATHER, row.weather);
 		updateRow.put(JGInfo.COLS.AREA_TEMP, row.area_temp);
-		updateRow.put(JGInfo.COLS.CIRCUIT_NO, row.circuit_no);
-		updateRow.put(JGInfo.COLS.CIRCUIT_NAME, row.circuit_name);
-		updateRow.put(JGInfo.COLS.CURRENT_LOAD, row.current_load);
-		updateRow.put(JGInfo.COLS.CONDUCTOR_CNT, row.conductor_cnt);
-		updateRow.put(JGInfo.COLS.LOCATION, row.location);
+		updateRow.put(JGInfo.COLS.CLAIM_CONTENT, row.claim_content);
 		updateRow.put(JGInfo.COLS.T_GUBUN, row.t_gubun);
+		updateRow.put(JGUSubInfo.COLS.EQP_NM, row.eqp_nm);
+		updateRow.put(JGUSubInfo.COLS.UPTLVL_UPLMT, row.uptlvl_uplmt);
+		updateRow.put(JGUSubInfo.COLS.UPTLVL_LWLT, row.uptlvl_lwlt);
+		updateRow.put(JGUSubInfo.COLS.UPTLVL_INTRCP, row.uptlvl_intrcp);
+		updateRow.put(JGUSubInfo.COLS.MNG_01, row.mng_01);
+		updateRow.put(JGUSubInfo.COLS.MNG_02, row.mng_02);
+		updateRow.put(JGUSubInfo.COLS.SD, row.sd);
 		updateRow.put(JGInfo.COLS.T1_C1, row.t1_c1);
 		updateRow.put(JGInfo.COLS.T1_C2, row.t1_c2);
 		updateRow.put(JGInfo.COLS.T1_C3, row.t1_c3);
@@ -73,7 +77,7 @@ public class InputJGDao extends BaseDao{
 
 	public ArrayList<JGInfo> selectJGU(String mIdx) {
 
-		ArrayList<JGInfo> jsList = new ArrayList<JGInfo>();
+		ArrayList<JGInfo> jguList = new ArrayList<JGInfo>();
 
 		try {
 			SQLiteDatabase db = DBHelper.getReadableInstance(ctx);
@@ -87,12 +91,15 @@ public class InputJGDao extends BaseDao{
 				String master_idx = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.MASTER_IDX));
 				String wether = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.WEATHER));
 				String area_temp = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.AREA_TEMP));
+				String claim_content = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.CLAIM_CONTENT));
 
-				String circuit_no = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.CIRCUIT_NO));
-				String circuit_name = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.CIRCUIT_NAME));
-				String current_load = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.CURRENT_LOAD));
-				String conductor_cnt = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.CONDUCTOR_CNT));
-				String location = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.LOCATION));
+				String eqp_nm = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.EQP_NM));
+				String uptlvl_uplmt = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.UPTLVL_UPLMT));
+				String uptlvl_lwlt = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.UPTLVL_LWLT));
+				String uptlvl_intrcp = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.UPTLVL_INTRCP));
+				String mng_01 = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.MNG_01));
+				String mng_02 = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.MNG_02));
+				String sd = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.SD));
 				String t1_c1 = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.T1_C1));
 				String t1_c2 = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.T1_C2));
 				String t1_c3 = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.T1_C3));
@@ -104,18 +111,21 @@ public class InputJGDao extends BaseDao{
 				info.master_idx = master_idx;
 				info.weather = wether;
 				info.area_temp = area_temp;
+				info.claim_content = claim_content;
 
-				info.circuit_no = circuit_no;
-				info.circuit_name = circuit_name;
-				info.current_load = current_load;
-				info.conductor_cnt = conductor_cnt;
-				info.location = location;
+				info.eqp_nm = eqp_nm;
+				info.uptlvl_uplmt = uptlvl_uplmt;
+				info.uptlvl_lwlt = uptlvl_lwlt;
+				info.uptlvl_intrcp = uptlvl_intrcp;
+				info.mng_01 = mng_01;
+				info.mng_02 = mng_02;
+				info.sd = sd;
 				info.t1_c1= t1_c1;
 				info.t1_c2= t1_c2;
 				info.t1_c3= t1_c3;
 				info.t1_c4= t1_c4;
 
-				jsList.add(info);
+				jguList.add(info);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -123,7 +133,7 @@ public class InputJGDao extends BaseDao{
 			close();
 		}
 
-		return jsList;
+		return jguList;
 	}
 
 	public ArrayList<JGInfo> selectJGP(String mIdx) {
@@ -143,11 +153,10 @@ public class InputJGDao extends BaseDao{
 				String wether = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.WEATHER));
 				String area_temp = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.AREA_TEMP));
 
-				String circuit_no = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.CIRCUIT_NO));
-				String circuit_name = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.CIRCUIT_NAME));
-				String current_load = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.CURRENT_LOAD));
-				String conductor_cnt = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.CONDUCTOR_CNT));
-				String location = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.LOCATION));
+				String fnct_lc_no = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.FNCT_LC_NO));
+				String fnct_lc_dtls = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.FNCT_LC_DTLS));
+				String eqp_no = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.EQP_NO));
+				String eqp_nm = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.EQP_NM));
 				String t2_c1 = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.T2_C1));
 				String t2_c2 = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.T2_C2));
 				String t2_c3 = cursor.getString(cursor.getColumnIndex(JGInfo.COLS.T2_C3));
@@ -159,11 +168,10 @@ public class InputJGDao extends BaseDao{
 				info.weather = wether;
 				info.area_temp = area_temp;
 
-				info.circuit_no = circuit_no;
-				info.circuit_name = circuit_name;
-				info.current_load = current_load;
-				info.conductor_cnt = conductor_cnt;
-				info.location = location;
+				info.fnct_lc_no = fnct_lc_no;
+				info.fnct_lc_dtls = fnct_lc_dtls;
+				info.eqp_no = eqp_no;
+				info.eqp_nm = eqp_nm;
 				info.t2_c1= t2_c1;
 				info.t2_c2= t2_c2;
 				info.t2_c3= t2_c3;
@@ -228,13 +236,13 @@ public class InputJGDao extends BaseDao{
 //				int detail_item_code = cursor.getInt(5);
 //				String spt_mgt_yn = cursor.getString(6);
 				
-				Log.d("Test", "idx : " + idx);
-				Log.d("Test", "master_idx : " + master_idx);
-				Log.d("Test", "wether : " + wether);
-				Log.d("Test", "worker_cnt : " + worker_cnt);
-				Log.d("Test", "claim_content : " + claim_content);
-				Log.d("Test", "check_result : " + check_result);
-				Log.d("Test", "etc : " + etc);
+				//Log.d("Test", "idx : " + idx);
+				//Log.d("Test", "master_idx : " + master_idx);
+				//Log.d("Test", "wether : " + wether);
+				//Log.d("Test", "worker_cnt : " + worker_cnt);
+				//Log.d("Test", "claim_content : " + claim_content);
+				//Log.d("Test", "check_result : " + check_result);
+				//Log.d("Test", "etc : " + etc);
 //				Log.d("Test", "ins_result_code : " + ins_result_code);
 //				Log.d("Test", "check_result_code : " + check_result_code);
 //				Log.d("Test", "eqp_type_code : " + eqp_type_code);

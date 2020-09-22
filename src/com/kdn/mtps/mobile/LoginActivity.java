@@ -151,14 +151,13 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnSy
 				devCount = 0;
 				ToastUtil.show(this, "실서버 적용!!!");
 //				ConstVALUE.PREFIX_API_SERVER = "http://kdn.testbed.kr/";
-//				ConstVALUE.PREFIX_API_SERVER = "http://10.0.2.2:8080/kdnweb/";
+//				ConstVALUE.PREFIX_4API_SERVER = "http://10.0.2.2:8080/kdnweb/";
 				ConstVALUE.PREFIX_API_SERVER = "http://172.30.1.35:8080/kdnweb/";
 				//ConstVALUE.PREFIX_API_SERVER = "http://172.30.1.34:8080/kdnweb/";
 			} else if (devCount == 10){
 				ToastUtil.show(this, "192.168.0.12 서버 적용!");
 				ConstVALUE.PREFIX_API_SERVER = "http://192.168.0.12:8080/";
 			}
-			
 			break;
 		case R.id.btnLogin:
 			

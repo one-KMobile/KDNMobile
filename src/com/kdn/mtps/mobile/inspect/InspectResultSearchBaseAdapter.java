@@ -172,42 +172,42 @@ public class InspectResultSearchBaseAdapter extends BaseAdapter{
 				} else if (idx == 1) {
 					if ("Y".equalsIgnoreCase(info.send_yn_jg))
 						tv.setBackgroundResource(R.drawable.btn_input_jg_s);
-					else if ("Y".equalsIgnoreCase(info.complete_yn_js))
+					else if ("Y".equalsIgnoreCase(info.complete_yn_jg))
 						tv.setBackgroundResource(R.drawable.btn_input_jg_y);
 					else
 						tv.setBackgroundResource(R.drawable.btn_input_jg_n);
 				} else if (idx == 2) {
 					if ("Y".equalsIgnoreCase(info.send_yn_yb))
 						tv.setBackgroundResource(R.drawable.btn_input_yb_s);
-					else if ("Y".equalsIgnoreCase(info.complete_yn_jj))
+					else if ("Y".equalsIgnoreCase(info.complete_yn_yb))
 						tv.setBackgroundResource(R.drawable.btn_input_yb_y);
 					else
 						tv.setBackgroundResource(R.drawable.btn_input_yb_n);
 				} else if (idx == 3) {
 					if ("Y".equalsIgnoreCase(info.send_yn_mh))
 						tv.setBackgroundResource(R.drawable.btn_input_mh_s);
-					else if ("Y".equalsIgnoreCase(info.complete_yn_kb))
+					else if ("Y".equalsIgnoreCase(info.complete_yn_mh))
 						tv.setBackgroundResource(R.drawable.btn_input_mh_y);
 					else
 						tv.setBackgroundResource(R.drawable.btn_input_mh_n);
 				} else if (idx == 4) {
 					if ("Y".equalsIgnoreCase(info.send_yn_gh))
 						tv.setBackgroundResource(R.drawable.btn_input_gh_s);
-					else if ("Y".equalsIgnoreCase(info.complete_yn_hk))
+					else if ("Y".equalsIgnoreCase(info.complete_yn_gh))
 						tv.setBackgroundResource(R.drawable.btn_input_gh_y);
 					else
 						tv.setBackgroundResource(R.drawable.btn_input_gh_n);
 				} else if (idx == 5) {
 					if ("Y".equalsIgnoreCase(info.send_yn_pr))
 						tv.setBackgroundResource(R.drawable.btn_input_pr_s);
-					else if ("Y".equalsIgnoreCase(info.complete_yn_hj))
+					else if ("Y".equalsIgnoreCase(info.complete_yn_pr))
 						tv.setBackgroundResource(R.drawable.btn_input_pr_y);
 					else
 						tv.setBackgroundResource(R.drawable.btn_input_pr_n);
 				} else if (idx == 6) {
 					if ("Y".equalsIgnoreCase(info.send_yn_jb))
 						tv.setBackgroundResource(R.drawable.btn_input_jb_s);
-					else if ("Y".equalsIgnoreCase(info.complete_yn_br))
+					else if ("Y".equalsIgnoreCase(info.complete_yn_jb))
 						tv.setBackgroundResource(R.drawable.btn_input_jb_y);
 					else
 						tv.setBackgroundResource(R.drawable.btn_input_jb_n);

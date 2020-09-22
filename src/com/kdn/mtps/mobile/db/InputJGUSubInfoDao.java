@@ -34,15 +34,22 @@ public class InputJGUSubInfoDao extends BaseDao{
 		if (idx != -1) {
 			updateRow.put(JGUSubInfo.COLS.IDX, idx);
 		}
-		
+
+		updateRow.put(JGUSubInfo.COLS.FNCT_LC_NO, row.FNCT_LC_NO);
+		updateRow.put(JGUSubInfo.COLS.FNCT_LC_DTLS, row.FNCT_LC_DTLS);
+		updateRow.put(JGUSubInfo.COLS.EQP_NO, row.EQP_NO);
+		updateRow.put(JGUSubInfo.COLS.EQP_NM, row.EQP_NM);
+		updateRow.put(JGUSubInfo.COLS.UPTLVL_UPLMT, row.UPTLVL_UPLMT);
+		updateRow.put(JGUSubInfo.COLS.UPTLVL_LWLT, row.UPTLVL_LWLT);
+		updateRow.put(JGUSubInfo.COLS.UPTLVL_INTRCP, row.UPTLVL_INTRCP);
+		updateRow.put(JGUSubInfo.COLS.MNG_01, row.MNG_01);
+		updateRow.put(JGUSubInfo.COLS.MNG_02, row.MNG_02);
+		updateRow.put(JGUSubInfo.COLS.SD, row.SD);
+
 		updateRow.put(JGUSubInfo.COLS.TOWER_IDX, row.TOWER_IDX);
 		updateRow.put(JGUSubInfo.COLS.CONT_NUM, row.CONT_NUM);
 		updateRow.put(JGUSubInfo.COLS.SN, row.SN);
 		updateRow.put(JGUSubInfo.COLS.TTM_LOAD, row.TTM_LOAD);
-		updateRow.put(JGUSubInfo.COLS.FNCT_LC_DTLS, row.FNCT_LC_DTLS);
-		updateRow.put(JGUSubInfo.COLS.EQP_NM, row.EQP_NM);
-		updateRow.put(JGUSubInfo.COLS.FNCT_LC_NO, row.FNCT_LC_NO);
-		updateRow.put(JGUSubInfo.COLS.EQP_NO, row.EQP_NO);
 			
 		db.replace(tableName, null, updateRow);
 
@@ -62,33 +69,47 @@ public class InputJGUSubInfoDao extends BaseDao{
 		
 		try {
 			SQLiteDatabase db = DBHelper.getReadableInstance(ctx);
-			String fmt = "select * from %s where EQP_NO = '%s' ORDER BY FNCT_LC_DTLS, CONT_NUM, SN";
+			String fmt = "select * from %s where EQP_NO = '%s' ORDER BY idx";
 			String sql = String.format(fmt, tableName, eqpNo);
 
 			cursor = db.rawQuery(sql, null);
 
 			while (cursor.moveToNext()) {
 				int idx = cursor.getInt(cursor.getColumnIndex(JGUSubInfo.COLS.IDX));
+				String FNCT_LC_NO = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.FNCT_LC_NO));
+				String FNCT_LC_DTLS = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.FNCT_LC_DTLS));
+				String EQP_NO = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.EQP_NO));
+				String EQP_NM = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.EQP_NM));
+				String UPTLVL_UPLMT = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.UPTLVL_UPLMT));
+				String UPTLVL_LWLT = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.UPTLVL_LWLT));
+				String UPTLVL_INTRCP = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.UPTLVL_INTRCP));
+				String MNG_01 = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.MNG_01));
+				String MNG_02 = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.MNG_02));
+				String SD = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.SD));
+
 				String TOWER_IDX = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.TOWER_IDX));
 				String CONT_NUM = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.CONT_NUM));
 				String SN = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.SN));
 				String TTM_LOAD = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.TTM_LOAD));
-				String FNCT_LC_DTLS = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.FNCT_LC_DTLS));
-				String EQP_NM = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.EQP_NM));
-				String FNCT_LC_NO = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.FNCT_LC_NO));
-				String EQP_NO = cursor.getString(cursor.getColumnIndex(JGUSubInfo.COLS.EQP_NO));
 				
 				JGUSubInfo info = new JGUSubInfo();
 				
 				info.IDX = idx;
+				info.FNCT_LC_NO = FNCT_LC_NO;
+				info.FNCT_LC_DTLS = FNCT_LC_DTLS;
+				info.EQP_NO = EQP_NO;
+				info.EQP_NM = EQP_NM;
+				info.UPTLVL_UPLMT = UPTLVL_UPLMT;
+				info.UPTLVL_LWLT = UPTLVL_LWLT;
+				info.UPTLVL_INTRCP = UPTLVL_INTRCP;
+				info.MNG_01 = MNG_01;
+				info.MNG_02 = MNG_02;
+				info.SD = SD;
+
 				info.TOWER_IDX = TOWER_IDX;
 				info.CONT_NUM = CONT_NUM;
 				info.SN = SN;
 				info.TTM_LOAD = TTM_LOAD;
-				info.FNCT_LC_DTLS = FNCT_LC_DTLS;
-				info.EQP_NM = EQP_NM;
-				info.FNCT_LC_NO = FNCT_LC_NO;
-				info.EQP_NO = EQP_NO;
 				
 				jsList.add(info);
 			}

@@ -36,14 +36,14 @@ public class InputJGPSubInfoDao extends BaseDao{
 			updateRow.put(JGPSubInfo.COLS.IDX, idx);
 		}
 
-		updateRow.put(JGUSubInfo.COLS.TOWER_IDX, row.TOWER_IDX);
-		updateRow.put(JGUSubInfo.COLS.CONT_NUM, row.CONT_NUM);
-		updateRow.put(JGUSubInfo.COLS.SN, row.SN);
-		updateRow.put(JGUSubInfo.COLS.TTM_LOAD, row.TTM_LOAD);
-		updateRow.put(JGUSubInfo.COLS.FNCT_LC_DTLS, row.FNCT_LC_DTLS);
-		updateRow.put(JGUSubInfo.COLS.EQP_NM, row.EQP_NM);
-		updateRow.put(JGUSubInfo.COLS.FNCT_LC_NO, row.FNCT_LC_NO);
-		updateRow.put(JGUSubInfo.COLS.EQP_NO, row.EQP_NO);
+		updateRow.put(JGPSubInfo.COLS.TOWER_IDX, row.TOWER_IDX);
+		updateRow.put(JGPSubInfo.COLS.CONT_NUM, row.CONT_NUM);
+		updateRow.put(JGPSubInfo.COLS.SN, row.SN);
+		updateRow.put(JGPSubInfo.COLS.TTM_LOAD, row.TTM_LOAD);
+		updateRow.put(JGPSubInfo.COLS.FNCT_LC_DTLS, row.FNCT_LC_DTLS);
+		updateRow.put(JGPSubInfo.COLS.EQP_NM, row.EQP_NM);
+		updateRow.put(JGPSubInfo.COLS.FNCT_LC_NO, row.FNCT_LC_NO);
+		updateRow.put(JGPSubInfo.COLS.EQP_NO, row.EQP_NO);
 			
 		db.replace(tableName, null, updateRow);
 

@@ -19,24 +19,18 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="624dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:layout_width="151dp"
+                    android:layout_width="380dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="선로명" />
+                    android:text="회선/전력구/관로명" />
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="지지물번호" />
             </LinearLayout>
 
             <LinearLayout
@@ -47,7 +41,7 @@
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:layout_width="118dp"
+                    android:layout_width="16dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="  순시종류" />
@@ -67,13 +61,13 @@
             android:orientation="horizontal" >
 
             <LinearLayout
-                android:layout_width="372dp"
+                android:layout_width="303dp"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btnName"
-                    android:layout_width="227dp"
+                    android:layout_width="296dp"
                     android:layout_height="fill_parent"
                     android:background="@drawable/inspect_result_select_long"
                     android:gravity="center"
@@ -85,14 +79,6 @@
                     android:layout_height="0dp"
                     android:visibility="invisible" />
 
-                <EditText
-                    android:id="@+id/editTowerNo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/inspect_result_input"
-                    android:hint="지지물번호"
-                    android:paddingLeft="5dp"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -101,7 +87,7 @@
                 android:orientation="horizontal"></LinearLayout>
 
             <LinearLayout
-                android:layout_width="371dp"
+                android:layout_width="405dp"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
@@ -112,7 +98,7 @@
 
                 <Button
                     android:id="@+id/btnType"
-                    android:layout_width="168dp"
+                    android:layout_width="268dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="@drawable/inspect_result_select2"
@@ -127,7 +113,7 @@
 
                 <Button
                     android:id="@+id/btnDate"
-                    android:layout_width="94dp"
+                    android:layout_width="156dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/inspect_result_select2"

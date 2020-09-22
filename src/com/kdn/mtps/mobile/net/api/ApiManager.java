@@ -44,7 +44,12 @@ import com.kdn.mtps.mobile.net.api.bean.JGPSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.JGUSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.JSSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.LoginData;
+import com.kdn.mtps.mobile.net.api.bean.MHBSubInfoList;
+import com.kdn.mtps.mobile.net.api.bean.MHGSubInfoList;
+import com.kdn.mtps.mobile.net.api.bean.MHISubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.NfcTagInfo;
+import com.kdn.mtps.mobile.net.api.bean.PRKSubInfoList;
+import com.kdn.mtps.mobile.net.api.bean.PRPSubInfoList;
 import com.kdn.mtps.mobile.net.api.bean.PatrolmansList;
 import com.kdn.mtps.mobile.net.api.bean.ScheduleList;
 import com.kdn.mtps.mobile.net.api.bean.TowerList;
@@ -76,7 +81,8 @@ public class ApiManager {
 	public static final String API_SCHEDULE_LIST= API_PREFIX + "inspection/result/in/schedule.json";
 	
 	/** 송전설비 검색 **/
-	public static final String API_FACILITY_LIST= API_PREFIX + "search/trans/tower.json";
+	public static final String API_FACILITY_LIST= API_PREFIX + "search/facility/eqplist.json";
+	//public static final String API_FACILITY_LIST= API_PREFIX + "search/trans/tower.json";
 			
 	/** 선로 목록 **/
 	public static final String API_TRACKS_LIST= API_PREFIX + "tracks/list.json";
@@ -106,10 +112,25 @@ public class ApiManager {
 	public static final String API_INPUT_HK_SUB_LIST= API_PREFIX + "error/air.json";
 
 	/** 정기순시_유압 정보 **/
-	public static final String API_INPUT_JG_U_SUB_LIST= API_PREFIX + "circuit/in/schedule.json";
+	public static final String API_INPUT_JG_U_SUB_LIST= API_PREFIX + "oileqp/in/schedule.json";
 
 	/** 경보회로_점검 정보 **/
 	public static final String API_INPUT_GH_SUB_LIST= API_PREFIX + "circuit/in/schedule.json";
+
+	/** 피뢰기점검_피뢰기점검 정보 **/
+	public static final String API_INPUT_PR_P_SUB_LIST= API_PREFIX + "circuit/in/schedule.json";
+
+	/** 피뢰기점검_케이블헤드 정보 **/
+	public static final String API_INPUT_PR_K_SUB_LIST= API_PREFIX + "circuit/in/schedule.json";
+
+	/** 맨홀점검_이상유무 정보 **/
+	public static final String API_INPUT_MH_I_SUB_LIST= API_PREFIX + "circuit/in/schedule.json";
+
+	/** 맨홀점검_발생유무 정보 **/
+	public static final String API_INPUT_MH_B_SUB_LIST= API_PREFIX + "circuit/in/schedule.json";
+
+	/** 맨홀점검_가스탐지기록 정보 **/
+	public static final String API_INPUT_MH_G_SUB_LIST= API_PREFIX + "circuit/in/schedule.json";
 	
 	/** 순시결과 전송 **/
 	public static final String API_INPUT_BT= API_PREFIX + "result/normal/inspection.json";
@@ -813,7 +834,7 @@ public class ApiManager {
 		}
 		return null;
 	}
-
+	/*정기순시_유압리스트*/
 	public static JGUSubInfoList jguInfoSubList() {
 		try {
 			List<NameValuePair> getParameters = new ArrayList<NameValuePair>();
@@ -831,7 +852,7 @@ public class ApiManager {
 		}
 		return null;
 	}
-
+	/*정기순시_피뢰기리스트*/
 	public static JGPSubInfoList jgpInfoSubList() {
 		try {
 			List<NameValuePair> getParameters = new ArrayList<NameValuePair>();
@@ -849,7 +870,7 @@ public class ApiManager {
 		}
 		return null;
 	}
-
+	/*경보회로 점검리스트*/
 	public static GHSubInfoList ghInfoSubList() {
 		try {
 			List<NameValuePair> getParameters = new ArrayList<NameValuePair>();
@@ -861,6 +882,100 @@ public class ApiManager {
 			} else {
 				GHSubInfoList ghSubInfoList = new Gson().fromJson(response, GHSubInfoList.class);
 				return ghSubInfoList;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	/*피뢰기점검_피뢰기점검리스트*/
+	public static PRPSubInfoList prpInfoSubList() {
+		try {
+			List<NameValuePair> getParameters = new ArrayList<NameValuePair>();
+
+			String response = HttpUtil.connectPost(API_INPUT_PR_P_SUB_LIST, getParameters, 1000 * 300);
+			Logg.d(response);
+			if (response == null) {// 서버에서 받아오지 못했다면
+				return null;
+			} else {
+				PRPSubInfoList prpSubInfoList = new Gson().fromJson(response, PRPSubInfoList.class);
+				return prpSubInfoList;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	/*피뢰기점검_케이블헤드리스트*/
+	public static PRKSubInfoList prkInfoSubList() {
+		try {
+			List<NameValuePair> getParameters = new ArrayList<NameValuePair>();
+
+			String response = HttpUtil.connectPost(API_INPUT_PR_K_SUB_LIST, getParameters, 1000 * 300);
+			Logg.d(response);
+			if (response == null) {// 서버에서 받아오지 못했다면
+				return null;
+			} else {
+				PRKSubInfoList prkSubInfoList = new Gson().fromJson(response, PRKSubInfoList.class);
+				return prkSubInfoList;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	/*맨홀점검_이상유무리스트*/
+	public static MHISubInfoList mhiInfoSubList() {
+		try {
+			List<NameValuePair> getParameters = new ArrayList<NameValuePair>();
+
+			String response = HttpUtil.connectPost(API_INPUT_MH_I_SUB_LIST, getParameters, 1000 * 300);
+			Logg.d(response);
+			if (response == null) {// 서버에서 받아오지 못했다면
+				return null;
+			} else {
+				MHISubInfoList mhiSubInfoList = new Gson().fromJson(response, MHISubInfoList.class);
+				return mhiSubInfoList;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	/*맨홀점검_발생유무리스트*/
+	public static MHBSubInfoList mhbInfoSubList() {
+		try {
+			List<NameValuePair> getParameters = new ArrayList<NameValuePair>();
+
+			String response = HttpUtil.connectPost(API_INPUT_MH_B_SUB_LIST, getParameters, 1000 * 300);
+			Logg.d(response);
+			if (response == null) {// 서버에서 받아오지 못했다면
+				return null;
+			} else {
+				MHBSubInfoList mhbInfoSubList = new Gson().fromJson(response, MHBSubInfoList.class);
+				return mhbInfoSubList;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	/*맨홀점검_가스탐지기록리스트*/
+	public static MHGSubInfoList mhgInfoSubList() {
+		try {
+			List<NameValuePair> getParameters = new ArrayList<NameValuePair>();
+
+			String response = HttpUtil.connectPost(API_INPUT_MH_G_SUB_LIST, getParameters, 1000 * 300);
+			Logg.d(response);
+			if (response == null) {// 서버에서 받아오지 못했다면
+				return null;
+			} else {
+				MHGSubInfoList mhgInfoSubList = new Gson().fromJson(response, MHGSubInfoList.class);
+				return mhgInfoSubList;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -14,6 +14,7 @@ import android.location.LocationProvider;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -149,11 +150,11 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		btnTab1 = (Button)findViewById(R.id.btnTab1);
 		btnTab1.setTextColor(Color.BLACK);
 		btnTab1.setOnClickListener(this);
-		btnTab1.setBackgroundResource(R.drawable.tab_1_on);
+		btnTab1.setBackgroundResource(R.drawable.tab_jg_1_on);
 		btnTab2 = (Button)findViewById(R.id.btnTab2);
 		btnTab2.setTextColor(Color.BLACK);
 		btnTab2.setOnClickListener(this);
-		btnTab2.setBackgroundResource(R.drawable.tab_2_off);
+		btnTab2.setBackgroundResource(R.drawable.tab_jg_2_off);
 
 		llLayout = (LinearLayout)findViewById(R.id.llLayout);
 		llLayout2 = (LinearLayout)findViewById(R.id.llLayout2);
@@ -188,7 +189,10 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		}
 
 		for (JGUSubInfo info : list) {
-			Logg.d("sub info : " + info.FNCT_LC_DTLS);
+			Logg.d("sub info : FNCT_LC_DTLS " + info.FNCT_LC_DTLS);
+			Logg.d("sub info : FNCT_LC_NO " + info.FNCT_LC_NO);
+			Logg.d("sub info : FNCT_LC_DTLS " + info.EQP_NO);
+			Logg.d("sub info : FNCT_LC_NO " + info.EQP_NM);
 		}
 
 		for (JGPSubInfo info : list2) {
@@ -221,9 +225,9 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 			strWeather = CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_WEATHER, selectJgInfo.weather);
 			selectedWeatherNo = StringUtil.getIndex(strWeatherItems, strWeather);
 
-			//String strClaimContent = CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_GOOD_SECD, selectJgInfo.claim_content);
-			//btnClaimContent.setText(strClaimContent);
-			//selectedClaimContentNo = StringUtil.getIndex(strClainContentItems, strClaimContent);
+			String strClaimContent = CodeInfo.getInstance(this).getValue(ConstVALUE.CODE_TYPE_GOOD_SECD, selectJgInfo.claim_content);
+			btnClaimContent.setText(strClaimContent);
+			selectedClaimContentNo = StringUtil.getIndex(strClainContentItems, strClaimContent);
 
 			for (int i=0; i<jgInfoList1.size(); i++) {
 				addItem(i, jgInfoList1.get(i));
@@ -366,6 +370,12 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 	
 	public void update(boolean isEdit) {
 		boolean isEmpty = true;
+		Log.i("MyTag","############### btnClaimContent update : "+ btnClaimContent);
+		String strClaimContent = btnClaimContent.getText().toString();
+		if("".equals(strClaimContent)) {
+			ToastUtil.show(this, "종합판정을 입력해 주시기 바랍니다.");
+			return;
+		}
 		for (Entry<Integer, ViewHolder> entry : jguList.entrySet()) {
 			ViewHolder viewHolder = entry.getValue();
 			String strc1 = viewHolder.t1_editc1.getText().toString();
@@ -401,10 +411,13 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 
 		for (Entry<Integer, ViewHolder> entry : jguList.entrySet()) {
 			ViewHolder viewHolder = entry.getValue();
-			String strCircuitName = viewHolder.tvCircuitName.getText().toString();
-			String strCurrentLoad = viewHolder.tvCurrentLoad.getText().toString();
-			String strConductor_cnt = viewHolder.tvConductor_cnt.getText().toString();
-			String strLocation = viewHolder.tvLocation.getText().toString();
+			String strEqpNm = viewHolder.tvEqpNm.getText().toString();
+			String strMng01 = viewHolder.tvMng01.getText().toString();
+			String strMng02 = viewHolder.tvMng02.getText().toString();
+			String strUptlvlUplmt = viewHolder.tvUptlvlUplmt.getText().toString();
+			String strUptlvlLwlt = viewHolder.tvUptlvlLwlt.getText().toString();
+			String strUptlvlIntrcp = viewHolder.tvUptlvlIntrcp.getText().toString();
+			String strSd = viewHolder.tvSd.getText().toString();
 
 			String strt1_c1 = viewHolder.t1_editc1.getText().toString();
 			String strt1_c2= viewHolder.t1_editc2.getText().toString();
@@ -414,13 +427,18 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 			JGInfo log = new JGInfo();
 			log.master_idx = mInfo.master_idx;
 			log.weather = CodeInfo.getInstance(this).getKey(ConstVALUE.CODE_TYPE_WEATHER, strWeather);
-			log.circuit_no = viewHolder.jgInfo.circuit_no;
-			log.circuit_name = strCircuitName;
-			log.circuit_name = strCircuitName;
-			log.current_load = strCurrentLoad;
-			log.conductor_cnt = strConductor_cnt;
-			log.location = strLocation;
+			log.claim_content = CodeInfo.getInstance(this).getKey(ConstVALUE.CODE_TYPE_GOOD_SECD, strClaimContent);;
 			log.t_gubun = "1";
+			//log.fnct_lc_no = viewHolder.jgInfo.fnct_lc_no;
+			//log.fnct_lc_dtls = viewHolder.jgInfo.fnct_lc_dtls;
+			//log.eqp_no = viewHolder.jgInfo.eqp_no;
+			log.eqp_nm = strEqpNm;
+			log.uptlvl_uplmt = strUptlvlUplmt;
+			log.uptlvl_lwlt = strUptlvlLwlt;
+			log.uptlvl_intrcp = strUptlvlIntrcp;
+			log.mng_01 = strMng01;
+			log.mng_02 = strMng02;
+			log.sd = strSd;
 			log.t1_c1 = strt1_c1;
 			log.t1_c1 = log.t1_c1.replace("=", "");
 			log.t1_c2 = strt1_c2;
@@ -439,8 +457,8 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 
 		for (Entry<Integer, ViewHolder> entry : jgpList.entrySet()) {
 			ViewHolder viewHolder = entry.getValue();
-			String strCircuitName = viewHolder.tvCircuitName.getText().toString();
-			String strCurrentLoad = viewHolder.tvCurrentLoad.getText().toString();
+			String strCircuitName = viewHolder.tvFnctLcNo.getText().toString();
+			String strCurrentLoad = viewHolder.tvFnctLcDtls.getText().toString();
 			String strConductor_cnt = "";
 			String strLocation = "";
 
@@ -451,12 +469,11 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 			JGInfo log = new JGInfo();
 			log.master_idx = mInfo.master_idx;
 			log.weather = CodeInfo.getInstance(this).getKey(ConstVALUE.CODE_TYPE_WEATHER, strWeather);
-			log.circuit_no = viewHolder.jgInfo.circuit_no;
-			log.circuit_name = strCircuitName;
-			log.circuit_name = strCircuitName;
-			log.current_load = strCurrentLoad;
-			log.conductor_cnt = strConductor_cnt;
-			log.location = strLocation;
+			log.fnct_lc_no = viewHolder.jgInfo.fnct_lc_no;
+			log.fnct_lc_dtls = strCircuitName;
+			log.eqp_no = strCircuitName;
+			log.eqp_nm = strCurrentLoad;
+			log.claim_content = CodeInfo.getInstance(this).getKey(ConstVALUE.CODE_TYPE_GOOD_SECD, strClaimContent);
 			log.t_gubun = "2";
 			log.t2_c1 = strt1_c1;
 			log.t2_c1 = log.t2_c1.replace("=", "");
@@ -533,11 +550,16 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 	/*유압 리스트*/
 	public void addItem(int idx, JGUSubInfo jguSubInfo) {
 		JGInfo jgInfo = new JGInfo();
-		jgInfo.conductor_cnt = jguSubInfo.CONT_NUM;
-		jgInfo.location = jguSubInfo.SN;
-		jgInfo.current_load = jguSubInfo.TTM_LOAD;
-		jgInfo.circuit_name = jguSubInfo.FNCT_LC_DTLS;
-		jgInfo.circuit_no = jguSubInfo.FNCT_LC_NO;
+		jgInfo.fnct_lc_no = jguSubInfo.FNCT_LC_NO;
+		jgInfo.fnct_lc_dtls = jguSubInfo.FNCT_LC_DTLS;
+		jgInfo.eqp_no = jguSubInfo.EQP_NO;
+		jgInfo.eqp_nm = jguSubInfo.EQP_NM;
+		jgInfo.uptlvl_uplmt = jguSubInfo.UPTLVL_UPLMT;
+		jgInfo.uptlvl_lwlt = jguSubInfo.UPTLVL_LWLT;
+		jgInfo.uptlvl_intrcp = jguSubInfo.UPTLVL_INTRCP;
+		jgInfo.mng_01 = jguSubInfo.MNG_01;
+		jgInfo.mng_02 = jguSubInfo.MNG_02;
+		jgInfo.sd = jguSubInfo.SD;
 		
 		addItem(idx, jgInfo);
 	}
@@ -551,10 +573,16 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		UIUtil.setFont(this, (ViewGroup)llItemParent);
 		
 		llItemParent.setOnTouchListener(hideKeyboardListener);
-		viewHolder.tvCircuitName = (TextView) view.findViewById(R.id.tvCircuitName);
-		viewHolder.tvCurrentLoad = (TextView) view.findViewById(R.id.tvCurrentLoad);
-		viewHolder.tvConductor_cnt = (TextView) view.findViewById(R.id.tvConductor_cnt);
-		viewHolder.tvLocation = (TextView) view.findViewById(R.id.tvLocation);
+		//viewHolder.tvFnctLcNo = (TextView) view.findViewById(R.id.tvFnctLcNo);
+		//viewHolder.tvFnctLcDtls = (TextView) view.findViewById(R.id.tvFnctLcDtls);
+		//viewHolder.tvEqpNo = (TextView) view.findViewById(R.id.tvEqpNo);
+		viewHolder.tvEqpNm = (TextView) view.findViewById(R.id.tvEqpNm);
+		viewHolder.tvMng01 = (TextView) view.findViewById(R.id.tvMng01);
+		viewHolder.tvMng02 = (TextView) view.findViewById(R.id.tvMng02);
+		viewHolder.tvUptlvlUplmt = (TextView) view.findViewById(R.id.tvUptlvlUplmt);
+		viewHolder.tvUptlvlLwlt = (TextView) view.findViewById(R.id.tvUptlvlLwlt);
+		viewHolder.tvUptlvlIntrcp = (TextView) view.findViewById(R.id.tvUptlvlIntrcp);
+		viewHolder.tvSd = (TextView) view.findViewById(R.id.tvSd);
 
 		viewHolder.t1_editc1 = (EditText) view.findViewById(R.id.editc1);
 		viewHolder.t1_editc2 = (EditText) view.findViewById(R.id.editc2);
@@ -562,15 +590,21 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		viewHolder.t1_editc4 = (EditText) view.findViewById(R.id.editc4);
         //setTextWatcher(viewHolder);
 
-		viewHolder.tvCurrentLoad.setText(idx + "");
-		viewHolder.tvConductor_cnt.setText((idx + 1) + "");
+		//viewHolder.tvCurrentLoad.setText(idx + "");
+		//viewHolder.tvConductor_cnt.setText((idx + 1) + "");
 		
 		if (jgInfo != null) {
 			viewHolder.jgInfo = jgInfo;
-			viewHolder.tvCircuitName.setText(jgInfo.circuit_name);
-			viewHolder.tvCurrentLoad.setText(jgInfo.current_load);
-			viewHolder.tvConductor_cnt.setText(jgInfo.conductor_cnt);
-			viewHolder.tvLocation.setText(jgInfo.location);
+			//viewHolder.tvFnctLcNo.setText(jgInfo.fnct_lc_no);
+			//viewHolder.tvFnctLcDtls.setText(jgInfo.fnct_lc_dtls);
+			//viewHolder.tvEqpNo.setText(jgInfo.eqp_no);
+			viewHolder.tvEqpNm.setText(jgInfo.eqp_nm);
+			viewHolder.tvUptlvlUplmt.setText(jgInfo.uptlvl_uplmt);
+			viewHolder.tvUptlvlLwlt.setText(jgInfo.uptlvl_lwlt);
+			viewHolder.tvUptlvlIntrcp.setText(jgInfo.uptlvl_intrcp);
+			viewHolder.tvMng01.setText(jgInfo.mng_01);
+			viewHolder.tvMng02.setText(jgInfo.mng_02);
+			viewHolder.tvSd.setText(jgInfo.sd);
 
 			viewHolder.t1_editc1.setText(jgInfo.t1_c1);
 			viewHolder.t1_editc2.setText(jgInfo.t1_c2);
@@ -587,10 +621,16 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 	}
 	
 	public class ViewHolder {
-		TextView tvCircuitName;
-		TextView tvCurrentLoad;
-		TextView tvConductor_cnt;
-		TextView tvLocation;
+		TextView tvFnctLcNo;
+		TextView tvFnctLcDtls;
+		TextView tvEqpNo;
+		TextView tvEqpNm;
+		TextView tvMng01;
+		TextView tvMng02;
+		TextView tvUptlvlUplmt;
+		TextView tvUptlvlLwlt;
+		TextView tvUptlvlIntrcp;
+		TextView tvSd;
 		EditText t1_editc1;
         EditText t1_editc2;
         EditText t1_editc3;
@@ -605,8 +645,8 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 	/*피뢰기 리스트*/
 	public void addItem2(int idx, JGPSubInfo jgpSubInfo) {
 		JGInfo jgInfo = new JGInfo();
-		jgInfo.current_load = jgpSubInfo.FNCT_LC_DTLS;
-		jgInfo.circuit_name = jgpSubInfo.FNCT_LC_NO;
+		jgInfo.fnct_lc_no = jgpSubInfo.FNCT_LC_DTLS;
+		jgInfo.fnct_lc_dtls = jgpSubInfo.FNCT_LC_NO;
 
 		addItem2(idx, jgInfo);
 	}
@@ -620,8 +660,8 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		UIUtil.setFont(this, (ViewGroup)llItemParent);
 
 		llItemParent.setOnTouchListener(hideKeyboardListener);
-		viewHolder.tvCircuitName = (TextView) view.findViewById(R.id.tvCircuitName);
-		viewHolder.tvCurrentLoad = (TextView) view.findViewById(R.id.tvCurrentLoad);
+		viewHolder.tvFnctLcNo = (TextView) view.findViewById(R.id.tvCircuitName);
+		viewHolder.tvFnctLcDtls = (TextView) view.findViewById(R.id.tvCurrentLoad);
 		//viewHolder.tvConductor_cnt = (TextView) view.findViewById(R.id.tvConductor_cnt);
 		//viewHolder.tvLocation = (TextView) view.findViewById(R.id.tvLocation);
 
@@ -629,12 +669,11 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		viewHolder.t2_editc2 = (EditText) view.findViewById(R.id.editc2);
 		viewHolder.t2_editc3 = (EditText) view.findViewById(R.id.editc3);
 
-		viewHolder.tvCurrentLoad.setText(idx + "");
 
 		if (jgInfo != null) {
 			viewHolder.jgInfo = jgInfo;
-			viewHolder.tvCircuitName.setText(jgInfo.circuit_name);
-			viewHolder.tvCurrentLoad.setText(jgInfo.current_load);
+			viewHolder.tvFnctLcNo.setText(jgInfo.fnct_lc_no);
+			viewHolder.tvFnctLcDtls.setText(jgInfo.fnct_lc_dtls);
 			//viewHolder.tvConductor_cnt.setText("");
 			//viewHolder.tvLocation.setText("");
 
@@ -689,13 +728,13 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		if(strTab == "1") {
 			layout1.setVisibility(View.VISIBLE);
 			layout2.setVisibility(View.GONE);
-			btnTab1.setBackgroundResource(R.drawable.tab_1_on);
-			btnTab2.setBackgroundResource(R.drawable.tab_2_off);
+			btnTab1.setBackgroundResource(R.drawable.tab_jg_1_on);
+			btnTab2.setBackgroundResource(R.drawable.tab_jg_2_off);
 		} else {
 			layout2.setVisibility(View.VISIBLE);
 			layout1.setVisibility(View.GONE);
-			btnTab1.setBackgroundResource(R.drawable.tab_1_off);
-			btnTab2.setBackgroundResource(R.drawable.tab_2_on);
+			btnTab1.setBackgroundResource(R.drawable.tab_jg_1_off);
+			btnTab2.setBackgroundResource(R.drawable.tab_jg_2_on);
 		}
 	}
 }
