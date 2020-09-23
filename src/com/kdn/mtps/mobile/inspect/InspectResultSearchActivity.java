@@ -81,7 +81,7 @@ public class InspectResultSearchActivity extends BaseActivity implements TitleMa
 		Button btnHeaderLeft = (Button)findViewById(R.id.btnHeaderLeft);
 		Button btnHeaderRight = (Button)findViewById(R.id.btnHeaderRight);
 		
-		btnHeaderTitle.setText("순시결과조회");
+		btnHeaderTitle.setText("연간점검대상상세");
 		
 		//btnHeaderRight.setBackgroundResource(R.drawable.selector_btn_map);
 		

@@ -67,7 +67,7 @@ public class FacilitySearchActivity extends BaseActivity implements TitleManager
 		Button btnHeaderRight = (Button)findViewById(R.id.btnHeaderRight);
 		
 		btnHeaderTitle.setText("송전설비 검색");
-		btnHeaderRight.setBackgroundResource(R.drawable.selector_btn_map);
+		//btnHeaderRight.setBackgroundResource(R.drawable.selector_btn_map);
 		
 		btnHeaderLeft.setOnClickListener(new OnClickListener() {
 			@Override

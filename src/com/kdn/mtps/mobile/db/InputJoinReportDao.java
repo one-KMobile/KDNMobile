@@ -39,6 +39,7 @@ public class InputJoinReportDao extends BaseDao{
 		}
 
 		//updateRow.put(JoinReportInfo.COLS.IDX, row.idx);
+		updateRow.put(JoinReportInfo.COLS.WEATHER, row.weather);
 		updateRow.put(JoinReportInfo.COLS.NAME, row.name);
 		updateRow.put(JoinReportInfo.COLS.LENGTH, row.length);
 		updateRow.put(JoinReportInfo.COLS.LOCATION, row.location);
@@ -100,6 +101,7 @@ public class InputJoinReportDao extends BaseDao{
 				String etc = cursor.getString(17);
 
 				info.idx = idx;
+				info.weather = weather;
 				info.name = name;
 				info.length = length;
 				info.location = location;
@@ -216,26 +218,28 @@ public class InputJoinReportDao extends BaseDao{
 			while (cursor.moveToNext()) {
 
 				int idx = cursor.getInt(0);
-				String name = cursor.getString(1);
-				String length = cursor.getString(2);
-				String location = cursor.getString(3);
-				String work_nm = cursor.getString(4);
-				String join_date = cursor.getString(5);
-				String request_date = cursor.getString(6);
-				String join_s_date = cursor.getString(7);
-				String join_s_time = cursor.getString(8);
-				String join_e_date = cursor.getString(9);
-				String join_e_time = cursor.getString(10);
-				String request_joiner_co = cursor.getString(11);
-				String request_joiner = cursor.getString(12);
-				String joiner_dept = cursor.getString(13);
-				String joiner = cursor.getString(14);
-				String join_reason = cursor.getString(15);
-				String etc = cursor.getString(16);
+				String weather = cursor.getString(1);
+				String name = cursor.getString(2);
+				String length = cursor.getString(3);
+				String location = cursor.getString(4);
+				String work_nm = cursor.getString(5);
+				String join_date = cursor.getString(6);
+				String request_date = cursor.getString(7);
+				String join_s_date = cursor.getString(8);
+				String join_s_time = cursor.getString(9);
+				String join_e_date = cursor.getString(10);
+				String join_e_time = cursor.getString(11);
+				String request_joiner_co = cursor.getString(12);
+				String request_joiner = cursor.getString(13);
+				String joiner_dept = cursor.getString(14);
+				String joiner = cursor.getString(15);
+				String join_reason = cursor.getString(16);
+				String etc = cursor.getString(17);
 
 				JoinReportInfo info = new JoinReportInfo();
 
 				info.idx = idx;
+				info.weather = weather;
 				info.name = name;
 				info.length = length;
 				info.location = location;

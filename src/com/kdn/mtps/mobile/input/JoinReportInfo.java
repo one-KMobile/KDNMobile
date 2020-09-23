@@ -5,6 +5,7 @@ import android.os.Parcelable;
 
 public class JoinReportInfo implements Parcelable {
 	public int idx;
+	public String weather;
 	public String name;
 	public String length;
 	public String location;
@@ -21,7 +22,6 @@ public class JoinReportInfo implements Parcelable {
 	public String joiner;
 	public String join_reason;
 	public String etc;
-	public String weather;
 
 	public JoinReportInfo() {
 
@@ -30,6 +30,7 @@ public class JoinReportInfo implements Parcelable {
 	private JoinReportInfo(Parcel source) {
 		// TODO Auto-generated constructor stub
 		idx = source.readInt();
+		weather = source.readString();
 		name = source.readString();
 		length = source.readString();
 		location = source.readString();
@@ -46,7 +47,6 @@ public class JoinReportInfo implements Parcelable {
 		joiner = source.readString();
 		join_reason = source.readString();
 		etc = source.readString();
-		weather = source.readString();
 	}
 
 	@Override
@@ -56,6 +56,7 @@ public class JoinReportInfo implements Parcelable {
 	@Override
 	public void writeToParcel(Parcel arg0, int arg1) {
 		arg0.writeInt(idx);
+		arg0.writeString(weather);
 		arg0.writeString(name);
 		arg0.writeString(length);
 		arg0.writeString(location);
@@ -72,7 +73,6 @@ public class JoinReportInfo implements Parcelable {
 		arg0.writeString(joiner);
 		arg0.writeString(join_reason);
 		arg0.writeString(etc);
-		arg0.writeString(weather);
 	}
 
 	public  static final Creator<JoinReportInfo> CREATOR
@@ -237,6 +237,7 @@ public class JoinReportInfo implements Parcelable {
 
 	public static class COLS {
 		public static final String IDX = "IDX";
+		public static final String WEATHER = "WEATHER";
 		public static final String NAME = "NAME";
 		public static final String LENGTH = "LENGTH";
 		public static final String LOCATION = "LOCATION";

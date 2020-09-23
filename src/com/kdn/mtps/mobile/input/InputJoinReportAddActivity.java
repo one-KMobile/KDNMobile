@@ -321,9 +321,17 @@ public class InputJoinReportAddActivity extends BaseActivity implements TitleMan
 		TimePickerDialog timePickerDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
 			@Override
 			public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+				String strHour = "";
+				String strMinute = "";
+				if(hourOfDay<10) {
+					strHour += "0" + hourOfDay;
+				} else strHour = String.valueOf(hourOfDay);
+				if(minute<10) {
+					strMinute += "0" + minute;
+				} else strMinute = String.valueOf(minute);
 				mHour = hourOfDay;
 				mMinute = minute;
-				UpdateNow();
+				UpdateNow(strHour, strMinute);
 			}
 		}, mHour, mMinute, true);
 		timePickerDialog.show();
@@ -365,9 +373,9 @@ public class InputJoinReportAddActivity extends BaseActivity implements TitleMan
 		fired = false;
 		dateGubun = 0;
 	}
-	void UpdateNow(){
-		if(timeGubun == 1) btnJoinSTime.setText(String.format("%d:%d", mHour,mMinute));
-		else btnJoinETime.setText(String.format("%d:%d", mHour,mMinute));
+	void UpdateNow(String hour, String minute){
+		if(timeGubun == 1) btnJoinSTime.setText(hour+":"+minute);
+		else btnJoinETime.setText(hour+":"+minute);
 		timeGubun = 0;
 		//mTxtDate.setText(String.format("%d/%d/%d", mYear,mMonth + 1, mDay));
 		//mTxtTime.setText(String.format("%d:%d", mHour, mMinute));
