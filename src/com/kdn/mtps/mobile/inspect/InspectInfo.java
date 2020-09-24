@@ -27,6 +27,7 @@ public class InspectInfo implements Parcelable {
 	public String has_hj = "";
 	public String has_br = "";
 	public String has_jp = "";
+
 	//public String has_yb = "";
 	public String complete_yn_bt = "";
 	public String complete_yn_js = "";
@@ -36,6 +37,7 @@ public class InspectInfo implements Parcelable {
 	public String complete_yn_hj = "";
 	public String complete_yn_br = "";
 	public String complete_yn_jp = "";
+
 	public String send_yn_bt = "";
 	public String send_yn_js = "";
 	public String send_yn_jj = "";
@@ -44,6 +46,7 @@ public class InspectInfo implements Parcelable {
 	public String send_yn_hj = "";
 	public String send_yn_br = "";
 	public String send_yn_jp = "";
+
 	public String unity_ins_no = "";
 	public String nfc_tag_id = "";
 	public String nfc_tag_yn = "";
@@ -224,8 +227,8 @@ public class InspectInfo implements Parcelable {
 		this.address = address;
 	}
 
-	public  static final Parcelable.Creator<InspectInfo> CREATOR
-	= new Parcelable.Creator<InspectInfo>() {
+	public  static final Creator<InspectInfo> CREATOR
+	= new Creator<InspectInfo>() {
 
 		@Override
 		public InspectInfo createFromParcel(Parcel source) {

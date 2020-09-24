@@ -156,7 +156,7 @@ public class InspectResultSearchBaseAdapter extends BaseAdapter{
 		viewHolder.linearInsType.removeAllViews();
 		viewHolder.linearInsType2.removeAllViews();
 		
-		String[] hasInput = {info.has_bt, info.has_jg, info.has_yb, info.has_mh, info.has_gh, info.has_pr, info.has_jb};
+		String[] hasInput = {info.has_bt, info.has_jg, info.has_yb, info.has_mh, info.has_gh, info.has_pr, info.has_jb, info.has_js};
 		for (int idx=0; idx<hasInput.length; idx++) {
 			String has = hasInput[idx];
 			
@@ -211,6 +211,13 @@ public class InspectResultSearchBaseAdapter extends BaseAdapter{
 						tv.setBackgroundResource(R.drawable.btn_input_jb_y);
 					else
 						tv.setBackgroundResource(R.drawable.btn_input_jb_n);
+				}else if (idx == 7) {
+					if ("Y".equalsIgnoreCase(info.send_yn_js))
+						tv.setBackgroundResource(R.drawable.btn_input_js_s);
+					else if ("Y".equalsIgnoreCase(info.complete_yn_js))
+						tv.setBackgroundResource(R.drawable.btn_input_js_y);
+					else
+						tv.setBackgroundResource(R.drawable.btn_input_js_n);
 				}
 				
 				addTextView(tv, viewHolder);

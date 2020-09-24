@@ -440,6 +440,48 @@
         android:layout_height="wrap_content"
         android:background="@drawable/header_line"
         android:layout_marginBottom="5dp" />
-    
+
+	<FrameLayout
+		android:id="@+id/layout_js"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="5dp"
+		android:visibility="gone">
+		<TextView
+			android:id="@+id/tvJSInput"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="전선 접속 개소 점검"
+			android:textSize="16sp"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="10dp" />
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="right">
+			<Button
+				android:layout_marginRight="5dp"
+				android:id="@+id/btnFacJSCamera"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/selector_inspect_bt_camera" />
+			<Button
+				android:id="@+id/btnFacJS"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/selector_input_bt_insert"
+				/>
+		</LinearLayout>
+	</FrameLayout>
+
+	<ImageView
+		android:visibility="gone"
+		android:id="@+id/ivJSLine"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/header_line"
+		android:layout_marginBottom="5dp" />
 
 </LinearLayout>
