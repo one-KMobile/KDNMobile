@@ -42,7 +42,6 @@ public class ConstVALUE {
 	
 	/** Inspect Type No**/
 	public static final String CODE_NO_INSPECT_BT = "001";
-	public static final String CODE_NO_INSPECT_JS = "027";
 	public static final String CODE_NO_INSPECT_JJ = "028";
 	public static final String CODE_NO_INSPECT_KB = "21";
 	public static final String CODE_NO_INSPECT_HK = "025";
@@ -56,14 +55,15 @@ public class ConstVALUE {
 	public static final String CODE_NO_INSPECT_GH = "056";/*경보회로점검*/
 	public static final String CODE_NO_INSPECT_PR = "055";/*피뢰기점검*/
 	public static final String CODE_NO_INSPECT_JB = "059";/*전력구소방시설_보통점검 */
-	
+	public static final String CODE_NO_INSPECT_JS = "027";/*전선접속개소점검*/
+
 	/** 파일경로를 URI로 변경할때 앞에 붙일 prefix */
 	public static final String MEDIA_FILEPATH_PREFIX = "file://";
 	
 	/** api 서버 **/
 	//public static String PREFIX_API_SERVER = "http://kdn.testbed.kr:8989/";
 //	public static String PREFIX_API_SERVER = "http://172.30.1.34:8080/kdnweb/";
-	public static String PREFIX_API_SERVER = "http://172.30.1.35:8080/kdnweb/";
+	public static String PREFIX_API_SERVER = "http://218.237.17.203:8080/kdnweb/";
 //	public static String PREFIX_API_SERVER = "http://192.168.0.12:8080/";
 	public static final String NOTICE_LIST_URL = PREFIX_API_SERVER + "mobileWeb/noticeList.do";
 	public static final String NOTICE_DETAIL_URL = NOTICE_LIST_URL + "?board_idx=";
