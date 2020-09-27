@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -23,6 +24,7 @@ import com.kdn.mtps.mobile.db.TowerListDao;
 import com.kdn.mtps.mobile.info.CodeInfo;
 import com.kdn.mtps.mobile.net.api.bean.FacilityList;
 import com.kdn.mtps.mobile.util.AppUtil;
+import com.kdn.mtps.mobile.util.Logg;
 import com.kdn.mtps.mobile.util.ToastUtil;
 import com.kdn.mtps.mobile.util.thread.ATask;
 
@@ -108,17 +110,27 @@ public class FacilitySearchActivity extends BaseActivity implements TitleManager
 		
 		listFacility = (ListView)findViewById(R.id.listFacility);
 		listFacility.setOnScrollListener(this);
+
+		listFacility.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View view, int arg2,
+									long arg3) {
+				adapter.click(view);
+			}
+		});
 		
 		tvNoData = (TextView)findViewById(R.id.tvNoData);
-		ivBox = (ImageView)findViewById(R.id.ivBox);
+		//ivBox = (ImageView)findViewById(R.id.ivBox);
 		
 		adapter = new FacilitySearchBaseAdapter(this);
 	}
 
-	public void showNameDialog() {
+	public void showNameDialog(String btnGubun) {
 
 		//final String strGItems[] = {"회선","전력구","관로"};
-		final String strItems[] = CodeInfo.getInstance(this).getTracksNames();
+		//final String strItems[] = CodeInfo.getInstance(this).getTracksNames();
+		TowerListDao towerListDao = TowerListDao.getInstance(FacilitySearchActivity.this);
+		final String strItems[] = towerListDao.facilitySearchList(btnGubun);
 
 		AlertDialog.Builder dialog = new AlertDialog.Builder(this, AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
 		dialog.setTitle(getString(R.string.facility_name));
@@ -150,12 +162,24 @@ public class FacilitySearchActivity extends BaseActivity implements TitleManager
 	
 	@Override
 	public void onClick(View v) {
+		String strGubun;
 		switch (v.getId()) {
 		case R.id.btnGubun:
 			showNameDialog1();
 			break;
 		case R.id.btnName:
-			showNameDialog();
+			Logg.d("btnGubun : "+btnGubun.getText().toString());
+			if(btnGubun.getText().toString() == "회선") {
+				strGubun = "FL07";
+			} else if(btnGubun.getText().toString() == "전력구") {
+				strGubun = "FL08";
+			} else if(btnGubun.getText().toString() == "관로") {
+				strGubun = "FL09";
+			} else {
+				strGubun = "";
+			}
+
+			showNameDialog(strGubun);
 			break;
 		case R.id.btnSearch:
 			
@@ -192,10 +216,10 @@ public class FacilitySearchActivity extends BaseActivity implements TitleManager
 				
 				if (adapter.getCount() <= 0 ) {
 					tvNoData.setVisibility(View.VISIBLE);
-					ivBox.setVisibility(View.GONE);
+					//ivBox.setVisibility(View.GONE);
 				} else {
 					tvNoData.setVisibility(View.GONE);
-					ivBox.setVisibility(View.VISIBLE);
+					//ivBox.setVisibility(View.VISIBLE);
 				}
 			}
 			

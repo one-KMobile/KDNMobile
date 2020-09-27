@@ -575,15 +575,7 @@ public class InspectResultMasterDao extends BaseDao{
 				output.btInfo.check_result = check_result;
 				output.btInfo.etc = etc;
 				
-				Log.d("Test", "======================BTINFO====================");
-				
-				Log.d("Test", "mIdx : " + mIdx);
-				Log.d("Test", "wether : " + wether);
-				Log.d("Test", "worker_cnt : " + worker_cnt);
-				Log.d("Test", "claim_content : " + claim_content);
-				Log.d("Test", "check_result : " + check_result);
-				Log.d("Test", "etc : " + etc);
-				
+
 				outputList.add(output);
 			}
 		} catch (Exception e) {

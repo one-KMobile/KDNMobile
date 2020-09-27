@@ -78,14 +78,16 @@ public class ApiManager {
 	public static final String API_CODE_INFO_LIST= API_PREFIX + "apiCodeInfoList.json";
 	
 	/** 스케줄 **/
-	public static final String API_SCHEDULE_LIST= API_PREFIX + "inspection/result/in/schedule.json";
+	//public static final String API_SCHEDULE_LIST= API_PREFIX + "inspection/result/in/schedule.json";
+	public static final String API_SCHEDULE_LIST= API_PREFIX + "under/inspection/result/schedule.json";
 	
 	/** 송전설비 검색 **/
 	public static final String API_FACILITY_LIST= API_PREFIX + "search/facility/eqplist.json";
 	//public static final String API_FACILITY_LIST= API_PREFIX + "search/trans/tower.json";
 			
 	/** 선로 목록 **/
-	public static final String API_TRACKS_LIST= API_PREFIX + "tracks/list.json";
+	//public static final String API_TRACKS_LIST= API_PREFIX + "tracks/list.json";
+	public static final String API_TRACKS_LIST= API_PREFIX + "under/tracks/list.json";
 	
 	/** 지지물 목록 **/
 	public static final String API_TOWER_LIST= API_PREFIX + "tracks/list.json";

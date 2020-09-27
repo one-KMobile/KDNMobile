@@ -1,66 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/viewGroup"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/llItemParent"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" 
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
-    <LinearLayout 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-    
-	    <LinearLayout 
-	        	android:layout_weight="7"
-	    	    android:layout_width="0px"
-	    	    android:layout_height="wrap_content"
-	    	    android:gravity="left|center_vertical"
-	    	    android:orientation="vertical"
-	    	    android:layout_marginRight="5dp">
-		        <TextView
-			        android:id="@+id/tvEqpName"
-			        android:layout_width="wrap_content"
-			        android:layout_height="wrap_content"
-			        android:textSize="16sp"
-			        android:text="aaaaaaaaaaaaaaaaa" />
-		        <LinearLayout 
-		            android:layout_width="match_parent"
-		            android:layout_height="wrap_content"
-		            android:layout_marginTop="5dp">
-		            <TextView
-				        android:id="@+id/tvEqpType"
-				        android:layout_width="0dp"
-				        android:layout_weight="1"
-				        android:layout_height="wrap_content"
-				        android:textSize="14sp" />
-		            <TextView
-				        android:id="@+id/tvCircuitCnt"
-				        android:layout_width="0dp"
-				        android:layout_weight="1"
-				        android:layout_height="wrap_content"
-				        android:textSize="14sp"
-				        android:gravity="right|center_vertical"
-				        android:layout_marginRight="10dp" />
-		        </LinearLayout>
-	    	</LinearLayout>
-	    	
-	    <LinearLayout 
-	        android:layout_weight="3"
-	        android:layout_width="0px"
-	        android:layout_height="match_parent"
-	        android:gravity="right|center_vertical">
-	        <Button
-	            android:id="@+id/btnLocation"
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:background="@drawable/selector_facility_bt_location" />
-	    </LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="36dp"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:weightSum="10">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/table_line_h" />
+
+
+			<TextView
+				android:id="@+id/tvIdx"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:text="1" />
+
+			<ImageView
+				android:id="@+id/imageView4"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/table_line_h" />
+
+			<TextView
+				android:id="@+id/tvFnctLcDtls"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:gravity="center"
+				android:text="회선/관로/전력구명" />
+
+			<ImageView
+				android:id="@+id/imageView5"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/table_line_h" />
+
+			<TextView
+				android:id="@+id/tvEqpTyCdNm"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:gravity="center"
+				android:text="설비유형" />
+
+			<ImageView
+				android:id="@+id/imageView6"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/table_line_h" />
+
+			<TextView
+				android:id="@+id/tvEqpNm"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="5"
+				android:gravity="center"
+				android:text="설비명" />
+
+			<ImageView
+				android:id="@+id/imageView3"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/table_line_h" />
+
+		</LinearLayout>
+
 	</LinearLayout>
-    
-    
-</RelativeLayout>
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/table_line_w" />
+</LinearLayout>

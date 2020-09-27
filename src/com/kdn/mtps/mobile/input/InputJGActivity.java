@@ -150,7 +150,7 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		btnTab1 = (Button)findViewById(R.id.btnTab1);
 		btnTab1.setTextColor(Color.BLACK);
 		btnTab1.setOnClickListener(this);
-		btnTab1.setBackgroundResource(R.drawable.tab_jg_1_on);
+		btnTab1.setBackgroundResource(R.drawable.tab_icon_back_on);
 		btnTab2 = (Button)findViewById(R.id.btnTab2);
 		btnTab2.setTextColor(Color.BLACK);
 		btnTab2.setOnClickListener(this);
@@ -728,13 +728,13 @@ public class InputJGActivity extends BaseActivity implements TitleManager, OnCli
 		if(strTab == "1") {
 			layout1.setVisibility(View.VISIBLE);
 			layout2.setVisibility(View.GONE);
-			btnTab1.setBackgroundResource(R.drawable.tab_jg_1_on);
-			btnTab2.setBackgroundResource(R.drawable.tab_jg_2_off);
+			btnTab1.setBackgroundResource(R.drawable.tab_icon_back_on);
+			btnTab2.setBackgroundResource(R.drawable.tab_icon_back_off);
 		} else {
 			layout2.setVisibility(View.VISIBLE);
 			layout1.setVisibility(View.GONE);
-			btnTab1.setBackgroundResource(R.drawable.tab_jg_1_off);
-			btnTab2.setBackgroundResource(R.drawable.tab_jg_2_on);
+			btnTab1.setBackgroundResource(R.drawable.tab_icon_back_off);
+			btnTab2.setBackgroundResource(R.drawable.tab_icon_back_on);
 		}
 	}
 }

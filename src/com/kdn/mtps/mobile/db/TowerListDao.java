@@ -1,18 +1,23 @@
 package com.kdn.mtps.mobile.db;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
+import com.kdn.mtps.mobile.constant.ConstVALUE;
+import com.kdn.mtps.mobile.db.bean.ManageCodeLog;
 import com.kdn.mtps.mobile.facility.FacilityInfo;
+import com.kdn.mtps.mobile.info.CodeInfo;
 import com.kdn.mtps.mobile.inspect.InspectInfo;
 import com.kdn.mtps.mobile.util.Logg;
 
 public class TowerListDao extends BaseDao{
 	static TowerListDao towerListDao;
+	public LinkedHashMap<String, String> CODE_TRACKS = new LinkedHashMap<String, String>();
 
 	private TowerListDao(Context ctx) {
 		tableName = "TOWER_LIST";
@@ -38,7 +43,9 @@ public class TowerListDao extends BaseDao{
 		}
 		
 		updateRow.put(FacilityInfo.COLS.TOWER_IDX, row.TOWER_IDX);
+		updateRow.put(FacilityInfo.COLS.FNCT_LC_NO, row.FNCT_LC_NO);
 		updateRow.put(FacilityInfo.COLS.FNCT_LC_DTLS, row.FNCT_LC_DTLS);
+		updateRow.put(FacilityInfo.COLS.FNCT_LC_TY, row.FNCT_LC_TY);
 		updateRow.put(FacilityInfo.COLS.EQP_TY_CD_NM, row.EQP_TY_CD_NM);
 		updateRow.put(FacilityInfo.COLS.EQP_NO, row.EQP_NO);
 		updateRow.put(FacilityInfo.COLS.EQP_NM, row.EQP_NM);
@@ -159,7 +166,9 @@ public class TowerListDao extends BaseDao{
 
 			cursor = db.rawQuery(fmt, null);
 
+			int num = 0;
 			while (cursor.moveToNext()) {
+				num++;
 				int idx = cursor.getInt(cursor.getColumnIndex(FacilityInfo.COLS.IDX));
 				String TOWER_IDX = cursor.getString(cursor.getColumnIndex(FacilityInfo.COLS.TOWER_IDX));
 				String FNCT_LC_DTLS= cursor.getString(cursor.getColumnIndex(FacilityInfo.COLS.FNCT_LC_DTLS));
@@ -172,7 +181,7 @@ public class TowerListDao extends BaseDao{
 				String CONT_NUM = cursor.getString(cursor.getColumnIndex(FacilityInfo.COLS.CONT_NUM));
 				
 				FacilityInfo info = new FacilityInfo();
-				info.IDX = idx;
+				info.IDX = num;
 				info.TOWER_IDX = TOWER_IDX;
 				info.FNCT_LC_DTLS = FNCT_LC_DTLS;
 				info.EQP_TY_CD_NM = EQP_TY_CD_NM;
@@ -185,7 +194,6 @@ public class TowerListDao extends BaseDao{
 				info.CONT_NUM = CONT_NUM;
 				
 				facList.add(info);
-				
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -194,6 +202,35 @@ public class TowerListDao extends BaseDao{
 		}
 
 		return facList;
+	}
+
+
+	public String[] facilitySearchList(String mType) {
+		SQLiteDatabase db = DBHelper.getReadableInstance(ctx);
+
+		String fmt = "select distinct FNCT_LC_NO, FNCT_LC_DTLS, FNCT_LC_TY from " + tableName + " where 1=1";
+
+		if (mType != null && !"".equals(mType))
+			fmt += " and FNCT_LC_TY LIKE '%" + mType + "%' ";
+
+		Logg.d("mType : "+mType+" /query : " + fmt);
+		cursor = db.rawQuery(fmt, null);
+
+		String strArray[] = new String[cursor.getCount()];
+		int index = 0;
+		while (cursor.moveToNext()) {
+			String fnct_lc_no = cursor.getString(0);
+			String fnct_lc_dtls = cursor.getString(1);
+			String fnct_lc_ty = cursor.getString(2);
+
+			FacilityInfo info = new FacilityInfo();
+			info.FNCT_LC_NO = fnct_lc_no;
+			info.FNCT_LC_DTLS = fnct_lc_dtls;
+			info.FNCT_LC_TY = fnct_lc_ty;
+			//facSearchList.add(info);
+			strArray[index++] = info.FNCT_LC_DTLS;
+		}
+		return strArray;
 	}
 
 	public void dbCheck() {
@@ -221,19 +258,7 @@ public class TowerListDao extends BaseDao{
 //				int eqp_type_code = cursor.getInt(4);
 //				int detail_item_code = cursor.getInt(5);
 //				String spt_mgt_yn = cursor.getString(6);
-				
-				Log.d("Test", "idx : " + idx);
-				Log.d("Test", "master_idx : " + master_idx);
-				Log.d("Test", "wether : " + wether);
-				Log.d("Test", "worker_cnt : " + worker_cnt);
-				Log.d("Test", "claim_content : " + claim_content);
-				Log.d("Test", "check_result : " + check_result);
-				Log.d("Test", "etc : " + etc);
-//				Log.d("Test", "ins_result_code : " + ins_result_code);
-//				Log.d("Test", "check_result_code : " + check_result_code);
-//				Log.d("Test", "eqp_type_code : " + eqp_type_code);
-//				Log.d("Test", "detail_item_code : " + detail_item_code);
-//				Log.d("Test", "spt_mgt_yn : " + spt_mgt_yn);
+
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
